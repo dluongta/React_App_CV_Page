@@ -1,5 +1,4 @@
 import React from 'react'
-import headerImage from  '../../../../assets/header-img.png'
 
 export const Home = () => {
   return (
@@ -7,12 +6,12 @@ export const Home = () => {
         <div className='container flex'>
             <div className='left'>
                 <div className='img'>
-                    <img src={headerImage} alt='' />
+                    <img src='https://i.imgur.com/ad8IQPH.png' alt='' />
                 </div>
             </div>
             <div className='right topMargin'>
                 <h1> I AM A <br/>
-                WEB PROGRAMMER
+                CODER
                 </h1>
                 <div className="socialIcon">
                     <i className='fab fa-facebook-f facebook'></i>

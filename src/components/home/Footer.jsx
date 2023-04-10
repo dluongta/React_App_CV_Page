@@ -1,12 +1,11 @@
 import React from 'react'
-import logo from '../../assets/Luen.jpg'
 
 export const Footer = () => {
   return (
     <footer>
         <div className="container grid1">
             <div className="box">
-            <img width="95" height="60" src= {logo}  alt=''/>
+            <img width="95" height="60" src= "https://i.imgur.com/HfhbIe9.jpg " alt=''/>
             <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus quaerat quam dolorum ipsa laboriosam, repudia illum amet inventore facilis, eius libero."</p>
             <div className="socialIcon">
                     <i className='fab fa-facebook-f '></i>
@@ -60,7 +59,7 @@ export const Footer = () => {
         </div>
         <div className="legal container">
             <p>Copyright @2023. All rights reserved.</p>
-            <label htmlFor=''>Made with ❤️ by <span>Luen</span></label> 
+            <label htmlFor=''>Design and Develop by <span>Luen</span></label> 
         </div>
     </footer>
   )
