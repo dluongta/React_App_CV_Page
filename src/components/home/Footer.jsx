@@ -7,7 +7,7 @@ export const Footer = () => {
         <div className="container grid1">
             <div className="box">
             <img width="95" height="60" src= {logo} alt=''/>
-            <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus quaerat quam dolorum ipsa laboriosam, repudia illum amet inventore facilis, eius libero."</p>
+            <p>"I am trying my best to become a good programmer"</p>
             <div className="socialIcon">
                     <i className='fab fa-facebook-f '></i>
                     <i className='fab fa-instagram '></i>
@@ -43,7 +43,7 @@ export const Footer = () => {
             </div>
             <div className="box">
                 <h2>Get in Touch</h2>
-                <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus quaerat quam dolorum ipsa laboriosam</p>
+                <p>"I am trying my best to become a good programmer"</p>
                 <div className="icon">
                     <i className='fa fa-map-marker-alt'></i>
                     <label htmlFor=''>Location: Hanoi, Vietnam</label>
