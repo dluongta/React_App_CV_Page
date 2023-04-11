@@ -1,4 +1,6 @@
 import React from 'react'
+import bannerImage from '../../../assets/banner-bg.png'
+
 
 export const Service = () => {
     const ServicesData = [
@@ -6,37 +8,37 @@ export const Service = () => {
           id: 1,
           title: "Web Design",
           desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-          cover: "https://i.imgur.com/KXUtRut.png",
+          cover: bannerImage,
         },
         {
           id: 2,
           title: "Web Development",
           desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-          cover: "https://i.imgur.com/KXUtRut.png",
+          cover: bannerImage,
         },
         {
           id: 3,
           title: "Photography",
           desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-          cover: "https://i.imgur.com/KXUtRut.png",
+          cover: bannerImage,
         },
         {
           id: 4,
           title: "Live Support",
           desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-          cover: "https://i.imgur.com/KXUtRut.png",
+          cover: bannerImage,
         },
         {
           id: 5,
           title: "Content Writing",
           desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-          cover: "https://i.imgur.com/KXUtRut.png",
+          cover: bannerImage,
         },
         {
           id: 6,
           title: "Timely Deliverables",
           desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-          cover: "https://i.imgur.com/KXUtRut.png",
+          cover: bannerImage,
         },
       ]
       
