@@ -44,7 +44,7 @@ export const Footer = () => {
                 <h2>Get in Touch</h2>
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus quaerat quam dolorum ipsa laboriosam</p>
                 <div className="icon">
-                    <i className='fa fa-location-dot'></i>
+                    <i className='fa fa-map-marker-alt'></i>
                     <label htmlFor=''>Location: Hanoi, Vietnam</label>
                 </div>
                 <div className="icon">
