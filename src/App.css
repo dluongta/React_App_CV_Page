@@ -452,6 +452,24 @@ footer .icon i {
   margin-top: 70px;
   padding: 20px 0;
 }
+footer .socialIcon i:hover {
+  color: #434242;
+}
+footer .fa-facebook-f:hover {
+  background-color: white;
+}
+footer .fa-instagram:hover {
+  background-color: white;
+}
+footer .fa-twitter:hover {
+  background-color: white;
+}
+footer .fa-youtube:hover {
+  background-color: white;
+}
+footer .fa-pinterest:hover {
+  background-color: white;
+}
 
 
 
