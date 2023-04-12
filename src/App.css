@@ -141,12 +141,7 @@ header.active {
   font-size: 60px;
   
 }
-.home .right {
-  background-image: url(./assets/background.svg);
-  background-position:center;
-  background-repeat: no-repeat;
-  background-size:cover;
-}
+
 .socialIcon i {
   width: 35px;
   height: 35px;
