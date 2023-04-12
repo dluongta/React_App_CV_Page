@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import {Link  } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
-import WorkIcon from '@mui/icons-material/Work';
+import DevicesIcon from '@mui/icons-material/Devices';
 import GridViewIcon from '@mui/icons-material/GridView';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -42,7 +42,7 @@ export const Header = () => {
                     </li>
                     <li className='icon'>
                         <SearchIcon className="HeaderIcon"/>                       
-                        <WorkIcon className="HeaderIcon"/>
+                        <DevicesIcon className="HeaderIcon"/>
                         <GridViewIcon className="HeaderIcon"/>
 
                     </li>

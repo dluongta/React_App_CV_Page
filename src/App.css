@@ -114,6 +114,7 @@ header.active {
   height: 90vh;
   width: 100%;
   position: relative;
+  
 }
 @keyframes updown {
   0% {
@@ -138,6 +139,13 @@ header.active {
 }
 .home h1 {
   font-size: 60px;
+  
+}
+.home .right {
+  background-image: url(./assets/background.svg);
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size:cover;
 }
 .socialIcon i {
   width: 35px;
@@ -217,7 +225,7 @@ button {
   margin-bottom: 20px;
 }
 p{
-  color: #6185a5;
+  
   line-height: 30px;
 }
 

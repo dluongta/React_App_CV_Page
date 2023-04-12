@@ -1,6 +1,9 @@
 import React from 'react'
-import headerImage from  '../../../../assets/header-img.png'
+import headerImg from '../../../../assets/math.gif'
+
+
 import { useState,useEffect } from 'react'
+
 
 export const Home = () => {
  const [loopNum, setLoopNum] = useState(0);
@@ -8,7 +11,7 @@ export const Home = () => {
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(100 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = [ "Web Programmer", "Web Developer", "UI/UX Designer" ];
   const period = 2000;
 
   useEffect(() => {
@@ -49,7 +52,7 @@ export const Home = () => {
         <div className='container flex'>
             <div className='left'>
                 <div className='img'>
-                <img src={headerImage} alt='' />
+                <img src={headerImg} alt='' />
                 </div>
             </div>
             <div className='right topMargin'>
