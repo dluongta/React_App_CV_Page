@@ -27,7 +27,7 @@ export const Pages = () => {
           return (<div className='card '>
 
             <h1>{value.linkName}</h1>
-            <a className='link' href='{value.link}' >{value.link} </a>
+            <a className='link' href='{value.link}' >&rarr; {value.link} </a>
 
 
           </div>)

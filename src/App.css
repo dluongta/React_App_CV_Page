@@ -545,17 +545,15 @@ footer .fa-pinterest:hover {
   }
 
 }
-.page {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.pages, .blog, .portfolio {
+  margin-left: 30px;
 }
-.card {
+
+.pages .card {
   background-color: aliceblue;
   padding: 10px;
   margin-bottom: 15px;
-  width: 100%;
+  width: 90%;
   height: 50vh;
   border-radius: 10px;
   border-style: none;
@@ -576,12 +574,6 @@ footer .fa-pinterest:hover {
   color:purple;
 }
 
-.portfolio {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .contact {
   height: 100vh;
   display: flex;
@@ -597,15 +589,24 @@ footer .fa-pinterest:hover {
   width: 20px;
   height: 20px;
 }
-.blog {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.blog .card {
+  background-color: rgb(248, 240, 255);
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 90%;
+  height: 50vh;
+  border-radius: 10px;
+  border-style: none;
+  position: relative ;
 }
-.shop {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.portfolio .card {
+  background-color: rgb(255, 248, 240);
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 90%;
+  height: 50vh;
+  border-radius: 10px;
+  border-style: none;
+  position: relative ;
 }
+

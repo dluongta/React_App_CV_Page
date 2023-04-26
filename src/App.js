@@ -11,7 +11,6 @@ import { Footer } from './components/home/Footer';
 import { Pages } from './components/pages/Pages';
 import { Portfolio } from './components/pages/Portfolio';
 import { Blog } from './components/pages/Blog';
-import { Shop } from './components/pages/Shop';
 import { Contact } from './components/pages/Contact';
 
 function App() {
@@ -24,7 +23,6 @@ function App() {
       <Route path= '/pages' exact component={Pages} />
       <Route path= '/portfolio' exact component={Portfolio} />
       <Route path= '/blog' exact component={Blog} />
-      <Route path= '/shop' exact component={Shop} />
       <Route path= '/contact' exact component={Contact} />
     </Switch>
     <Footer/>
