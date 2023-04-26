@@ -52,7 +52,7 @@ export const Portfolio = () => {
           return (<div className='card '>
 
             <h1>{value.linkName}</h1>
-            <Link className='link' to={{ pathname: value.link }} target="_blank">{value.link}</Link>
+            <Link className='link' to={{ pathname: value.link }} target="_blank">&rarr; {value.link}</Link>
 
 
           </div>)
