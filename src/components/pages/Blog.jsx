@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 export const Blog = () => {
   const data = [
@@ -23,8 +24,7 @@ export const Blog = () => {
           return (<div className='card '>
 
             <h1>{value.linkName}</h1>
-            <a className='link' href='{value.link}' >&rarr; {value.link} </a>
-
+            <Link className='link' to={{ pathname: value.link }} target="_blank">{value.link}</Link>
 
           </div>)
 
