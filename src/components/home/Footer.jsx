@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../../assets/Luen.jpg'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   return (
@@ -9,10 +10,10 @@ export const Footer = () => {
             <img width="95" height="60" src= {logo} alt=''/>
             <p>"I am trying my best to become a good programmer"</p>
             <div className="socialIcon">
-                    <i className='fab fa-facebook-f '></i>
+                     <i className='fab fa-facebook-f '></i>
                     <i className='fab fa-instagram '></i>
                     <i className='fab fa-twitter '></i>
-                    <i className='fab fa-youtube '></i>
+                    <Link className='white' to={{ pathname: 'https://www.youtube.com/@luen03' }} target="_blank"><i className='fab fa-youtube '></i></Link>
                     <i className='fab fa-pinterest '></i>
             </div>
             </div>
@@ -29,16 +30,16 @@ export const Footer = () => {
             <div className="box">
                 <h2>Recent Post</h2>
                 <div className='text'>
-                    <p>Boost Sale</p>
-                    <span>28 Feb 2022</span>
+                    <p>Latest News</p>
+                    <span>30 April 2023</span>
                 </div>
                 <div className='text'>
-                    <p>Boost Sale</p>
-                    <span>28 Feb 2022</span>
+                    <p>Lastest News</p>
+                    <span>30 April 2023</span>
                 </div>
                 <div className='text'>
-                    <p>Boost Sale</p>
-                    <span>28 Feb 2022</span>
+                    <p>Lastest News</p>
+                    <span>30 April 2023</span>
                 </div>
             </div>
             <div className="box">
@@ -54,7 +55,7 @@ export const Footer = () => {
                 </div>
                 <div className="icon">
                     <i className='fa fa-envelope'></i>
-                    <label htmlFor=''>Email: luen@example.com</label>                   
+                    <label htmlFor=''>Email: luen2k3@gmail.com</label>                   
                 </div>
             </div>
         </div>

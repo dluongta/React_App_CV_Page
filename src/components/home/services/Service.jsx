@@ -18,25 +18,25 @@ export const Service = () => {
         },
         {
           id: 3,
-          title: "Photography",
-          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-          cover: bannerImage,
-        },
-        {
-          id: 4,
-          title: "Live Support",
-          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-          cover: bannerImage,
-        },
-        {
-          id: 5,
           title: "Content Writing",
           desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
           cover: bannerImage,
         },
         {
+          id: 4,
+          title: "Online Support",
+          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+          cover: bannerImage,
+        },
+        {
+          id: 5,
+          title: "Project Planning",
+          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+          cover: bannerImage,
+        },
+        {
           id: 6,
-          title: "Timely Deliverables",
+          title: "Time Management",
           desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
           cover: bannerImage,
         },

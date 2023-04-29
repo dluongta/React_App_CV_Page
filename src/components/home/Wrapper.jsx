@@ -3,8 +3,8 @@ import React from 'react'
 export const Wrapper = () => {
     const data = [
         {
-          title: "LOOKING FOR EXCLUSIVE SERVICES?",
-          heading: "Get The Best For Your Business",
+          title: "LOOKING FOR MORE SOLUTIONS",
+          heading: "Get The Best For Your Career",
           desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         },
       ]

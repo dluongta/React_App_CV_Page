@@ -15,7 +15,7 @@ export const Contact = () => {
                 </div>
                 <div className="icon">
                     <i className='fa fa-envelope'></i>
-                    <label htmlFor=''>Email: luen@example.com</label>                   
+                    <label htmlFor=''>Email: luen2k3@gmail.com</label>                   
                 </div>
             </div>
         
