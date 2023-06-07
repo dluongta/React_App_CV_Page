@@ -6,6 +6,7 @@ import { Skill } from '../home/header/homes/Skill'
 import { WrapperOne } from '../home/header/homes/WrapperOne'
 import { Service } from '../home/services/Service'
 import { Wrapper } from '../home/Wrapper'
+import { City } from '../home/header/homes/City'
 
 export const HomePage = () => {
   return (
@@ -16,6 +17,7 @@ export const HomePage = () => {
     <Service/>
     <Wrapper/>
     <Skill/>
+    <City/>
     <WrapperOne/>
     </>
   )
