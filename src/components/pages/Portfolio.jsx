@@ -40,6 +40,12 @@ export const Portfolio = () => {
 
     <>
       <section className='portfolio'>
+        <div id="mySidenav" class="sidenav">
+          <Link to='/pages' id="pages"> Pages </Link>
+          <Link to='/blog' id="blog"> Blog </Link>
+          <Link to='/portfolio' id="portfolio"> Portfolio </Link>
+          <Link to='/contact' id="contact"> Contact </Link>
+        </div>
 
         <div className='card '>
 

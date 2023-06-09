@@ -24,6 +24,12 @@ export const Pages = () => {
 
     <>
       <section className='pages'>
+        <div id="mySidenav" class="sidenav">
+          <Link to='/pages' id="pages"> Pages </Link>
+          <Link to='/blog' id="blog"> Blog </Link>
+          <Link to='/portfolio' id="portfolio"> Portfolio </Link>
+          <Link to='/contact' id="contact"> Contact </Link>
+        </div>
 
         {data.map((value) => {
           return (<div className='card '>

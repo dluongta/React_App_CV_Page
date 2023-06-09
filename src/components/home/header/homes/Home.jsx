@@ -49,6 +49,7 @@ export const Home = () => {
     } 
 
   return (
+    
     <section className='home'>
         <div className='container flex'>
             <div className='left'>

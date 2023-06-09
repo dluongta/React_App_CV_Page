@@ -768,3 +768,43 @@ footer .fa-pinterest:hover {
 }
 
 /*city*/
+/*homepage*/
+#mySidenav a {
+  position: fixed;
+  left: -80px;
+  margin-top: 150px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  z-index: 1000;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#pages {
+  top: 20px;
+  background-color: #04AA6D;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196F3;
+}
+
+#portfolio {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #ff8800
+}
+
+/*homepage*/
