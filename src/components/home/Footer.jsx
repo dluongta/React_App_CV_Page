@@ -13,7 +13,7 @@ export const Footer = () => {
                      <i className='fab fa-facebook-f '></i>
                     <i className='fab fa-instagram '></i>
                     <i className='fab fa-twitter '></i>
-                    <Link className='white' to={{ pathname: 'https://www.youtube.com/@luen03' }} target="_blank"><i className='fab fa-youtube '></i></Link>
+                    <Link className='white' to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"><i className='fab fa-youtube '></i></Link>
                     <i className='fab fa-pinterest '></i>
             </div>
             </div>

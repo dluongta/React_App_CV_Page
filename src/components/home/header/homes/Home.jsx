@@ -1,5 +1,5 @@
 import React from 'react'
-import headerImg from '../../../../assets/math.gif'
+import headerImg from '../../../../assets/main.png'
 import { Link } from 'react-router-dom'
 
 
@@ -65,7 +65,7 @@ export const Home = () => {
                     <i className='fab fa-facebook-f facebook'></i>
                     <i className='fab fa-instagram instagram'></i>
                     <i className='fab fa-twitter twitter'></i>
-                    <Link to={{ pathname: 'https://www.youtube.com/@luen03' }} target="_blank"> <i className='fab fa-youtube youtube'></i></Link>
+                    <Link to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"> <i className='fab fa-youtube youtube'></i></Link>
                     <i className='fab fa-pinterest pinterest'></i>
                 </div>
                 <p>I am studying and researching</p>
