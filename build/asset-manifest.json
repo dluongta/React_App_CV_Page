@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.4a738418.css",
-    "main.js": "/static/js/main.d7ac931d.js",
+    "main.css": "/static/css/main.057c31e2.css",
+    "main.js": "/static/js/main.c81c8d2e.js",
     "static/js/787.28cb0dcd.chunk.js": "/static/js/787.28cb0dcd.chunk.js",
-    "static/media/main.png": "/static/media/main.ac8515a2f639d4480b8a.png",
+    "static/media/main.png": "/static/media/main.f0aea878927d6dcc4c5b.png",
     "static/media/contact-img.png": "/static/media/contact-img.b99cdb766ab2d8b5cfa5.png",
     "static/media/banner-bg.png": "/static/media/banner-bg.f67087d1c9931d7ccc75.png",
     "static/media/Luen.jpg": "/static/media/Luen.d5373d32deba7fe1ccdc.jpg",
     "index.html": "/index.html",
-    "main.4a738418.css.map": "/static/css/main.4a738418.css.map",
-    "main.d7ac931d.js.map": "/static/js/main.d7ac931d.js.map",
+    "main.057c31e2.css.map": "/static/css/main.057c31e2.css.map",
+    "main.c81c8d2e.js.map": "/static/js/main.c81c8d2e.js.map",
     "787.28cb0dcd.chunk.js.map": "/static/js/787.28cb0dcd.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a738418.css",
-    "static/js/main.d7ac931d.js"
+    "static/css/main.057c31e2.css",
+    "static/js/main.c81c8d2e.js"
   ]
 }

@@ -157,11 +157,10 @@ header.active {
   position: absolute;
   top: 0;
   left: 0;
-  height: 90vh;
+  height: 100vh;
   width: 80%;
   object-fit: contain;
-  transform: scale(1.1);
-  animation: updown 3s linear infinite;
+  transform: scale(1.2);
 }
 
 .home h1 {
