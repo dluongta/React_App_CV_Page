@@ -6,9 +6,7 @@ export const About = () => {
     const data = [
         {
           title: "Who I Am And What I Do",
-          desc1: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde possimus quaerat quam dolorum ipsa laboriosam, repudia illum amet inventore facilis, eius libero.",
-          desc2: "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.",
-          desc3: "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+          desc: "I'm a skilled programmer, fascinated to science, technology and math.",
           cover: contactImage,
         },
       ]
@@ -23,9 +21,7 @@ export const About = () => {
                             <h3>About Me</h3>
                             <h1>{value.title}</h1>
                         </div>
-                        <p>{value.desc1}</p>
-                        <p>{value.desc2}</p>
-                        <p>{value.desc3}</p>
+                        <p>{value.desc}</p>
                         <button className='primary-btn'>Learn About Me</button>
                     </div>
                     <div className="right">

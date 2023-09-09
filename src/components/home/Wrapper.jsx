@@ -5,7 +5,7 @@ export const Wrapper = () => {
         {
           title: "LOOKING FOR MORE SOLUTIONS",
           heading: "Get The Best For Your Career",
-          desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+          desc: "I am always looking for jobs and developing my knowledge.",
         },
       ]
   return (

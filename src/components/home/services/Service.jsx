@@ -7,37 +7,37 @@ export const Service = () => {
         {
           id: 1,
           title: "Web Design",
-          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+          desc: "Web Design is vital to make layout better.",
           cover: bannerImage,
         },
         {
           id: 2,
           title: "Web Development",
-          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+          desc: "I definitely want to have good web app.",
           cover: bannerImage,
         },
         {
           id: 3,
           title: "Content Writing",
-          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+          desc: "Application need an good content.",
           cover: bannerImage,
         },
         {
           id: 4,
           title: "Online Support",
-          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+          desc: "Website also provide support by everyone.",
           cover: bannerImage,
         },
         {
           id: 5,
           title: "Project Planning",
-          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
-          cover: bannerImage,
+          desc: "It is predominant to have a good plan before creating application.",
+          cover: bannerImage
         },
         {
           id: 6,
           title: "Time Management",
-          desc: "Lorem ipsum dolor sit amet, consecte tuer adipiscing elit enean.",
+          desc: "Following to time arrangement is a supreme thing.",
           cover: bannerImage,
         },
       ]

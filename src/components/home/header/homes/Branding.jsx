@@ -5,17 +5,17 @@ export const Branding = () => {
         {
           id: "01",
           heading: "Digital Branding",
-          desc: "Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo similique! Impedit.",
+          desc: "I always want to create quality products.",
         },
         {
           id: "02",
           heading: "Team Management",
-          desc: "Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo similique! Impedit.",
+          desc: "Working with team is also an important thing in programming. ",
         },
         {
           id: "03",
           heading: "Creative Mind",
-          desc: "Lorem ipsum dolor sit amet, provid adipisicing elit. Aliquam dolorum nu illo similique! Impedit.",
+          desc: "Creativity will be thr core to develop program.",
         },
       ]
   return (
