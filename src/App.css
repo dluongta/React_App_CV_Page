@@ -129,35 +129,21 @@ header.active {
 }
 
 .home {
-  height: 90vh;
+  height: 40em;
 }
 
 .home .img {
-  height: 90vh;
+  height: 10em;
   width: 100%;
   position: relative;
-
-}
-
-@keyframes updown {
-  0% {
-    transform: translateY(-20px);
-  }
-
-  50% {
-    transform: translateY(20px);
-  }
-
-  100% {
-    transform: translateY(-20px);
-  }
+  margin-top: 5em;
 }
 
 .home img {
   position: absolute;
   top: 0;
   left: 0;
-  height: 100vh;
+  height: 28em;
   width: 80%;
   object-fit: contain;
   transform: scale(1.2);
