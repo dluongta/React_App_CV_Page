@@ -10,8 +10,13 @@ export const Blog = () => {
     },
     {
       id: "02",
-      link: "https://github.com/luen2003/Luen_News/releases/download/v1.0.0/app-release.apk",
-      linkName: "News App",
+      link: "https://github.com/luen2003/NoteApp/releases/download/v1.0.0/app-release.apk",
+      linkName: "Note App",
+    },
+    {
+      id: "03",
+      link: "https://github.com/luen2003/ChatApp/releases/download/v1.0.0/app-release.apk",
+      linkName: "Chat App",
     }
 
   ]

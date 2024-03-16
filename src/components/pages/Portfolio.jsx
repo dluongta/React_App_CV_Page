@@ -21,20 +21,24 @@ export const Portfolio = () => {
     },
     {
       id: "04",
-      link: "https://news-api-95dr.onrender.com",
-      linkName: "News API",
+      link: "https://github.com/luen2003/NoteApp/releases/download/v1.0.0/app-release.apk",
+      linkName: "Note App",
     },
     {
       id: "05",
-      link: "https://github.com/luen2003/SDLGAME/archive/refs/tags/1.0.zip",
-      linkName: "SDL Game - Water Pipe ",
+      link: "https://github.com/luen2003/ChatApp/releases/download/v1.0.0/app-release.apk",
+      linkName: "Chat App",
     },
     {
       id: "06",
-      link: "https://github.com/luen2003/Luen_News/releases/download/v1.0.0/app-release.apk",
-      linkName: "News App",
+      link: "https://note-task.onrender.com/",
+      linkName: "Note Task Website",
+    },
+    {
+      id: "07",
+      link: "https://luen2003-mern-shop.onrender.com/",
+      linkName: "MERN Shop Website",
     }
-
   ]
   return (
 

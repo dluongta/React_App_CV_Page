@@ -16,8 +16,13 @@ export const Pages = () => {
     },
     {
       id: "03",
-      link: "https://news-api-95dr.onrender.com",
-      linkName: "News API",
+      link: "https://note-task.onrender.com/",
+      linkName: "Note Task Website",
+    },
+    {
+      id: "04",
+      link: "https://luen2003-mern-shop.onrender.com/",
+      linkName: "MERN Shop Website",
     },
   ]
   return (
