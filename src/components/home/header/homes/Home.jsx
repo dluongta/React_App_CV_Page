@@ -68,7 +68,7 @@ export const Home = () => {
                     <Link to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"> <i className='fab fa-youtube youtube'></i></Link>
                     <i className='fab fa-pinterest pinterest'></i>
                 </div>
-                <p>I am Ta Dinh Luong. I am a programmer who skilled at Web Developer, Mathematics, Competitive Programming.I also learning about Artificial Intelligence And Android Developer.</p>
+                <p>I am Ta Dinh Luong. I am a programmer who skilled at Web Developer, Mathematics, Solving Problem. I also learning about Artificial Intelligence And Android Developer.</p>
                 <button className='primary-btn'>Contact Me</button>
             </div>
         </div>
