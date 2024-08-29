@@ -10,7 +10,7 @@ export const Footer = () => {
             <img width="95" height="60" src= {logo} alt=''/>
             <p>"I am trying my best to become a good programmer"</p>
             <div className="socialIcon">
-                     <i className='fab fa-facebook-f '></i>
+            <Link className='white' to={{ pathname: 'https://www.facebook.com/luen2003' }} target="_blank"><i className='fab fa-facebook-f '></i></Link>
                     <i className='fab fa-instagram '></i>
                     <i className='fab fa-twitter '></i>
                     <Link className='white' to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"><i className='fab fa-youtube '></i></Link>

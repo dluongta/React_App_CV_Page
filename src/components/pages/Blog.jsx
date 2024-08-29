@@ -17,6 +17,11 @@ export const Blog = () => {
       id: "03",
       link: "https://github.com/luen2003/ChatApp/releases/download/v1.0.0/app-release.apk",
       linkName: "Chat App",
+    },
+    {
+      id: "04",
+      link: "https://github.com/luen2003/NewsApp/releases/download/v1.0.0/app-release.apk",
+      linkName: "News App",
     }
 
   ]

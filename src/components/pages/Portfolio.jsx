@@ -38,7 +38,17 @@ export const Portfolio = () => {
       id: "07",
       link: "https://luen2003-mern-shop.onrender.com/",
       linkName: "MERN Shop Website",
-    }
+    },
+    {
+      id: "08",
+      link: "https://github.com/luen2003/NewsApp/releases/download/v1.0.0/app-release.apk",
+      linkName: "News App",
+    },
+    {
+      id: "09",
+      link: "https://mgpost.onrender.com",
+      linkName: "Post office website with live chat",
+    },
   ]
   return (
 

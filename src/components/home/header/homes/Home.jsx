@@ -62,7 +62,7 @@ export const Home = () => {
                 {text}|
                 </h1>
                 <div className="socialIcon">
-                    <i className='fab fa-facebook-f facebook'></i>
+                <Link to={{ pathname: 'https://www.facebook.com/luen2003' }} target="_blank"><i className='fab fa-facebook-f facebook'></i></Link>
                     <i className='fab fa-instagram instagram'></i>
                     <i className='fab fa-twitter twitter'></i>
                     <Link to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"> <i className='fab fa-youtube youtube'></i></Link>
