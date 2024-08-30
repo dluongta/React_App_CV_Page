@@ -29,6 +29,11 @@ export const Pages = () => {
       link: "https://mgpost.onrender.com",
       linkName: "Post office website with live chat",
     },
+    {
+      id: "06",
+      link: "http://getimage.atwebpages.com/",
+      linkName: "Edit Image Website",
+    }
   ]
   return (
 

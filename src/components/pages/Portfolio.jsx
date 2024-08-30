@@ -49,6 +49,11 @@ export const Portfolio = () => {
       link: "https://mgpost.onrender.com",
       linkName: "Post office website with live chat",
     },
+    {
+      id: "10",
+      link: "http://getimage.atwebpages.com/",
+      linkName: "Edit Image Website",
+    }
   ]
   return (
 
