@@ -33,6 +33,11 @@ export const Pages = () => {
       id: "06",
       link: "http://getimage.atwebpages.com/",
       linkName: "Edit Image Website",
+    },
+    {
+      id: "07",
+      link: "https://getimage.w3spaces.com/",
+      linkName: "Image Editor Website",
     }
   ]
   return (

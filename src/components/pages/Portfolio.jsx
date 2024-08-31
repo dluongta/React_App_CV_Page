@@ -53,6 +53,11 @@ export const Portfolio = () => {
       id: "10",
       link: "http://getimage.atwebpages.com/",
       linkName: "Edit Image Website",
+    },
+    {
+      id: "11",
+      link: "https://getimage.w3spaces.com/",
+      linkName: "Image Editor Website",
     }
   ]
   return (
