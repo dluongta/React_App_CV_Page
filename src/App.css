@@ -791,5 +791,9 @@ footer .fa-pinterest:hover {
   top: 200px;
   background-color: #ff8800
 }
+.blue {
+  color: #2196F3;
+  text-decoration: underline;
+}
 
 /*homepage*/
