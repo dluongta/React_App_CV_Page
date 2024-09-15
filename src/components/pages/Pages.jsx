@@ -11,17 +11,17 @@ export const Pages = () => {
     },
     {
       id: "02",
-      link: "https://carttechnology.000webhostapp.com",
+      link: "http://carttechnology.atwebpages.com",
       linkName: "Shopping Cart And Comment",
     },
     {
       id: "03",
-      link: "https://note-task.onrender.com/",
+      link: "https://note-task.onrender.com",
       linkName: "Note Task Website",
     },
     {
       id: "04",
-      link: "https://luen2003-mern-shop.onrender.com/",
+      link: "https://luen2003-mern-shop.onrender.com",
       linkName: "MERN Shop Website",
     },
     {
