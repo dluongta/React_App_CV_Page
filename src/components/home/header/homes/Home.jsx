@@ -69,7 +69,7 @@ export const Home = () => {
                     <i className='fab fa-pinterest pinterest'></i>
                 </div>
                 <p>I am Ta Dinh Luong. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And IoT.</p>
-                <p>My CV: <Link to={{ pathname: 'https://vn.joboko.com/xem-cv/ta-dinh-luong-df2eb6d2d589606f-2677400' }} target="_blank" className="blue">CV Viewer Page</Link>
+                <p>My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">CV Viewer Page</Link>
                 </p>
                 <button className='primary-btn'>Contact Me</button>
             </div>

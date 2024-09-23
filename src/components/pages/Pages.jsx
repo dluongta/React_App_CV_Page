@@ -28,6 +28,11 @@ export const Pages = () => {
       id: "05",
       link: "https://mgpost.onrender.com",
       linkName: "Post office website with live chat",
+    },
+    {
+      id: "06",
+      link: "https://blog-app-conduit.onrender.com/",
+      linkName: "Blog App Website",
     }
   ]
   return (
