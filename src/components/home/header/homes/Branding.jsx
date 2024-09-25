@@ -1,4 +1,5 @@
 import React from 'react'
+import logo from '../../../../assets/Luen_logo.png'
 
 export const Branding = () => {
     const data = [
@@ -19,6 +20,7 @@ export const Branding = () => {
         },
       ]
   return (
+    <>
     <section  className='branding'>
         <div className='container grid'>
             {data.map((value) => {
@@ -37,5 +39,7 @@ export const Branding = () => {
             )}
         </div>
     </section>
+    <img width={'100%'} src={logo}/>
+    </>
   )
 }

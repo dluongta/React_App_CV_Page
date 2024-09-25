@@ -1,5 +1,7 @@
 import React from 'react'
 import logo from '../../assets/Luen.jpg'
+import logo_brand from '../../assets/Luen_logo.png'
+
 import { Link } from 'react-router-dom'
 
 export const Footer = () => {
@@ -7,7 +9,7 @@ export const Footer = () => {
     <footer>
         <div className="container grid1">
             <div className="box">
-            <img width="95" height="60" src= {logo} alt=''/>
+            <img width="95" height="60" src= {logo_brand} alt=''/>
             <p>"I am trying my best to become a good programmer"</p>
             <div className="socialIcon">
             <Link className='white' to={{ pathname: 'https://www.facebook.com/luen2003' }} target="_blank"><i className='fab fa-facebook-f '></i></Link>
