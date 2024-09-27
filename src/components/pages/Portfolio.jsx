@@ -53,6 +53,11 @@ export const Portfolio = () => {
       id: "10",
       link: "https://blog-app-conduit.onrender.com/",
       linkName: "Blog App Website",
+    },
+    {
+      id: "11",
+      link: "https://github.com/luen2003/python-code",
+      linkName: "Python Code Used For Crop, Resize Image, Merge, Cut Video, Predict Data, Face Detection, Color Map, Insert Text to Video And Image",
     }
   ]
   return (
