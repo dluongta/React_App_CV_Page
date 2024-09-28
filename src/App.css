@@ -1,22 +1,41 @@
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+/* Prevent horizontal overflow */
+html {
+  overflow-x: hidden;
+}
+
+/* Container adjustments */
+.container {
+  max-width: 100%; /* Allow full width */
+  padding: 0; /* Remove padding */
+  margin: 0 auto; /* Center the container */
 }
 
 body {
+  overflow-x: hidden; /* Hide horizontal overflow */
   font-family: "Times New Roman", Times, serif;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
 
 }
 
-.container {
-  max-width: 80%;
-  margin: auto;
+/* Ensure flex items don’t overflow */
+.flex {
+  flex-wrap: wrap; /* Allow items to wrap */
 }
+
+/* Media queries for mobile adjustments */
+@media screen and (max-width: 768px) {
+  .nav-links-sidebar {
+    left: 0; /* Align sidebar to the left */
+    right: 0; /* Stretch sidebar to the right */
+    margin: 0; /* Remove any margin */
+  }
+  
+  /* Additional adjustments */
+  .home, .about, .services, .branding {
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+  }
+}
+
 
 .flex {
   display: flex;

@@ -18,7 +18,7 @@ export const Header = () => {
     <header className='header'>
         <div className='container flex'>
             <div className='logo'>
-            <img width="95" height="60" src= {logo} alt=''/>
+            <Link to='/'> <img width="95" height="60" src= {logo} alt=''/> </Link>
             </div>
             <div className='nav'>
                 <ul className= {sideBar ? "nav-links-sidebar" : "nav-links"} onClick = {() => setSidebar(false)}>
