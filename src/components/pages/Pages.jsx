@@ -6,8 +6,8 @@ export const Pages = () => {
   const data = [
     {
       id: "01",
-      link: "https://cv-react.onrender.com",
-      linkName: "CV - Portfolio ",
+      link: "https://luen2003.github.io/",
+      linkName: "General Intoduce Page",
     },
     {
       id: "02",
