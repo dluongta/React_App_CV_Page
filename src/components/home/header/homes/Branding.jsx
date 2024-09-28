@@ -40,6 +40,7 @@ export const Branding = () => {
         </div>
     </section>
     <img width={'100%'} src={logo}/>
+    <iframe src="https://luen2003.github.io/Rubik.html"></iframe>
     </>
   )
 }
