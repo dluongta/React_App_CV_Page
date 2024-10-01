@@ -41,6 +41,7 @@ export const Branding = () => {
     </section>
     <img width={'100%'} src={logo}/>
     <iframe src="https://luen2003.github.io/Rubik.html"></iframe>
+    <iframe src="https://vietnam-map-platform.vercel.app/"></iframe>
     </>
   )
 }

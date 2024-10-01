@@ -38,6 +38,11 @@ export const Pages = () => {
       id: "07",
       link: "https://github.com/luen2003/python-code",
       linkName: "Python Code Used For Crop, Resize Image, Merge, Cut Video, Predict Data, Face Detection, Color Map, Insert Text to Video And Image, Combine Image Or Video To Another Video Or Image",
+    },
+    {
+      id: "08",
+      link: "https://vietnam-map-platform.vercel.app/",
+      linkName: "Vietnam Map Platform",
     }
   ]
   return (
