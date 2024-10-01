@@ -3,16 +3,16 @@ import headerImg from '../../../../assets/main.png'
 import { Link } from 'react-router-dom'
 
 
-import { useState,useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 
 export const Home = () => {
- const [loopNum, setLoopNum] = useState(0);
+  const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(100 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Programmer", "Web Developer", "UI/UX Designer" ];
+  const toRotate = ["Web Programmer", "Web Developer", "UI/UX Designer"];
   const period = 2000;
 
   useEffect(() => {
@@ -46,34 +46,36 @@ export const Home = () => {
     } else {
       setIndex(prevIndex => prevIndex + 1);
     }
-    } 
+  }
 
   return (
-    
+
     <section className='home'>
-        <div className='container flex'>
-            <div className='left'>
-                <div className='img'>
-                <img src={headerImg} alt='' />
-                </div>
-            </div>
-            <div className='right topMargin'>
-                <h1> I AM A <br/>
-                {text}|
-                </h1>
-                <div className="socialIcon">
-                <Link to={{ pathname: 'https://www.facebook.com/luen2003' }} target="_blank"><i className='fab fa-facebook-f facebook'></i></Link>
-                    <i className='fab fa-instagram instagram'></i>
-                    <i className='fab fa-twitter twitter'></i>
-                    <Link to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"> <i className='fab fa-youtube youtube'></i></Link>
-                    <i className='fab fa-pinterest pinterest'></i>
-                </div>
-                <p>I am Ta Dinh Luong. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And IoT.</p>
-                <p>My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">CV Viewer Page</Link>
-                </p>
-                <button className='primary-btn'>Contact Me</button>
-            </div>
+      <div className='container flex'>
+        <div className='left'>
+          <div className='img'>
+            <img src={headerImg} alt='' />
+          </div>
         </div>
+        <div className='right topMargin'>
+          <h1> I AM A <br />
+            {text}|
+          </h1>
+          
+          
+          <div className="socialIcon">
+            <Link to={{ pathname: 'https://www.facebook.com/luen2003' }} target="_blank"><i className='fab fa-facebook-f facebook'></i></Link>
+            <Link to={{ pathname: 'https://www.instagram.com/dluongta/'}} target="_blank"> <i className='fab fa-instagram instagram'></i></Link>
+            <Link to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/'}} target="_blank"> <i className=' fab fa-brands fa-linkedin likedin'></i></Link>
+            <Link to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"> <i className='fab fa-youtube youtube'></i></Link>
+            <Link to={{ pathname: 'https://www.tiktok.com/@luen200301' }} target="_blank"> <i className='fab fa-brands fa-tiktok tiktok'></i></Link>
+          </div>
+          <p>I am Ta Dinh Luong. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And IoT.</p>
+          <p>My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">CV Viewer Page</Link>
+          </p>
+          <button className='primary-btn'>Contact Me</button>
+        </div>
+      </div>
     </section>
   )
 }

@@ -226,12 +226,12 @@ header.active {
   background-color: rgb(241, 75, 224);
 }
 
-.twitter {
+.likedin {
   color: rgb(75, 139, 241);
   border: 1px solid rgb(75, 139, 241);
 }
 
-.twitter:hover {
+.likedin:hover {
   background-color: rgb(75, 139, 241);
 }
 
@@ -244,13 +244,13 @@ header.active {
   background-color: rgb(253, 0, 0);
 }
 
-.pinterest {
-  color: rgb(253, 97, 0);
-  border: 1px solid rgb(253, 97, 0);
+.tiktok {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
 }
 
-.pinterest:hover {
-  background-color: rgb(253, 97, 0);
+.tiktok:hover {
+  background-color: rgb(0, 0, 0);
 }
 
 button {
@@ -587,7 +587,7 @@ footer .fa-instagram:hover {
   background-color: white;
 }
 
-footer .fa-twitter:hover {
+footer .fa-linkedin:hover {
   background-color: white;
 }
 
@@ -595,7 +595,7 @@ footer .fa-youtube:hover {
   background-color: white;
 }
 
-footer .fa-pinterest:hover {
+footer .fa-tiktok:hover {
   background-color: white;
 }
 
