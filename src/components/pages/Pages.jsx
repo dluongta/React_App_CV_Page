@@ -43,6 +43,11 @@ export const Pages = () => {
       id: "08",
       link: "https://vietnam-map-platform.vercel.app/",
       linkName: "Vietnam Map Platform",
+    },
+    {
+      id: "09",
+      link: "https://qr-scanner-live.netlify.app/",
+      linkName: "QR Code Scanner",
     }
   ]
   return (

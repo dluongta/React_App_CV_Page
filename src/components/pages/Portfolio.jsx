@@ -63,6 +63,11 @@ export const Portfolio = () => {
       id: "12",
       link: "https://vietnam-map-platform.vercel.app/",
       linkName: "Vietnam Map Platform",
+    },
+    {
+      id: "13",
+      link: "https://qr-scanner-live.netlify.app/",
+      linkName: "QR Code Scanner",
     }
   ]
   return (
