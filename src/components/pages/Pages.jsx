@@ -37,7 +37,7 @@ export const Pages = () => {
     {
       id: "07",
       link: "https://github.com/luen2003/python-code",
-      linkName: "Python Code Used For Crop, Resize Image, Merge, Cut Video, Predict Data, Face Detection, Color Map, Insert Text to Video And Image, Combine Image Or Video To Another Video Or Image, Change Or Remove Background, Add Sound To Video Or Extract Sound From Video",
+      linkName: "Python Code Used For Predict Data, Face Detection, Color Map, Video, Image, Audio Processing",
     },
     {
       id: "08",
