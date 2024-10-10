@@ -687,7 +687,7 @@ footer .fa-tiktok:hover {
   padding: 10px;
   margin-bottom: 15px;
   width: 90%;
-  height: 50vh;
+  min-height: 50vh;
   border-radius: 10px;
   border-style: none;
   position: relative;
@@ -733,7 +733,7 @@ footer .fa-tiktok:hover {
   padding: 10px;
   margin-bottom: 15px;
   width: 90%;
-  height: 50vh;
+  min-height: 50vh;
   border-radius: 10px;
   border-style: none;
   position: relative;
@@ -744,7 +744,7 @@ footer .fa-tiktok:hover {
   padding: 10px;
   margin-bottom: 15px;
   width: 90%;
-  height: 50vh;
+  min-height: 50vh;
   border-radius: 10px;
   border-style: none;
   position: relative;

@@ -1,21 +1,25 @@
-import React from 'react'
-import logo from '../../assets/Luen.jpg'
-import logo_brand from '../../assets/Luen_logo.png'
-
-import { Link } from 'react-router-dom'
+import React, { useEffect } from 'react';
+import logo from '../../assets/Luen.jpg';
+import logo_brand from '../../assets/Luen_logo.png';
+import { Link } from 'react-router-dom';
 
 export const Footer = () => {
+    useEffect(() => {
+        const currentYear = new Date().getFullYear();
+        document.getElementById('currentYear').textContent = currentYear;
+    }, []);
+
     return (
         <footer>
             <div className="container grid1">
                 <div className="box">
                     <img width="95" height="60" src={logo_brand} alt='' />
-                    <p>"I am trying my best to become a good programmer"</p>
+                    <p>Luong Engineering,Enterprise And Entertainment</p>
                     <div className="socialIcon">
                         <Link className='white' to={{ pathname: 'https://www.facebook.com/luen2003' }} target="_blank"><i className='fab fa-facebook-f'></i></Link>
                         <Link className='white' to={{ pathname: 'https://www.instagram.com/dluongta/' }} target="_blank"> <i className='fab fa-instagram '></i></Link>
-                        <Link className='white' to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/' }} target="_blank"> <i className='fab fa-brands fa-linkedin'></i></Link>
-                        <Link className='white' to={{ pathname: 'https://www.tiktok.com/@luen200301' }} target="_blank"> <i className='fab fa-brands fa-tiktok'></i></Link>
+                        <Link className='white' to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/' }} target="_blank"><i className='fab fa-brands fa-linkedin'></i></Link>
+                        <Link className='white' to={{ pathname: 'https://www.tiktok.com/@luen200301' }} target="_blank"><i className='fab fa-brands fa-tiktok'></i></Link>
                         <Link className='white' to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"><i className='fab fa-youtube'></i></Link>
                     </div>
                 </div>
@@ -36,11 +40,11 @@ export const Footer = () => {
                         <span>30 April 2023</span>
                     </div>
                     <div className='text'>
-                        <p>Lastest News</p>
+                        <p>Latest News</p>
                         <span>30 April 2023</span>
                     </div>
                     <div className='text'>
-                        <p>Lastest News</p>
+                        <p>Latest News</p>
                         <span>30 April 2023</span>
                     </div>
                 </div>
@@ -49,22 +53,22 @@ export const Footer = () => {
                     <p>"I am trying my best to become a good programmer"</p>
                     <div className="icon">
                         <i className='fa fa-map-marker-alt'></i>
-                        <label htmlFor=''>Location: Hanoi, Vietnam</label>
+                        <label>Location: Hanoi, Vietnam</label>
                     </div>
                     <div className="icon">
                         <i className='fa fa-phone'></i>
-                        <label htmlFor=''>Phone: +123456789</label>
+                        <label>Phone: +123456789</label>
                     </div>
                     <div className="icon">
                         <i className='fa fa-envelope'></i>
-                        <label htmlFor=''>Email: luen2k3@gmail.com</label>
+                        <label>Email: luen2k3@gmail.com</label>
                     </div>
                 </div>
             </div>
             <div className="legal container">
-                <p>Copyright @2023. All rights reserved.</p>
-                <label htmlFor=''>Made with ❤️‍🔥 by <span>Luen</span></label>
+                <p>Copyright &copy;<span id="currentYear"></span>. All rights reserved.</p>
+                <label>Made with ❤️‍🔥 by <span>Luen</span></label>
             </div>
         </footer>
-    )
-}
+    );
+};
