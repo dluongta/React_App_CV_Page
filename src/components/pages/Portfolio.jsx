@@ -57,7 +57,7 @@ export const Portfolio = () => {
     {
       id: "11",
       link: "https://github.com/luen2003/python-code",
-      linkName: "Python Code Used For Predict Data, Face Detection, Color Map, Video, Image, Audio Processing",
+      linkName: "Python Code Used For Predict Data, Face Detection, Color Map, Digit Recognizer, Video, Image And Audio Processing",
     },
     {
       id: "12",
