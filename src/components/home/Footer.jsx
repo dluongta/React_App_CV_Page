@@ -16,11 +16,11 @@ export const Footer = () => {
                     <img width="95" height="60" src={logo_brand} alt='' />
                     <p>Luong Engineering,Enterprise And Entertainment</p>
                     <div className="socialIcon">
-                        <Link className='white' to={{ pathname: 'https://www.facebook.com/luen2003' }} target="_blank"><i className='fab fa-facebook-f'></i></Link>
+                        <Link className='white' to={{ pathname: 'https://www.facebook.com/dluongta' }} target="_blank"><i className='fab fa-facebook-f'></i></Link>
                         <Link className='white' to={{ pathname: 'https://www.instagram.com/dluongta/' }} target="_blank"> <i className='fab fa-instagram '></i></Link>
                         <Link className='white' to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/' }} target="_blank"><i className='fab fa-brands fa-linkedin'></i></Link>
-                        <Link className='white' to={{ pathname: 'https://www.tiktok.com/@luen200301' }} target="_blank"><i className='fab fa-brands fa-tiktok'></i></Link>
-                        <Link className='white' to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"><i className='fab fa-youtube'></i></Link>
+                        <Link className='white' to={{ pathname: 'https://www.tiktok.com/@dluongta' }} target="_blank"><i className='fab fa-brands fa-tiktok'></i></Link>
+                        <Link className='white' to={{ pathname: 'https://www.youtube.com/@dluongta' }} target="_blank"><i className='fab fa-youtube'></i></Link>
                     </div>
                 </div>
                 <div className="box">

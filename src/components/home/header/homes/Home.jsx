@@ -64,11 +64,11 @@ export const Home = () => {
           
           
           <div className="socialIcon">
-            <Link to={{ pathname: 'https://www.facebook.com/luen2003' }} target="_blank"><i className='fab fa-facebook-f facebook'></i></Link>
+            <Link to={{ pathname: 'https://www.facebook.com/dluongta' }} target="_blank"><i className='fab fa-facebook-f facebook'></i></Link>
             <Link to={{ pathname: 'https://www.instagram.com/dluongta/'}} target="_blank"> <i className='fab fa-instagram instagram'></i></Link>
             <Link to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/'}} target="_blank"> <i className=' fab fa-brands fa-linkedin likedin'></i></Link>
-            <Link to={{ pathname: 'https://www.youtube.com/@luen_2003' }} target="_blank"> <i className='fab fa-youtube youtube'></i></Link>
-            <Link to={{ pathname: 'https://www.tiktok.com/@luen200301' }} target="_blank"> <i className='fab fa-brands fa-tiktok tiktok'></i></Link>
+            <Link to={{ pathname: 'https://www.youtube.com/@dluongta' }} target="_blank"> <i className='fab fa-youtube youtube'></i></Link>
+            <Link to={{ pathname: 'https://www.tiktok.com/@dluongta' }} target="_blank"> <i className='fab fa-brands fa-tiktok tiktok'></i></Link>
           </div>
           <p>I am Ta Dinh Luong. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And IoT.</p>
           <p>My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">CV Viewer Page</Link>
