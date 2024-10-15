@@ -31,7 +31,7 @@ export const Pages = () => {
     },
     {
       id: "06",
-      link: "https://blog-app-conduit.onrender.com/",
+      link: "https://react-page-blog-app.vercel.app/",
       linkName: "Blog App Website",
     },
     {
