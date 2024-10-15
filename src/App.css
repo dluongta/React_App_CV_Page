@@ -253,6 +253,15 @@ header.active {
   background-color: rgb(0, 0, 0);
 }
 
+.github {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.github:hover {
+  background-color: rgb(0, 0, 0);
+}
+
 button {
   background: none;
   outline: none;
@@ -596,6 +605,10 @@ footer .fa-youtube:hover {
 }
 
 footer .fa-tiktok:hover {
+  background-color: white;
+}
+
+footer .fa-github:hover {
   background-color: white;
 }
 

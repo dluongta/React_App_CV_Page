@@ -6,7 +6,7 @@ export const Pages = () => {
   const data = [
     {
       id: "01",
-      link: "https://luen2003.github.io/",
+      link: "https://dluongta.github.io/",
       linkName: "General Intoduce Page",
     },
     {

@@ -21,6 +21,8 @@ export const Footer = () => {
                         <Link className='white' to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/' }} target="_blank"><i className='fab fa-brands fa-linkedin'></i></Link>
                         <Link className='white' to={{ pathname: 'https://www.tiktok.com/@dluongta' }} target="_blank"><i className='fab fa-brands fa-tiktok'></i></Link>
                         <Link className='white' to={{ pathname: 'https://www.youtube.com/@dluongta' }} target="_blank"><i className='fab fa-youtube'></i></Link>
+                        <Link className='white' to={{ pathname: 'https://github.com/dluongta' }} target="_blank"><i className='fab fa-brands fa-github'></i></Link>
+
                     </div>
                 </div>
                 <div className="box">

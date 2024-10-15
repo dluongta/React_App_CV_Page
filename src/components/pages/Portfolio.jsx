@@ -11,7 +11,7 @@ export const Portfolio = () => {
     },
     {
       id: "02",
-      link: "https://luen2003.github.io/",
+      link: "https://dluongta.github.io/",
       linkName: "General Intoduce Page",
     },
     {
