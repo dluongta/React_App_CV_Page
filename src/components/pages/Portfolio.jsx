@@ -51,7 +51,7 @@ export const Portfolio = () => {
     },
     {
       id: "10",
-      link: "https://react-page-blog-app.vercel.app/",
+      link: "https://react-app-blog-page.vercel.app/",
       linkName: "Blog App Website",
     },
     {
