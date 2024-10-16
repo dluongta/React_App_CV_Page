@@ -723,23 +723,6 @@ footer .fa-github:hover {
   color: purple;
 }
 
-.contact {
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-}
-
-.contact .box {
-  line-height: 5vh;
-}
-
-.contact .icon i {
-  margin-right: 20px;
-  width: 20px;
-  height: 20px;
-}
 
 .blog .card {
   background-color: rgb(248, 240, 255);
@@ -849,3 +832,23 @@ footer .fa-github:hover {
 
 /*homepage*/
 iframe { border: none; width: 100%; height: 500px; }
+
+
+.contact {
+  display: flex; /* Aligns children in a row */
+}
+
+.pdf-container {
+  flex-grow: 1; /* This makes the pdf-container fill the remaining space */
+  padding: 10px; /* Optional padding */
+}
+
+.pdf {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border: none; /* Remove default border for a cleaner look */
+  margin-bottom: 20px; /* Space between iframes */
+  width: 80% ;
+
+}
