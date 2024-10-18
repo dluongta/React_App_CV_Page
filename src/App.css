@@ -864,3 +864,36 @@ iframe { border: none; width: 100%; height: 500px; }
   opacity: 1;
   transform: translateY(0);
 }
+/* Media queries for mobile adjustments */
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 0; /* Remove any padding */
+    margin: 0; /* Remove any margin */
+    height: auto; /* Allow dynamic height */
+    position: relative; /* Ensure stacking context */
+  }
+
+  .home img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the area without distortion */
+    position: relative; /* Position relative for stacking */
+  }
+
+  .branding {
+    position: relative; /* Ensure it stacks correctly */
+    z-index: 1; /* Bring it above other content if necessary */
+  }
+
+  .wrapperOne {
+    width: 100%; /* Make wrapperOne full width */
+    padding: 20px; /* Optional padding for aesthetics */
+  }
+
+  /* Ensure branding text does not overlap */
+  .branding h1,
+  .branding p {
+    z-index: 2; /* Ensure branding text is on top */
+    position: relative; /* Establish a new stacking context */
+  }
+}
