@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Skill = () => {
+export const Skill = ({ className }) => {
     const Progress = ({done,title}) => {
         return (
             <div className="progress">
@@ -19,7 +19,7 @@ export const Skill = () => {
         },
       ]
   return (
-    <section className='skill'>
+    <section className={`skill ${className}`}>
         <div className="container">
             <div className="heading">
                 <h3>WHY CHOOSE ME</h3>

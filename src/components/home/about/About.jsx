@@ -2,7 +2,7 @@ import React from 'react'
 import contactImage from '../../../assets/contact-img.png'
 
 
-export const About = () => {
+export const About = ({ className }) => {
     const data = [
         {
           title: "Who I Am And What I Do",
@@ -11,7 +11,7 @@ export const About = () => {
         },
       ]
   return (
-    <section className='about topMargin'>
+    <section className={`about topMargin ${className}`}>
         <div className="container flex">
             {data.map((value) => {
                 return (

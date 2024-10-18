@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 
 
-export const Home = () => {
+export const Home = ({className}) => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
@@ -50,7 +50,7 @@ export const Home = () => {
 
   return (
 
-    <section className='home'>
+    <section className={`home ${className}`}>
       <div className='container flex'>
         <div className='left'>
           <div className='img'>

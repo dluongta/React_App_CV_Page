@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Wrapper = () => {
+export const Wrapper = ({ className }) => {
     const data = [
         {
           title: "LOOKING FOR MORE SOLUTIONS",
@@ -9,7 +9,7 @@ export const Wrapper = () => {
         },
       ]
   return (
-    <section className='branding wrapper'>
+    <section className={`branding wrapper ${className}`}>
         <div className="container">
             {data.map((val) =>{
                 return (

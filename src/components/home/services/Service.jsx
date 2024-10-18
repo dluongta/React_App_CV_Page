@@ -2,7 +2,7 @@ import React from 'react'
 import bannerImage from '../../../assets/banner-bg.png'
 
 
-export const Service = () => {
+export const Service = ({ className }) => {
     const ServicesData = [
         {
           id: 1,
@@ -43,7 +43,7 @@ export const Service = () => {
       ]
       
   return (
-    <section className='services topMargin'>
+    <section className={`services topMargin ${className}`}>
         <div className="container">
             <div className="heading">
                 <h3>MY SERVICES</h3>
