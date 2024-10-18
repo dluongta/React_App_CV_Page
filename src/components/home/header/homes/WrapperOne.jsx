@@ -2,22 +2,10 @@ import React, { useEffect, useState, useRef } from 'react';
 
 export const WrapperOne = ({ className }) => {
     const data = [
-        {
-            num: "99%",
-            text: "AWARDS WINNING",
-        },
-        {
-            num: "99%",
-            text: "SATISFIED CLIENTS",
-        },
-        {
-            num: "100",
-            text: "CREATIVE PROJECTS",
-        },
-        {
-            num: "2999",
-            text: "LINES OF CODE",
-        },
+        { num: "99%", text: "AWARDS WINNING" },
+        { num: "99%", text: "SATISFIED CLIENTS" },
+        { num: "100", text: "CREATIVE PROJECTS" },
+        { num: "2999", text: "LINES OF CODE" },
     ];
 
     const [counts, setCounts] = useState(data.map(item => ({ ...item, count: 0 })));
@@ -29,7 +17,7 @@ export const WrapperOne = ({ className }) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
-                    observer.unobserve(sectionRef.current); // Stop observing once visible
+                    observer.unobserve(sectionRef.current);
                 }
             });
         });
@@ -40,7 +28,7 @@ export const WrapperOne = ({ className }) => {
 
         return () => {
             if (sectionRef.current) {
-                observer.unobserve(sectionRef.current); // Cleanup
+                observer.unobserve(sectionRef.current);
             }
         };
     }, []);
@@ -50,16 +38,16 @@ export const WrapperOne = ({ className }) => {
             const interval = setInterval(() => {
                 setCounts(prevCounts => 
                     prevCounts.map((item, index) => {
-                        const target = parseInt(data[index].num.replace('%', '')); // Remove % for counting
+                        const target = parseInt(data[index].num.replace('%', ''));
                         if (item.count < target) {
-                            return { ...item, count: Math.min(item.count + 1, target) }; // Increment until the target
+                            return { ...item, count: Math.min(item.count + 1, target) };
                         }
                         return item;
                     })
                 );
-            }, 10); // Adjust the speed by changing the interval time
+            }, 10);
 
-            return () => clearInterval(interval); // Cleanup on unmount
+            return () => clearInterval(interval);
         }
     }, [isVisible]);
 
@@ -75,4 +63,4 @@ export const WrapperOne = ({ className }) => {
             </div>
         </section>
     );
-}
+};

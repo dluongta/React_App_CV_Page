@@ -886,8 +886,27 @@ iframe { border: none; width: 100%; height: 500px; }
   }
 
   .wrapperOne {
-    width: 100%; /* Make wrapperOne full width */
-    padding: 20px; /* Optional padding for aesthetics */
+    padding: 20px; /* Padding tùy chọn */
+    text-align: center; /* Căn giữa nội dung */
+  }
+
+  .grid1 {
+    display: flex; /* Sử dụng flexbox */
+    flex-direction: column; /* Đặt hướng flex là chiều dọc */
+    align-items: center; /* Căn giữa các phần tử */
+  }
+
+  .grid1 .box {
+    margin-bottom: 20px; /* Khoảng cách giữa các box */
+    width: 100%; /* Chiều rộng 100% để các box chiếm toàn bộ không gian */
+  }
+
+  .grid1 h1 {
+    font-size: 24px; /* Giảm kích thước chữ nếu cần */
+  }
+
+  .grid1 p {
+    font-size: 14px; /* Giảm kích thước chữ cho phần mô tả nếu cần */
   }
 
   /* Ensure branding text does not overlap */
