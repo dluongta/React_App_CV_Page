@@ -4,7 +4,7 @@ export const WrapperOne = ({ className }) => {
     const data = [
         { num: "99%", text: "AWARDS WINNING" },
         { num: "99%", text: "SATISFIED CLIENTS" },
-        { num: "100", text: "CREATIVE PROJECTS" },
+        { num: "20", text: "CREATIVE PROJECTS" },
         { num: "2999", text: "LINES OF CODE" },
     ];
 
@@ -39,13 +39,22 @@ export const WrapperOne = ({ className }) => {
                 setCounts(prevCounts => 
                     prevCounts.map((item, index) => {
                         const target = parseInt(data[index].num.replace('%', ''));
-                        if (item.count < target) {
+                        if (item.text === "LINES OF CODE") {
+                            // Increase count by 100 each second for "LINES OF CODE"
+                            return { ...item, count: Math.min(item.count + 150, target) };
+                        } else if (item.text === "CREATIVE PROJECTS") {
                             return { ...item, count: Math.min(item.count + 1, target) };
+
+                        } else {
+                            // Increase by 1 for others
+                            if (item.count < target) {
+                                return { ...item, count: Math.min(item.count + 5, target) };
+                            }
+                            return item;
                         }
-                        return item;
                     })
                 );
-            }, 10);
+            }, 100);
 
             return () => clearInterval(interval);
         }
