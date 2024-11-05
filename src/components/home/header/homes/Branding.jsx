@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../../assets/Luen_logo.png';
+import logo from '../../../../assets/Luen.jpg';
 import video from '../../../../assets/Luen-Intro.mp4';
 
 export const Branding = ({ className }) => {
