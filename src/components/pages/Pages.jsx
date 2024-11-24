@@ -21,7 +21,7 @@ export const Pages = () => {
     },
     {
       id: "04",
-      link: "https://luen2003-mern-shop.onrender.com",
+      link: "https://the-digital-shop.onrender.com",
       linkName: "MERN Shop Website",
     },
     {
