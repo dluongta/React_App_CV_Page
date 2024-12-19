@@ -38,7 +38,7 @@ export const HomePage = () => {
         <Link to='/portfolio' id="portfolio"> Portfolio </Link>
         <Link to='/contact' id="contact"> Contact </Link>
       </div>
-      <Home className="reveal" />
+      <Home className="reveal"/>
       <Branding className="reveal" />
       <About className="reveal" />
       <Service className="reveal" />

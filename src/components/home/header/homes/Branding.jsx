@@ -22,7 +22,7 @@ export const Branding = ({ className }) => {
   ];
 
   return (
-    <section className={`branding ${className}`}>
+    <section className={`branding ${className}`} style={{marginTop: "100px"}}>
       <div className='container grid'>
         {data.map((value) => (
           <div key={value.id} className='box flex'>

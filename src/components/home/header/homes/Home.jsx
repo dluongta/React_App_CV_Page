@@ -54,7 +54,7 @@ export const Home = ({className}) => {
       <div className='container flex'>
         <div className='left'>
           <div className='img'>
-            <img src={headerImg} alt='' />
+            <img src={headerImg} alt=''style={{marginTop: "120px"}}/>
           </div>
         </div>
         <div className='right topMargin'>
@@ -72,7 +72,7 @@ export const Home = ({className}) => {
             <Link to={{ pathname: 'https://github.com/dluongta' }} target="_blank"> <i className='fab fa-brands fa-github github'></i></Link>
 
           </div>
-          <p>I am Ta Dinh Luong. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And IoT.</p>
+          <p>I am Dinh Luong Ta. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And IoT. My favorite subjects are Math, Physics And Informatics.</p>
           <p>My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">CV Viewer Page</Link>
           </p>
           <button className='primary-btn'>Contact Me</button>
