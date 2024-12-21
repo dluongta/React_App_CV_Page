@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import headerImg from '../../../../assets/main.png';
+import introBackground from '../../../../assets/IntroBackground.mp4';
 import { Link } from 'react-router-dom';
 
 export const Home = ({ className }) => {
@@ -64,7 +65,7 @@ export const Home = ({ className }) => {
                     height: '100%'
                   }}
                 >
-                  <source src="https://vtcgame.vn/media/media/images/files/Intro%20VTCGame_No%20Music.mp4" type="video/mp4" />
+                  <source src={introBackground} type="video/mp4" />
                 </video>
               </div>
             </div>
