@@ -46,60 +46,60 @@ export const Home = ({ className }) => {
 
   return (
     <>
-    <div className="container mx-auto position-relative">
-    <div className="swiper mySwiper h-100 w-100">
-      <div className="swiper-wrapper">
-        <div className="swiper-slide swiper-slide-active w-100" style={{ height: '700px' }}>
-          <div className="embed-responsive embed-responsive-16by9">
-            <video 
-              className="embed-responsive-item"
-              autoPlay
-              loop
-              playsInline
-              preload="auto"
-              muted
-              style={{ 
-                objectFit: 'cover',  
-                width: '100%',        
-                height: '100%'
-              }}
-            >
-              <source src="https://vtcgame.vn/media/media/images/files/Intro%20VTCGame_No%20Music.mp4" type="video/mp4" />
-            </video>
+      <div className="container mx-auto position-relative ">
+        <div className="swiper mySwiper h-100 w-100">
+          <div className="swiper-wrapper">
+            <div className="swiper-slide swiper-slide-active w-100" style={{ height: '700px' }}>
+              <div className="embed-responsive embed-responsive-16by9">
+                <video
+                  className="embed-responsive-item"
+                  autoPlay
+                  loop
+                  playsInline
+                  preload="auto"
+                  muted
+                  style={{
+                    objectFit: 'cover',
+                    width: '100%',
+                    height: '100%'
+                  }}
+                >
+                  <source src="https://vtcgame.vn/media/media/images/files/Intro%20VTCGame_No%20Music.mp4" type="video/mp4" />
+                </video>
+              </div>
+            </div>
           </div>
+          <div className="swiper-pagination"></div>
         </div>
       </div>
-      <div className="swiper-pagination"></div>
-    </div>
-  </div>
-    <section className={`home ${className}`}>
+      <section className={`home ${className}`}>
 
-      <div className="container flex" style={{ marginTop: '200px' }}>
-        <div className="left">
-          <div className="img">
-            <img src={headerImg} alt="" style={{ marginTop: '120px' }} />
+        <div className="container flex" style={{ marginTop: '200px' }}>
+          <div className="left">
+            <div className="img">
+              <img src={headerImg} alt="" style={{ marginTop: '120px' }} />
+            </div>
+          </div>
+          <div className="right topMargin">
+            <h1> I AM A <br />
+              {text}|
+            </h1>
+
+            <div className="socialIcon">
+              <Link to={{ pathname: 'https://www.facebook.com/dluongta' }} target="_blank"><i className="fab fa-facebook-f facebook"></i></Link>
+              <Link to={{ pathname: 'https://www.instagram.com/dluongta/' }} target="_blank"> <i className="fab fa-instagram instagram"></i></Link>
+              <Link to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/' }} target="_blank"> <i className="fab fa-brands fa-linkedin likedin"></i></Link>
+              <Link to={{ pathname: 'https://www.youtube.com/@dinhluongta' }} target="_blank"> <i className="fab fa-youtube youtube"></i></Link>
+              <Link to={{ pathname: 'https://www.tiktok.com/@dluongta' }} target="_blank"> <i className="fab fa-brands fa-tiktok tiktok"></i></Link>
+              <Link to={{ pathname: 'https://github.com/dluongta' }} target="_blank"> <i className="fab fa-brands fa-github github"></i></Link>
+            </div>
+            <p>I am Dinh Luong Ta. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And IoT. My favorite subjects are Math, Physics And Informatics.</p>
+            <p>My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">CV Viewer Page</Link>
+            </p>
+            <button className="primary-btn">Contact Me</button>
           </div>
         </div>
-        <div className="right topMargin">
-          <h1> I AM A <br />
-            {text}|
-          </h1>
-
-          <div className="socialIcon">
-            <Link to={{ pathname: 'https://www.facebook.com/dluongta' }} target="_blank"><i className="fab fa-facebook-f facebook"></i></Link>
-            <Link to={{ pathname: 'https://www.instagram.com/dluongta/'}} target="_blank"> <i className="fab fa-instagram instagram"></i></Link>
-            <Link to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/'}} target="_blank"> <i className="fab fa-brands fa-linkedin likedin"></i></Link>
-            <Link to={{ pathname: 'https://www.youtube.com/@dinhluongta' }} target="_blank"> <i className="fab fa-youtube youtube"></i></Link>
-            <Link to={{ pathname: 'https://www.tiktok.com/@dluongta' }} target="_blank"> <i className="fab fa-brands fa-tiktok tiktok"></i></Link>
-            <Link to={{ pathname: 'https://github.com/dluongta' }} target="_blank"> <i className="fab fa-brands fa-github github"></i></Link>
-          </div>
-          <p>I am Dinh Luong Ta. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And IoT. My favorite subjects are Math, Physics And Informatics.</p>
-          <p>My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">CV Viewer Page</Link>
-          </p>
-          <button className="primary-btn">Contact Me</button>
-        </div>
-      </div>
-    </section>
+      </section>
     </>
   );
 }
