@@ -8,6 +8,8 @@
   <meta name="theme-color" content="#000000" />
   <meta name="description" content="Web site created using create-react-app" />
   <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper@10.0.0/swiper-bundle.min.css">
+
   <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -46,5 +48,20 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
 </body>
+<script src="https://unpkg.com/swiper@10.0.0/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper@10.0.0/swiper-bundle.min.js"></script>
+<script>
+  const swiper = new Swiper('.swiper', {
+    loop: true,  // Vòng lặp các slide
+    spaceBetween: 10, // Khoảng cách giữa các slide
+    pagination: {
+      el: '.swiper-pagination', // Pagination
+      clickable: true, // Cho phép nhấp vào pagination
+    },
+    autoplay: {
+      delay: 5000, // Chuyển slide sau mỗi 5 giây
+    },
+  });
+</script>
 
 </html>
