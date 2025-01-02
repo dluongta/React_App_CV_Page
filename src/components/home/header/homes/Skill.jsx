@@ -14,8 +14,8 @@ export const Skill = ({ className }) => {
     const data = [
         {
           title: "Every Day is a New Challenge",
-          para: "I am specializing in Web Developer.",
-          para1: "I am researching and learning more about Artificial Intelligence and Android Developer.",
+          para: "I am a programmer who skilled at Web Developer, Android Developer.",
+          para1: "I also learning about Artificial Intelligence And IoT.",
         },
       ]
   return (
