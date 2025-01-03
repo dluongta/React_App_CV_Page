@@ -52,7 +52,7 @@ export const Footer = () => {
                 </div>
                 <div className="box">
                     <h2>Get in Touch</h2>
-                    <p>Do everything</p>
+                    <p>"I am trying my best to become a skilled programmer"</p>
                     <div className="icon">
                         <i className='fa fa-map-marker-alt'></i>
                         <label>Location: Hanoi, Vietnam</label>
