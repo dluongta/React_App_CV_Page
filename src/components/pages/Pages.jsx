@@ -51,7 +51,7 @@ export const Pages = () => {
     },
     {
       id: "10",
-      link: "https://livevideocallrtc.onrender.com",
+      link: "https://react-app-videocall.onrender.com/",
       linkName: "Voice Or Video Call Using WebRTC",
     }
   ]
