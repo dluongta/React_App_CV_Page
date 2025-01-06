@@ -48,6 +48,11 @@ export const Pages = () => {
       id: "09",
       link: "https://qr-scanner-live.netlify.app/",
       linkName: "QR Code Scanner",
+    },
+    {
+      id: "10",
+      link: "https://livevideocallrtc.onrender.com",
+      linkName: "Live Video Call RTC",
     }
   ]
   return (
