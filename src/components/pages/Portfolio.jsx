@@ -77,7 +77,7 @@ export const Portfolio = () => {
     {
       id: "15",
       link: "https://livevideocallrtc.onrender.com",
-      linkName: "Live Video Call RTC",
+      linkName: "Voice Or Video Call Using WebRTC",
     }
   ]
   return (
