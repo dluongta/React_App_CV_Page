@@ -53,6 +53,11 @@ export const Pages = () => {
       id: "10",
       link: "https://react-app-videocall.onrender.com/",
       linkName: "Voice Or Video Call Using WebRTC",
+    },
+    {
+      id: "11",
+      link: "https://react-qr-code-generator-live.vercel.app/",
+      linkName: "React QRCode Generator",
     }
   ]
   return (

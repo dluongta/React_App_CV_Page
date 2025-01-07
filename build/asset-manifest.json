@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.24cd6075.css",
-    "main.js": "/static/js/main.8486df0e.js",
+    "main.js": "/static/js/main.96b785ce.js",
     "static/js/787.d4aba7ab.chunk.js": "/static/js/787.d4aba7ab.chunk.js",
     "static/media/IntroBackground.mp4": "/static/media/IntroBackground.95b69e746bf4d217f295.mp4",
     "static/media/Luen-Intro.mp4": "/static/media/Luen-Intro.7024b4aecc904b81a08b.mp4",
@@ -13,11 +13,11 @@
     "static/media/Luen-1.jpg": "/static/media/Luen-1.d5373d32deba7fe1ccdc.jpg",
     "index.html": "/index.html",
     "main.24cd6075.css.map": "/static/css/main.24cd6075.css.map",
-    "main.8486df0e.js.map": "/static/js/main.8486df0e.js.map",
+    "main.96b785ce.js.map": "/static/js/main.96b785ce.js.map",
     "787.d4aba7ab.chunk.js.map": "/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.24cd6075.css",
-    "static/js/main.8486df0e.js"
+    "static/js/main.96b785ce.js"
   ]
 }

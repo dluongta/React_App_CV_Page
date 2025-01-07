@@ -78,6 +78,11 @@ export const Portfolio = () => {
       id: "15",
       link: "https://react-app-videocall.onrender.com/",
       linkName: "Voice Or Video Call Using WebRTC",
+    },
+    {
+      id: "16",
+      link: "https://react-qr-code-generator-live.vercel.app/",
+      linkName: "React QRCode Generator",
     }
   ]
   return (
