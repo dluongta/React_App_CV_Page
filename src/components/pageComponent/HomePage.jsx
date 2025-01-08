@@ -1,4 +1,5 @@
 import React, { useEffect } from 'react';
+import Snowfall from 'react-snowfall'; // Importing the snowfall component
 import { About } from '../home/about/About';
 import { Branding } from '../home/header/homes/Branding';
 import { Home } from '../home/header/homes/Home';
@@ -32,12 +33,28 @@ export const HomePage = () => {
 
   return (
     <>
+      {/* Snowfall covering the entire page */}
+      <Snowfall 
+        style={{
+          position: 'fixed', // Fixed to the viewport
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          zIndex: 10, // Ensure snowflakes appear above other elements
+          pointerEvents: 'none', // Allow interaction with content
+        }}
+      />
+      
+      {/* Main content */}
       <div id="mySidenav" className="sidenav">
         <Link to='/pages' id="pages"> Pages </Link>
         <Link to='/blog' id="blog"> Blog </Link>
         <Link to='/portfolio' id="portfolio"> Portfolio </Link>
         <Link to='/contact' id="contact"> Contact </Link>
       </div>
+      
+      {/* The rest of your content */}
       <Home className="reveal"/>
       <Branding className="reveal" />
       <About className="reveal" />
