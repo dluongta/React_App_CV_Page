@@ -91,7 +91,7 @@ export const Home = ({ className }) => {
               <Link to={{ pathname: 'https://www.instagram.com/dluongta/' }} target="_blank"> <i className="fab fa-instagram instagram"></i></Link>
               <Link to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/' }} target="_blank"> <i className="fab fa-brands fa-linkedin likedin"></i></Link>
               <Link to={{ pathname: 'https://www.youtube.com/@dinhluongta' }} target="_blank"> <i className="fab fa-youtube youtube"></i></Link>
-              <Link to={{ pathname: 'https://www.tiktok.com/@dluongta' }} target="_blank"> <i className="fab fa-brands fa-tiktok tiktok"></i></Link>
+              <Link to={{ pathname: 'https://www.tiktok.com/@dluongta2003' }} target="_blank"> <i className="fab fa-brands fa-tiktok tiktok"></i></Link>
               <Link to={{ pathname: 'https://github.com/dluongta' }} target="_blank"> <i className="fab fa-brands fa-github github"></i></Link>
             </div>
             <p>I am Dinh Luong Ta. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And Hardware. My favorite subjects are Math, Physics And Informatics.</p>
