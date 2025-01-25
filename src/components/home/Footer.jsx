@@ -19,7 +19,7 @@ export const Footer = () => {
                         <Link className='white' to={{ pathname: 'https://www.facebook.com/dluongta' }} target="_blank"><i className='fab fa-facebook-f'></i></Link>
                         <Link className='white' to={{ pathname: 'https://www.instagram.com/dluongta/' }} target="_blank"> <i className='fab fa-instagram '></i></Link>
                         <Link className='white' to={{ pathname: 'https://www.linkedin.com/in/dinh-luong-ta-940ba2286/' }} target="_blank"><i className='fab fa-brands fa-linkedin'></i></Link>
-                        <Link className='white' to={{ pathname: 'https://www.tiktok.com/@dluongta2003' }} target="_blank"><i className='fab fa-brands fa-tiktok'></i></Link>
+                        <Link className='white' to={{ pathname: 'https://www.tiktok.com/@dluongta_' }} target="_blank"><i className='fab fa-brands fa-tiktok'></i></Link>
                         <Link className='white' to={{ pathname: 'https://www.youtube.com/@dinhluongta' }} target="_blank"><i className='fab fa-youtube'></i></Link>
                         <Link className='white' to={{ pathname: 'https://github.com/dluongta' }} target="_blank"><i className='fab fa-brands fa-github'></i></Link>
 
