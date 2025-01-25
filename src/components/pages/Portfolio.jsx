@@ -6,81 +6,71 @@ export const Portfolio = () => {
   const data = [
     {
       id: "01",
-      link: "/graduation_thesis.pdf",
-      linkName: "Graduation Thesis ",
-    },
-    {
-      id: "02",
-      link: "https://leetcode.com/luen2003",
-      linkName: "Leetcode ",
-    },
-    {
-      id: "03",
       link: "https://dluongta.github.io/",
       linkName: "General Intoduce Page",
     },
     {
-      id: "04",
+      id: "02",
       link: "http://carttechnology.atwebpages.com",
       linkName: "Shopping Cart And Comment",
     },
     {
-      id: "05",
+      id: "03",
       link: "https://github.com/luen2003/NoteApp/releases/download/v1.0.0/app-release.apk",
       linkName: "Note App",
     },
     {
-      id: "06",
+      id: "04",
       link: "https://github.com/luen2003/ChatApp/releases/download/v1.0.0/app-release.apk",
       linkName: "Chat App",
     },
     {
-      id: "07",
+      id: "05",
       link: "https://note-task.onrender.com",
       linkName: "Note Task Website",
     },
     {
-      id: "08",
+      id: "06",
       link: "https://the-digital-shop.onrender.com",
       linkName: "MERN Shop Website",
     },
     {
-      id: "09",
+      id: "07",
       link: "https://github.com/luen2003/NewsApp/releases/download/v1.0.0/app-release.apk",
       linkName: "News App",
     },
     {
-      id: "10",
+      id: "08",
       link: "https://mgpost.onrender.com",
       linkName: "Post office website with live chat",
     },
     {
-      id: "11",
+      id: "09",
       link: "https://react-app-blog-page.vercel.app/",
       linkName: "Blog App Website",
     },
     {
-      id: "12",
+      id: "10",
       link: "https://github.com/luen2003/python-code",
       linkName: "Python Code Used For Predict Data, Face Detection, Color Map, Digit Recognizer, Video, Image And Audio Processing",
     },
     {
-      id: "13",
+      id: "11",
       link: "https://vietnam-map-platform.vercel.app/",
       linkName: "Vietnam Map Platform",
     },
     {
-      id: "14",
+      id: "12",
       link: "https://qr-scanner-live.netlify.app/",
       linkName: "QR Code Scanner",
     },
     {
-      id: "15",
+      id: "13",
       link: "https://react-app-videocall.onrender.com/",
       linkName: "Voice Or Video Call Using WebRTC",
     },
     {
-      id: "16",
+      id: "14",
       link: "https://react-qr-code-generator-live.vercel.app/",
       linkName: "React QRCode Generator",
     }
