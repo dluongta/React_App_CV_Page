@@ -22,7 +22,7 @@ export const Pages = () => {
     {
       id: "04",
       link: "https://the-digital-shop.onrender.com",
-      linkName: "MERN Shop Website",
+      linkName: "The Shop Website",
     },
     {
       id: "05",

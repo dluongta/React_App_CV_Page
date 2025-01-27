@@ -32,7 +32,7 @@ export const Portfolio = () => {
     {
       id: "06",
       link: "https://the-digital-shop.onrender.com",
-      linkName: "MERN Shop Website",
+      linkName: "The Shop Website",
     },
     {
       id: "07",
