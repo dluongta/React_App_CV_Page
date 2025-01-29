@@ -58,6 +58,11 @@ export const Pages = () => {
       id: "11",
       link: "https://react-qr-code-generator-live.vercel.app/",
       linkName: "React QRCode Generator",
+    },
+    {
+      id: "12",
+      link: "https://chatdeepmind.vercel.app/",
+      linkName: "Chat DeepMind",
     }
   ]
   return (
