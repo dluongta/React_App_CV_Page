@@ -73,11 +73,6 @@ export const Portfolio = () => {
       id: "14",
       link: "https://react-qr-code-generator-live.vercel.app/",
       linkName: "React QRCode Generator",
-    },
-    {
-      id: "15",
-      link: "https://chatdeepmind.onrender.com",
-      linkName: "Chat Deep Mind",
     }
   ]
   return (
