@@ -12,6 +12,25 @@ export const Home = ({ className }) => {
   const toRotate = ["Proficient Programmer", "Software Developer", "Hardware Engineer"];
   const period = 2000;
 
+  // Function to generate random color
+const getRandomColor = () => {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+
+  // Generate a random color
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+
+  // Check if the color is white (#FFFFFF) or black (#000000), if so, regenerate it
+  if (color === '#FFFFFF' || color === '#000000') {
+    return getRandomColor(); // Recursively call to get a new color
+  }
+
+  return color;
+};
+
+
   useEffect(() => {
     let ticker = setInterval(() => {
       tick();
@@ -45,6 +64,22 @@ export const Home = ({ className }) => {
     }
   };
 
+  // Render each letter with a random color
+  const renderColoredText = (text) => {
+    return text.split('').map((letter, index) => {
+      return (
+        <span key={index} style={{ color: getRandomColor() }}>
+          {letter}
+        </span>
+      );
+    });
+  };
+  const gradientTextStyle = {
+    backgroundImage: 'linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%)',
+    WebkitBackgroundClip: 'text',
+    color: 'transparent',  // This ensures the gradient shows on the text itself
+  };
+  
   return (
     <>
       <div className="container mx-auto position-relative ">
@@ -82,8 +117,8 @@ export const Home = ({ className }) => {
             </div>
           </div>
           <div className="right topMargin">
-            <h1> I AM A <br />
-              {text}|
+            <h1 style={gradientTextStyle}> I AM A <br />
+              {renderColoredText(text)}|
             </h1>
 
             <div className="socialIcon">
@@ -103,4 +138,4 @@ export const Home = ({ className }) => {
       </section>
     </>
   );
-}
+};
