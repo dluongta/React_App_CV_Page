@@ -973,18 +973,27 @@ iframe { border: none; width: 100%; height: 500px; }
 
 /* Mặc định: ảnh sẽ nằm bên phải */
 .home .math-image {
-  width:115px;
-  margin-left: 330px;
-  margin-top:215px;
+  width:150px;
+  margin-left: 0px;
+  margin-top:450px;
+}
+.home {
+  margin-bottom: 400px;
 }
 
 /* Điều chỉnh ảnh cho các thiết bị di động */
 @media (max-width: 768px) {
   .home .math-image {
       width:200px;
-      margin-top: 50px; /* Khoảng cách từ text */
+      margin-top: 50px; 
       margin-left: 60px;
       margin-bottom: 100px;
+  }
+  .right {
+    margin-bottom: -100px;
+  }
+  .home {
+    margin-bottom: 160px;
   }
 }
 
