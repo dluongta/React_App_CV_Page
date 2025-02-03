@@ -147,7 +147,7 @@ export const Home = ({ className }) => {
             <p>
               My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">
                 CV Viewer Page
-                <img src={math} alt="Math GIF" style={{width:'115px', marginLeft: '330px', marginTop:'215px' }} />
+                <img src={math} alt="Math GIF" class="math-image"/>
 
               </Link>
             </p>
