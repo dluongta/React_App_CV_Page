@@ -27,12 +27,12 @@ export const City = () => {
             <div className='city reveal'>
                 <button className="tablink" onClick={() => openCity('Hanoi', 'teal')} id="HanoiButton">Hanoi</button>
                 <button className="tablink" onClick={() => openCity('Sydney', 'green')} id="SydneyButton">Sydney</button>
-                <button className="tablink" onClick={() => openCity('Tokyo', 'navy')} id="TokyoButton">Tokyo</button>
+                <button className="tablink" onClick={() => openCity('Toronto', 'navy')} id="TorontoButton">Toronto</button>
                 <button className="tablink" onClick={() => openCity('London', 'salmon')} id="LondonButton">London</button>
 
                 <div id="Hanoi" className="tabContent">
                     <h1>Hanoi</h1>
-                    <p>Hanoi is the capital city of Vietnam.</p>
+                    <p>Hanoi is the capital of Vietnam.</p>
                 </div>
 
                 <div id="Sydney" className="tabContent">
@@ -40,9 +40,9 @@ export const City = () => {
                     <p>Sydney is the metropolitan city of Australia.</p>
                 </div>
 
-                <div id="Tokyo" className="tabContent">
-                    <h1>Tokyo</h1>
-                    <p>Tokyo is the capital of Japan.</p>
+                <div id="Toronto" className="tabContent">
+                    <h1>Toronto</h1>
+                    <p>Toronto is the the most populous, diverse and complex city of Canada.</p>
                 </div>
 
                 <div id="London" className="tabContent">
