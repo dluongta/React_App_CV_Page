@@ -26,8 +26,8 @@ export const Portfolio = () => {
     },
     {
       id: "05",
-      link: "https://note-task.onrender.com",
-      linkName: "Note Task Website",
+      link: "https://github.com/luen2003/SDLGAME/archive/refs/tags/1.0.zip",
+      linkName: "SDL Game - Water Pipe ",
     },
     {
       id: "06",
@@ -78,6 +78,11 @@ export const Portfolio = () => {
       id: "12",
       link: "https://chatdeepmind.vercel.app/",
       linkName: "Chat DeepMind",
+    },
+    {
+      id: "13",
+      link: "https://kbsv.vercel.app/",
+      linkName: "Stock Application Using Ant Design, TSX, Tailwind CSS",
     }
   ]
   return (

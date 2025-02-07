@@ -63,6 +63,11 @@ export const Pages = () => {
       id: "12",
       link: "https://chatdeepmind.vercel.app/",
       linkName: "Chat DeepMind",
+    },
+    {
+      id: "13",
+      link: "https://kbsv.vercel.app/",
+      linkName: "Stock Application Using Ant Design, TSX, Tailwind CSS",
     }
   ]
   return (
