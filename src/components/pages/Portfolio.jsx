@@ -92,7 +92,7 @@ export const Portfolio = () => {
     {
       id: "18",
       link: "http://pdf-generator.atwebpages.com/",
-      linkName: "Convert the information text to PDF",
+      linkName: "PDF Generator",
     }
   ]
   return (

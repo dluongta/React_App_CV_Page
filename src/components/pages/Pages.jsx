@@ -77,7 +77,7 @@ export const Pages = () => {
     {
       id: "15",
       link: "http://pdf-generator.atwebpages.com/",
-      linkName: "Convert the information text to PDF",
+      linkName: "PDF Generator",
     }
   ]
   return (
