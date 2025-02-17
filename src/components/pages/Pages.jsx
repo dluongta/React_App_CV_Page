@@ -73,6 +73,11 @@ export const Pages = () => {
       id: "14",
       link: "https://react-app-google-login-page.vercel.app/",
       linkName: "React App Google Login Page",
+    }, 
+    {
+      id: "15",
+      link: "http://pdf-generator.atwebpages.com/",
+      linkName: "Convert the information text to PDF",
     }
   ]
   return (
