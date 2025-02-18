@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'; 
+import React, { useState, useEffect } from 'react';
 import headerImg from '../../../../assets/main.png';
 import introBackground from '../../../../assets/IntroBackground.mp4';
 import { Link } from 'react-router-dom';
@@ -98,7 +98,7 @@ export const Home = ({ className }) => {
                   style={{
                     objectFit: 'cover',
                     width: '100%',
-                    height: '90vh',
+                    height: '100%',
                   }}
                 >
                   <source src={introBackground} type="video/mp4" />
@@ -147,7 +147,7 @@ export const Home = ({ className }) => {
             <p>
               My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">
                 CV Viewer Page
-                <img src={math} alt="Math GIF" class="math-image"/>
+                <img src={math} alt="Math GIF" class="math-image" />
 
               </Link>
             </p>

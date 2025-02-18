@@ -1060,3 +1060,17 @@ iframe {
   position: relative;
   z-index: 1; /* This ensures that content stays above the circle */
 }
+
+/* Giảm chiều cao video khi ở màn hình nhỏ để tránh bị che khuất */
+@media screen and (max-width: 768px) {
+  .swiper-slide video {
+    height: 50vh; /* Giảm chiều cao video xuống 50% chiều cao viewport */
+    width: 100%;
+  }
+
+  .swiper-wrapper,
+  .swiper-slide {
+    height: auto; /* Đảm bảo chiều cao của wrapper không bị cố định */
+    width: 100%;
+  }
+}
