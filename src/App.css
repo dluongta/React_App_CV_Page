@@ -13,7 +13,6 @@ html {
 body {
   overflow-x: hidden; /* Hide horizontal overflow */
   font-family: "Times New Roman", Times, serif;
-
 }
 
 /* Ensure flex items don’t overflow */
@@ -28,14 +27,16 @@ body {
     right: 0; /* Stretch sidebar to the right */
     margin: 0; /* Remove any margin */
   }
-  
+
   /* Additional adjustments */
-  .home, .about, .services, .branding {
+  .home,
+  .about,
+  .services,
+  .branding {
     padding: 0; /* Remove any padding */
     margin: 0; /* Remove any margin */
   }
 }
-
 
 .flex {
   display: flex;
@@ -95,7 +96,7 @@ header.active {
   z-index: 10;
 }
 
-@media screen and (max-width:768px) {
+@media screen and (max-width: 768px) {
   .container {
     width: 100%; /* Make containers full width */
     padding: 0; /* Remove padding */
@@ -189,7 +190,6 @@ header.active {
 
 .home h1 {
   font-size: 60px;
-
 }
 
 .socialIcon i {
@@ -201,7 +201,6 @@ header.active {
   border-radius: 50%;
   transition: 0.5s;
   cursor: pointer;
-
 }
 
 .socialIcon i:hover {
@@ -296,7 +295,6 @@ button {
 }
 
 p {
-
   line-height: 30px;
 }
 
@@ -466,7 +464,6 @@ h3 {
   font-size: 17px;
   font-weight: 400;
   color: gray;
-
 }
 
 .progress-done {
@@ -532,7 +529,6 @@ footer .socialIcon i {
   background-color: transparent;
   border: 1px solid white;
   border-radius: 50%;
-
 }
 
 footer h2 {
@@ -616,12 +612,9 @@ footer .fa-github:hover {
   color: white;
 }
 
-
-
 /*footer*/
 
-@media screen and (max-width:768px) {
-
+@media screen and (max-width: 768px) {
   .left,
   .right {
     width: 100%;
@@ -658,17 +651,14 @@ footer .fa-github:hover {
   }
 
   .about .img {
-
     width: 100%;
     height: 100%;
-
   }
 
   .about img {
     object-fit: cover;
     width: 100%;
     height: 100%;
-
   }
 
   .about img::after {
@@ -686,7 +676,6 @@ footer .fa-github:hover {
   footer .grid1 {
     grid-template-columns: repeat(2, 1fr);
   }
-
 }
 
 .pages,
@@ -722,7 +711,6 @@ footer .fa-github:hover {
 .card .link:hover {
   color: purple;
 }
-
 
 .blog .card {
   background-color: rgb(248, 240, 255);
@@ -808,12 +796,12 @@ footer .fa-github:hover {
 
 #pages {
   top: 20px;
-  background-color: #04AA6D;
+  background-color: #04aa6d;
 }
 
 #blog {
   top: 80px;
-  background-color: #2196F3;
+  background-color: #2196f3;
 }
 
 #portfolio {
@@ -823,16 +811,19 @@ footer .fa-github:hover {
 
 #contact {
   top: 200px;
-  background-color: #ff8800
+  background-color: #ff8800;
 }
 .blue {
-  color: #2196F3;
+  color: #2196f3;
   text-decoration: underline;
 }
 
 /*homepage*/
-iframe { border: none; width: 100%; height: 500px; }
-
+iframe {
+  border: none;
+  width: 100%;
+  height: 500px;
+}
 
 .contact {
   display: flex; /* Aligns children in a row */
@@ -849,10 +840,9 @@ iframe { border: none; width: 100%; height: 500px; }
   margin-right: auto;
   border: none; /* Remove default border for a cleaner look */
   margin-bottom: 20px; /* Space between iframes */
-  width: 80% ;
-
+  width: 80%;
 }
- /* Initial state for sections */
+/* Initial state for sections */
 .reveal {
   opacity: 0;
   transform: translateY(50px);
@@ -962,20 +952,20 @@ iframe { border: none; width: 100%; height: 500px; }
 }
 
 .card h1 {
-  display: -webkit-box;              /* Thiết lập để hiển thị dưới dạng hộp */
-  -webkit-box-orient: vertical;      /* Đặt chiều hướng của hộp là dọc */
-  -webkit-line-clamp: 2;             /* Giới hạn số dòng hiển thị là 2 */
-  overflow: hidden;                  /* Ẩn phần nội dung thừa */
-  text-overflow: ellipsis;           /* Thêm dấu ba chấm (...) khi bị cắt */
-  line-height: 1.5;                  /* Tùy chỉnh khoảng cách giữa các dòng (nếu cần) */
-  max-height: 3em;                   /* Đảm bảo chiều cao tối đa của 2 dòng */
+  display: -webkit-box; /* Thiết lập để hiển thị dưới dạng hộp */
+  -webkit-box-orient: vertical; /* Đặt chiều hướng của hộp là dọc */
+  -webkit-line-clamp: 2; /* Giới hạn số dòng hiển thị là 2 */
+  overflow: hidden; /* Ẩn phần nội dung thừa */
+  text-overflow: ellipsis; /* Thêm dấu ba chấm (...) khi bị cắt */
+  line-height: 1.5; /* Tùy chỉnh khoảng cách giữa các dòng (nếu cần) */
+  max-height: 3em; /* Đảm bảo chiều cao tối đa của 2 dòng */
 }
 
 /* Mặc định: ảnh sẽ nằm bên phải */
 .home .math-image {
-  width:250px;
+  width: 250px;
   margin-left: -145px;
-  margin-top:510px;
+  margin-top: 510px;
 }
 .home {
   margin-bottom: 500px;
@@ -984,10 +974,10 @@ iframe { border: none; width: 100%; height: 500px; }
 /* Điều chỉnh ảnh cho các thiết bị di động */
 @media (max-width: 768px) {
   .home .math-image {
-      width:200px;
-      margin-top: 50px; 
-      margin-left: 60px;
-      margin-bottom: 100px;
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 100px;
   }
   .right {
     margin-bottom: -100px;
@@ -997,5 +987,65 @@ iframe { border: none; width: 100%; height: 500px; }
   }
 }
 
+/* Card styles */
+.card {
+  position: relative;
+  background-color: rgb(255, 248, 240);
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 90%;
+  min-height: 50vh;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  overflow: hidden; /* Ensure the circle effect doesn't overflow */
+  transition: transform 0.3s ease;
+  z-index: 1; /* Ensure card is above other elements */
+}
 
+.card h1 {
+  padding: 10px;
+  margin: 10px;
+}
 
+.card .link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #00bbff;
+  z-index: 2; /* Ensure the link is above the circle effect */
+}
+
+.card .link:hover {
+  color: purple;
+}
+
+/* Circle effect */
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: -200px;
+  right: -200px;
+  width: 0;
+  height: 0;
+  background-color: rgba(0, 0, 255, 0.5); /* Blue color */
+  border-radius: 50%;
+  transition: width 0.5s ease, height 0.5s ease;
+  z-index: 0; /* Circle effect is below the card and link */
+}
+
+.card:hover::after,
+.card:active::after {
+  width: 2500px; /* Larger circle when hovered or touched */
+  height: 2500px;
+  bottom: -800px;
+  right: -800px;
+}
+
+.card:hover,
+.card:active {
+  transform: scale(
+    1.05
+  ); /* Slight scaling of the card when hovered or touched */
+}
