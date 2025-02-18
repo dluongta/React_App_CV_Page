@@ -98,7 +98,7 @@ export const Home = ({ className }) => {
                   style={{
                     objectFit: 'cover',
                     width: '100%',
-                    height: '100%',
+                    height: '90vh',
                   }}
                 >
                   <source src={introBackground} type="video/mp4" />
