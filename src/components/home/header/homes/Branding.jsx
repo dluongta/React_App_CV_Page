@@ -1,6 +1,5 @@
 import React from 'react';
 import logo from '../../../../assets/Luen.jpg';
-import video from '../../../../assets/Luen-Intro.mp4';
 import Hero from './Hero';
 
 export const Branding = ({ className }) => {
@@ -42,10 +41,6 @@ export const Branding = ({ className }) => {
         <iframe src="https://dluongta.github.io/Rubik.html" title="Rubik"></iframe>
         <iframe src="https://dluongta.github.io/fireworks.html" title="Fireworks Lighting"></iframe>
         <iframe src="https://vietnam-map-platform.vercel.app/" title="Vietnam Map Platform"></iframe>
-        <video width="100%" controls autoPlay muted loop>
-          <source src={video} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
       </section>
       <Hero />
     </>
