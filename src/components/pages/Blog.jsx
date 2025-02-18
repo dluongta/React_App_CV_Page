@@ -38,8 +38,9 @@ export const Blog = () => {
 
         {data.map((value) => {
           return (<div className='card '>
-
-            <h1>{value.linkName}</h1>
+            <div className="card-content">
+              <h1>{value.linkName}</h1>
+            </div>
             <Link className='link' to={{ pathname: value.link }} target="_blank">&rarr; {value.link}</Link>
 
           </div>)

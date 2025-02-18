@@ -1049,3 +1049,14 @@ iframe {
     1.05
   ); /* Slight scaling of the card when hovered or touched */
 }
+.card {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+  padding: 20px;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1; /* This ensures that content stays above the circle */
+}

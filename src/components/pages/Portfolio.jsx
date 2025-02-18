@@ -1,6 +1,5 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
-
+import React from "react";
+import { Link } from "react-router-dom";
 
 export const Portfolio = () => {
   const data = [
@@ -93,45 +92,59 @@ export const Portfolio = () => {
       id: "18",
       link: "http://pdf-generator.atwebpages.com/",
       linkName: "PDF Generator",
-    }, 
+    },
     {
       id: "19",
       link: "https://xlxs-reader.w3spaces.com/",
       linkName: "XLSX Reader",
-    }
-  ]
+    },
+  ];
   return (
-
     <>
-      <section className='portfolio'>
+      <section className="portfolio">
         <div id="mySidenav" class="sidenav">
-          <Link to='/pages' id="pages"> Pages </Link>
-          <Link to='/blog' id="blog"> Blog </Link>
-          <Link to='/portfolio' id="portfolio"> Portfolio </Link>
-          <Link to='/contact' id="contact"> Contact </Link>
+          <Link to="/pages" id="pages">
+            {" "}
+            Pages{" "}
+          </Link>
+          <Link to="/blog" id="blog">
+            {" "}
+            Blog{" "}
+          </Link>
+          <Link to="/portfolio" id="portfolio">
+            {" "}
+            Portfolio{" "}
+          </Link>
+          <Link to="/contact" id="contact">
+            {" "}
+            Contact{" "}
+          </Link>
         </div>
 
-        <div className='card '>
-
-          <h1>Major: Information Of Technology - UET - VNU</h1>
-          <h1>Time: 2021 - 2025</h1>
-
+        <div className="card ">
+          <div className="card-content">
+            <h1>Major: Information Of Technology - UET - VNU</h1>
+            <h1>Time: 2021 - 2025</h1>
+          </div>
         </div>
 
         {data.map((value) => {
-          return (<div className='card '>
-
-            <h1>{value.linkName}</h1>
-            <Link className='link' to={{ pathname: value.link }} target="_blank">&rarr; {value.link}</Link>
-
-
-          </div>)
-
-        }
-
-        )}
-
+          return (
+            <div className="card ">
+              <div className="card-content">
+                <h1>{value.linkName}</h1>
+              </div>
+              <Link
+                className="link"
+                to={{ pathname: value.link }}
+                target="_blank"
+              >
+                &rarr; {value.link}
+              </Link>
+            </div>
+          );
+        })}
       </section>
     </>
-  )
-}
+  );
+};
