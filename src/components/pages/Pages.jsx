@@ -78,10 +78,14 @@ export const Pages = () => {
       id: "15",
       link: "http://pdf-generator.atwebpages.com/",
       linkName: "PDF Generator",
+    }, 
+    {
+      id: "16",
+      link: "https://xlxs-reader.w3spaces.com/",
+      linkName: "XLSX Reader",
     }
   ]
   return (
-
     <>
       <section className='pages'>
         <div id="mySidenav" class="sidenav">
@@ -93,17 +97,11 @@ export const Pages = () => {
 
         {data.map((value) => {
           return (<div className='card '>
-
             <h1>{value.linkName}</h1>
             <Link className='link' to={{ pathname: value.link }} target="_blank">&rarr; {value.link}</Link>
-
-
           </div>)
-
         }
-
         )}
-
       </section>
     </>
   )
