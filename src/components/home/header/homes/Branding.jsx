@@ -38,7 +38,7 @@ export const Branding = ({ className }) => {
           ))}
         </div>
         <img width={'100%'} src={logo} alt="Logo" />
-        <iframe src="https://dluongta.github.io/Rubik.html" title="Rubik"></iframe>
+        <iframe src="https://dluongta.github.io/pac-man.html" title="Neon Pacman 3D"></iframe>
         <iframe src="https://dluongta.github.io/fireworks.html" title="Fireworks Lighting"></iframe>
         <iframe src="https://vietnam-map-platform.vercel.app/" title="Vietnam Map Platform"></iframe>
       </section>
