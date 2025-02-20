@@ -621,7 +621,7 @@ footer .fa-github:hover {
     width: 100%;
   }
   .home {
-    margin-top: 0px
+    margin-top: -20px;
   }
   .home .img {
     width: 100%;
@@ -634,6 +634,11 @@ footer .fa-github:hover {
     height: 100%;
     position: relative;
     transform: scale(1);
+  }
+
+  .home h1:first-child{
+    margin-left: -190px;
+    padding: 0;
   }
 
   .grid {
@@ -952,6 +957,7 @@ iframe {
   text-overflow: ellipsis; /* Thêm dấu ba chấm (...) khi bị cắt */
   line-height: 1.5; /* Tùy chỉnh khoảng cách giữa các dòng (nếu cần) */
   max-height: 3em; /* Đảm bảo chiều cao tối đa của 2 dòng */
+  line-clamp: 2; /* Giới hạn số dòng hiển thị là 2 */
 }
 
 /* Mặc định: ảnh sẽ nằm bên phải */
@@ -1064,6 +1070,9 @@ iframe {
   .swiper-slide {
     width: 100%;
   }
+  .direction {
+    flex-direction: column;
+  }
 
 }
 
@@ -1101,4 +1110,10 @@ marquee {
   font-size: 15px;  /* Kích thước chữ */
   background-color: #3498db; /* Màu nền */
   padding: 5px 0; /* Padding xung quanh văn bản */
+}
+
+.direction {
+  display: flex;
+  align-items: center;
+  text-align: left;
 }

@@ -90,7 +90,7 @@ export const Home = ({ className }) => {
             </div>
           </div>
           <div className="right topMargin" style={{ marginTop: '-22px' }}>
-            <div style={{ display: 'flex', alignItems: 'center', textAlign: 'left' }}>
+            <div className= "direction">
 
               <h1 style={gradientTextStyle}>
                 I AM A&nbsp;&nbsp;  
