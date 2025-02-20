@@ -1,21 +1,45 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import headerImg from '../../../../assets/main.png';
 import introBackground from '../../../../assets/IntroBackground.mp4';
 import { Link } from 'react-router-dom';
 import math from '../../../../assets/math.gif';
 
 export const Home = ({ className }) => {
-  const [currentLineIndex, setCurrentLineIndex] = useState(0); // Track the current line being displayed
-  const toRotate = ["Proficient Programmer", "Software Developer", "Hardware Engineer"];
+  const originalToRotate = ["Proficient Programmer", "Software Developer", "Hardware Engineer"];
+  const [toRotate, setToRotate] = useState([...originalToRotate, originalToRotate[0]]);
+  const [currentLineIndex, setCurrentLineIndex] = useState(0);
+  const [isTransitioning, setIsTransitioning] = useState(true);
 
   useEffect(() => {
-    // Change line every 3 seconds
     const interval = setInterval(() => {
-      setCurrentLineIndex((prevIndex) => (prevIndex + 1) % toRotate.length); // Loop through lines
-    }, 3000); // Change line every 3 seconds
+      if (currentLineIndex === toRotate.length - 1) {
+        // Tắt hiệu ứng chuyển động và reset về phần tử đầu tiên
+        setIsTransitioning(false); // Tắt hiệu ứng
+        setCurrentLineIndex(0); // Reset về phần tử đầu tiên
 
-    return () => clearInterval(interval); // Cleanup interval on unmount
-  }, []);
+        // Bật lại hiệu ứng sau 1 chu kỳ render (bằng cách dùng setTimeout với thời gian ngắn)
+        setTimeout(() => {
+          setIsTransitioning(true);
+        }, 50);
+      } else {
+        // Chuyển sang phần tử tiếp theo với hiệu ứng bình thường
+        setIsTransitioning(true);
+        setCurrentLineIndex((prevIndex) => prevIndex + 1);
+      }
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, [currentLineIndex, toRotate]);
+
+
+
+
+  const colors = [
+    'linear-gradient(83.84deg,rgb(255, 136, 0) -6.87%,rgb(92, 255, 51) 26.54%, #FF5C87 58.58%)',
+    'linear-gradient(83.84deg, #FF5733 -6.87%, #FFC300 26.54%,rgba(47, 245, 7, 0.91) 58.58%)',
+    'linear-gradient(83.84deg, #33FF57 -6.87%, #33D4FF 26.54%, #A433FF 58.58%)'
+  ];
+
 
   const gradientTextStyle = {
     backgroundImage: 'linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%)',
@@ -24,7 +48,7 @@ export const Home = ({ className }) => {
     paddingRight: '12px',
   };
   const gradientTransitonTextStyle = {
-    backgroundImage: 'linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%)',
+    backgroundImage: colors[currentLineIndex % colors.length],
     WebkitBackgroundClip: 'text',
     color: 'transparent',  // This ensures the gradient shows on the text itself
   };
@@ -72,15 +96,16 @@ export const Home = ({ className }) => {
                 I AM A
               </h1>
               <h1>
-                <div className="carousel_carousel_container__3M-yX" >
+                <div className="carousel_carousel_container" >
                   <div
-                    className="carousel_carousel__3tVog carousel_transition__x8b1X"
+                    className="carousel_carousel"
                     style={{
-                      transform: `translateY(-${currentLineIndex * 33.333333}%)`, // Moves the text up, one at a time
+                      transform: `translateY(-${currentLineIndex * 25}%)`,
+                      transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none',
                     }}
                   >
                     {toRotate.map((text, index) => (
-                      <div key={index} className="carousel_carousel_item__2O_Wn" style={gradientTransitonTextStyle}>
+                      <div key={index} className="carousel_carousel_item" style={gradientTransitonTextStyle}>
                         {text}
                       </div>
                     ))}

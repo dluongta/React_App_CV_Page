@@ -1068,30 +1068,23 @@ iframe {
     width: 100%;
   }
 }
-/* Container to hide the overflowed content */
-.carousel_carousel_container__3M-yX {
-  overflow: hidden; /* Hide the text that is out of view */
-  height: 128px; /* Adjust this height to fit one line of text */
-  width: 100%; /* Ensures the container takes full width */
+.carousel_carousel_container {
+  overflow: hidden;
+  height: 128px; /* Điều chỉnh chiều cao phù hợp */
   position: relative;
-  color: #205aef; /* Text color */
+  color: #205aef;
 }
 
-/* The carousel's flex column layout */
-.carousel_carousel__3tVog {
+.carousel_carousel {
   display: flex;
   flex-direction: column;
-  transition: transform 0.5s ease-in-out; /* Smooth transition */
 }
 
-/* Styling for each text item */
-.carousel_carousel_item__2O_Wn {
-  height: 128px; /* Set the height of each item to fit in the container */
+.carousel_carousel_item {
+  height: 128px;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 56px; /* Adjust font size */
-  color: #205aef; /* Text color */
+  font-size: 56px;
   font-weight: 800;
   text-align: left;
 }
