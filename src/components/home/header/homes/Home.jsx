@@ -35,9 +35,9 @@ export const Home = ({ className }) => {
 
 
   const colors = [
-    'linear-gradient(83.84deg,rgb(255, 136, 0) -6.87%,rgb(92, 255, 51) 26.54%, #FF5C87 58.58%)',
-    'linear-gradient(83.84deg, #FF5733 -6.87%, #FFC300 26.54%,rgba(47, 245, 7, 0.91) 58.58%)',
-    'linear-gradient(83.84deg, #33FF57 -6.87%, #33D4FF 26.54%, #A433FF 58.58%)'
+    '#FF8800',
+    '#A033FF',
+    '#0088FF'
   ];
 
 
@@ -46,11 +46,11 @@ export const Home = ({ className }) => {
     WebkitBackgroundClip: 'text',
     color: 'transparent',  // This ensures the gradient shows on the text itself
     paddingRight: '12px',
+    marginRight: '30px,',
+    whiteSpace: 'nowrap'
   };
   const gradientTransitonTextStyle = {
-    backgroundImage: colors[currentLineIndex % colors.length],
-    WebkitBackgroundClip: 'text',
-    color: 'transparent',  // This ensures the gradient shows on the text itself
+    color: colors[currentLineIndex % colors.length],
   };
 
   return (
@@ -82,18 +82,18 @@ export const Home = ({ className }) => {
         </div>
       </div>
 
-      <section className={`home ${className}`} style={{ marginTop: '200px' }}>
-        <div className="container flex" style={{ marginTop: '200px' }}>
+      <section className={`home ${className}`} >
+        <div className="container flex">
           <div className="left">
             <div className="img">
-              <img src={headerImg} alt="" style={{ marginTop: '120px' }} />
+              <img src={headerImg} alt=""  />
             </div>
           </div>
-          <div className="right topMargin">
+          <div className="right topMargin" style={{ marginTop: '-22px' }}>
             <div style={{ display: 'flex', alignItems: 'center', textAlign: 'left' }}>
 
               <h1 style={gradientTextStyle}>
-                I AM A
+                I AM A&nbsp;&nbsp;  
               </h1>
               <h1>
                 <div className="carousel_carousel_container" >
