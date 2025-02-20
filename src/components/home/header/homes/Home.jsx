@@ -2,80 +2,28 @@ import React, { useState, useEffect } from 'react';
 import headerImg from '../../../../assets/main.png';
 import introBackground from '../../../../assets/IntroBackground.mp4';
 import { Link } from 'react-router-dom';
-import math from '../../../../assets/math.gif'
+import math from '../../../../assets/math.gif';
 
 export const Home = ({ className }) => {
-  const [loopNum, setLoopNum] = useState(0);
-  const [isDeleting, setIsDeleting] = useState(false);
-  const [text, setText] = useState('');
-  const [delta, setDelta] = useState(100 - Math.random() * 100);
-  const [index, setIndex] = useState(1);
+  const [currentLineIndex, setCurrentLineIndex] = useState(0); // Track the current line being displayed
   const toRotate = ["Proficient Programmer", "Software Developer", "Hardware Engineer"];
-  const period = 2000;
-
-  // Function to generate random color
-  const getRandomColor = () => {
-    const letters = '0123456789ABCDEF';
-    let color = '#';
-
-    // Generate a random color
-    for (let i = 0; i < 6; i++) {
-      color += letters[Math.floor(Math.random() * 16)];
-    }
-
-    // Check if the color is white (#FFFFFF) or black (#000000), if so, regenerate it
-    if (color === '#FFFFFF' || color === '#000000') {
-      return getRandomColor(); // Recursively call to get a new color
-    }
-
-    return color;
-  };
 
   useEffect(() => {
-    let ticker = setInterval(() => {
-      tick();
-    }, delta);
+    // Change line every 3 seconds
+    const interval = setInterval(() => {
+      setCurrentLineIndex((prevIndex) => (prevIndex + 1) % toRotate.length); // Loop through lines
+    }, 3000); // Change line every 3 seconds
 
-    return () => { clearInterval(ticker) };
-  }, [text]);
-
-  const tick = () => {
-    let i = loopNum % toRotate.length;
-    let fullText = toRotate[i];
-    let updatedText = isDeleting ? fullText.substring(0, text.length - 1) : fullText.substring(0, text.length + 1);
-
-    setText(updatedText);
-
-    if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
-    }
-
-    if (!isDeleting && updatedText === fullText) {
-      setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
-      setDelta(period);
-    } else if (isDeleting && updatedText === '') {
-      setIsDeleting(false);
-      setLoopNum(loopNum + 1);
-      setIndex(1);
-      setDelta(500);
-    } else {
-      setIndex(prevIndex => prevIndex + 1);
-    }
-  };
-
-  // Render each letter with a random color
-  const renderColoredText = (text) => {
-    return text.split('').map((letter, index) => {
-      return (
-        <span key={index} style={{ color: getRandomColor() }}>
-          {letter}
-        </span>
-      );
-    });
-  };
+    return () => clearInterval(interval); // Cleanup interval on unmount
+  }, []);
 
   const gradientTextStyle = {
+    backgroundImage: 'linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%)',
+    WebkitBackgroundClip: 'text',
+    color: 'transparent',  // This ensures the gradient shows on the text itself
+    paddingRight: '12px',
+  };
+  const gradientTransitonTextStyle = {
     backgroundImage: 'linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%)',
     WebkitBackgroundClip: 'text',
     color: 'transparent',  // This ensures the gradient shows on the text itself
@@ -109,7 +57,8 @@ export const Home = ({ className }) => {
           <div className="swiper-pagination"></div>
         </div>
       </div>
-      <section className={`home ${className}`}>
+
+      <section className={`home ${className}`} style={{ marginTop: '200px' }}>
         <div className="container flex" style={{ marginTop: '200px' }}>
           <div className="left">
             <div className="img">
@@ -117,10 +66,29 @@ export const Home = ({ className }) => {
             </div>
           </div>
           <div className="right topMargin">
-            <h1 style={gradientTextStyle}>
-              I AM A <br />
-              {renderColoredText(text)}|
-            </h1>
+            <div style={{ display: 'flex', alignItems: 'center', textAlign: 'left' }}>
+
+              <h1 style={gradientTextStyle}>
+                I AM A
+              </h1>
+              <h1>
+                <div className="carousel_carousel_container__3M-yX" >
+                  <div
+                    className="carousel_carousel__3tVog carousel_transition__x8b1X"
+                    style={{
+                      transform: `translateY(-${currentLineIndex * 33.333333}%)`, // Moves the text up, one at a time
+                    }}
+                  >
+                    {toRotate.map((text, index) => (
+                      <div key={index} className="carousel_carousel_item__2O_Wn" style={gradientTransitonTextStyle}>
+                        {text}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </h1>
+            </div>
+
 
             <div className="socialIcon">
               <Link to={{ pathname: 'https://www.facebook.com/dluongta' }} target="_blank">
@@ -143,12 +111,13 @@ export const Home = ({ className }) => {
               </Link>
             </div>
 
-            <p>I am Dinh Luong Ta. I am a programmer who skilled at Web Developer, Android Developer. I also learning about Artificial Intelligence And Hardware. My favorite subjects are Math, Physics And Informatics.</p>
+            <p>
+              I am Dinh Luong Ta. I am a programmer skilled at Web Development, Android Development, and I am also learning Artificial Intelligence and Hardware. My favorite subjects are Math, Physics, and Informatics.
+            </p>
             <p>
               My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">
                 CV Viewer Page
-                <img src={math} alt="Math GIF" class="math-image" />
-
+                <img src={math} alt="Math GIF" className="math-image" />
               </Link>
             </p>
 
