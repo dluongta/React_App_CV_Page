@@ -169,7 +169,7 @@ header.active {
 
 .home {
   height: 40em;
-  margin-top: 200px
+  margin-top: 200px;
 }
 
 .home .img {
@@ -636,7 +636,7 @@ footer .fa-github:hover {
     transform: scale(1);
   }
 
-  .home h1:first-child{
+  .home h1:first-child {
     margin-left: -80px;
     padding: 0;
   }
@@ -967,7 +967,6 @@ iframe {
   margin-top: 650px;
 }
 .home {
-  margin-bottom: 500px;
   margin-top: 200px;
 }
 
@@ -1060,7 +1059,7 @@ iframe {
 /* Giảm chiều cao video khi ở màn hình nhỏ để tránh bị che khuất */
 @media screen and (max-width: 768px) {
   .swiper-slide {
-    height: 300px!important;
+    height: 300px !important;
   }
   .swiper-slide video {
     width: 100%;
@@ -1073,7 +1072,6 @@ iframe {
   .direction {
     flex-direction: column;
   }
-
 }
 
 .carousel_carousel_container {
@@ -1098,16 +1096,16 @@ iframe {
 }
 
 .marquee-container {
-  width: 100%;  /* Chiếm toàn bộ chiều rộng */
+  width: 100%; /* Chiếm toàn bộ chiều rộng */
   height: 50px; /* Đặt chiều cao cho marquee */
-  overflow: hidden;  /* Đảm bảo văn bản không tràn ra ngoài */
-  position: relative;  /* Đảm bảo marquee nằm đúng vị trí */
+  overflow: hidden; /* Đảm bảo văn bản không tràn ra ngoài */
+  position: relative; /* Đảm bảo marquee nằm đúng vị trí */
   z-index: 1000;
 }
 
 marquee {
-  color: white;  /* Màu chữ */
-  font-size: 15px;  /* Kích thước chữ */
+  color: white; /* Màu chữ */
+  font-size: 15px; /* Kích thước chữ */
   background-color: #3498db; /* Màu nền */
   padding: 5px 0; /* Padding xung quanh văn bản */
 }

@@ -86,14 +86,14 @@ export const Home = ({ className }) => {
         <div className="container flex">
           <div className="left">
             <div className="img">
-              <img src={headerImg} alt=""  />
+              <img src={headerImg} alt="" />
             </div>
           </div>
           <div className="right topMargin" style={{ marginTop: '-22px' }}>
-            <div className= "direction">
+            <div className="direction">
 
               <h1 style={gradientTextStyle}>
-                I AM A&nbsp;&nbsp;  
+                I AM A&nbsp;&nbsp;
               </h1>
               <h1>
                 <div className="carousel_carousel_container" >
@@ -142,7 +142,6 @@ export const Home = ({ className }) => {
             <p>
               My CV: <Link to={{ pathname: 'https://www.topcv.vn/xem-cv/VlNRBgdQUwcHUAZUVQMOAQUCAlsCCwMHAwNXUA38ec' }} target="_blank" className="blue">
                 CV Viewer Page
-                <img src={math} alt="Math GIF" className="math-image" />
               </Link>
             </p>
 
