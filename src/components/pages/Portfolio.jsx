@@ -80,44 +80,35 @@ export const Portfolio = () => {
     },
     {
       id: "16",
-      link: "https://kbsv.vercel.app/",
-      linkName: "Stock Application Using Ant Design, TSX, Tailwind CSS",
-    },
-    {
-      id: "17",
       link: "https://react-app-google-login-page.vercel.app/",
       linkName: "React App Google Login Page",
     },
     {
-      id: "18",
-      link: "http://pdf-generator.atwebpages.com/",
+      id: "17",
+      link: "http://pdf-excel-generator.atwebpages.com/",
       linkName: "PDF And Excel Generator",
     },
     {
-      id: "19",
-      link: "https://xlxs-reader.w3spaces.com/",
+      id: "18",
+      link: "https://xlsx-reader.w3spaces.com/",
       linkName: "XLSX Reader",
-    },
+    }
   ];
   return (
     <>
       <section className="portfolio">
         <div id="mySidenav" class="sidenav">
           <Link to="/pages" id="pages">
-            {" "}
-            Pages{" "}
+            Pages
           </Link>
           <Link to="/blog" id="blog">
-            {" "}
-            Blog{" "}
+            Blog
           </Link>
           <Link to="/portfolio" id="portfolio">
-            {" "}
-            Portfolio{" "}
+            Portfolio
           </Link>
           <Link to="/contact" id="contact">
-            {" "}
-            Contact{" "}
+            Contact
           </Link>
         </div>
 

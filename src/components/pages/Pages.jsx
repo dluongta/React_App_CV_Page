@@ -66,22 +66,17 @@ export const Pages = () => {
     },
     {
       id: "13",
-      link: "https://kbsv.vercel.app/",
-      linkName: "Stock Application Using Ant Design, TSX, Tailwind CSS",
-    },
-    {
-      id: "14",
       link: "https://react-app-google-login-page.vercel.app/",
       linkName: "React App Google Login Page",
     },
     {
-      id: "15",
-      link: "http://pdf-generator.atwebpages.com/",
+      id: "14",
+      link: "http://pdf-excel-generator.atwebpages.com/",
       linkName: "PDF And Excel Generator",
     },
     {
-      id: "16",
-      link: "https://xlxs-reader.w3spaces.com/",
+      id: "15",
+      link: "https://xlsx-reader.w3spaces.com/",
       linkName: "XLSX Reader",
     }
   ]
