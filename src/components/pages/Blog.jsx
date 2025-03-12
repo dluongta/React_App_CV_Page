@@ -22,8 +22,12 @@ export const Blog = () => {
       id: "04",
       link: "https://github.com/luen2003/NewsApp/releases/download/v1.0.0/app-release.apk",
       linkName: "News App",
+    },
+    {
+      id: "05",
+      link: "https://github.com/luen2003/Flutter_Weather_App/releases/download/v1.0.0/app-release.apk",
+      linkName: "Flutter Weather App",
     }
-
   ]
   return (
 
