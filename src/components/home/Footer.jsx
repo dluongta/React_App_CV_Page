@@ -55,22 +55,31 @@ export const Footer = () => {
                     <p>"I am trying my best to become a good programmer"</p>
                     <div className="icon">
                         <i className='fa fa-map-marker-alt'></i>
-                        <span>Location: Hanoi, Vietnam</span>
+                        <div className='text'>
+                            <span>Location: Hanoi, Vietnam</span>
+                        </div>
                     </div>
                     <div className="icon">
                         <i className='fa fa-phone'></i>
-                        <span>Phone: +84 383402036</span>
+                        <div className='text'>
+                            <span>Phone: +84 383402036</span>
+                        </div>
                     </div>
                     <div className="icon">
                         <i className='fa fa-envelope'></i>
-                        <span>Email: dluongta@gmail.com</span>
+                        <div className='text'>
+                            <span>Email: dluongta@gmail.com</span>
+                        </div>
                     </div>
-
                 </div>
             </div>
             <div className="legal container">
-                <p>Copyright &copy;<span id="currentYear"></span>. All rights reserved.</p>
-                <label>Made with ❤️‍🔥 by <span>Dinh Luong Ta</span></label>
+                <div className='text'>
+                    <p>Copyright <span className='blue'>&copy;<span id="currentYear"></span></span>. All rights reserved.</p>
+                </div>
+                <div className='text'>
+                    <span>Made with <span className="heartbeat">❤️‍🔥</span> by <span className='blue'>Dinh Luong Ta</span></span>
+                </div>
             </div>
         </footer>
     );

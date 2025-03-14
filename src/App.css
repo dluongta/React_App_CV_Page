@@ -556,8 +556,9 @@ footer .box p {
   margin-top: 15px;
 }
 
-footer span {
+footer .blue {
   color: #00bbff;
+  text-decoration: none;
   opacity: 1;
 }
 
@@ -579,6 +580,32 @@ footer .icon i {
   border-top: 1px solid #8c9297;
   margin-top: 70px;
   padding: 20px 0;
+}
+.legal p, .legal span {
+  margin: 0; /* Removes default margins */
+}
+
+.legal span {
+  font-weight: normal; /* Optional: Adjust font weight if needed */
+}
+
+/* Styling for the heartbeat effect */
+.legal .heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite; /* Apply heartbeat animation */
+  display: inline-block; /* Ensure the element stays inline with the text */
+}
+
+/* Keyframes for the heartbeat effect using scale */
+@keyframes heartbeat {
+  0% {
+      transform: scale(1); /* Initial size */
+  }
+  50% {
+      transform: scale(1.2); /* Slightly larger scale at midpoint */
+  }
+  100% {
+      transform: scale(1); /* Return to original size */
+  }
 }
 
 footer .socialIcon i:hover {
