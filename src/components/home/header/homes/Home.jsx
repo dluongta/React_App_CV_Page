@@ -58,7 +58,7 @@ export const Home = ({ className }) => {
       <div className="container mx-auto position-relative ">
         <div className="swiper mySwiper h-100 w-100">
           <div className="swiper-wrapper">
-            <div className="swiper-slide swiper-slide-active w-100" style={{ height: '700px' }}>
+            <div className="swiper-slide swiper-slide-active w-100">
               <div className="embed-responsive embed-responsive-16by9">
                 <video
                   className="embed-responsive-item"
@@ -70,7 +70,11 @@ export const Home = ({ className }) => {
                   style={{
                     objectFit: 'cover',
                     width: '100%',
-                    height: '100%',
+                    height: '125%',
+                    position: 'absolute',
+                    top: '50%',
+                    left: '50%',
+                    transform: 'translate(-50%, -50%)',
                   }}
                 >
                   <source src={introBackground} type="video/mp4" />
