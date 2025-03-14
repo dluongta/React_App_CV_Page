@@ -1072,6 +1072,11 @@ iframe {
   .direction {
     flex-direction: column;
   }
+  footer .box label {
+    font-size: 14px;
+    line-height: 30px;
+  }
+
 }
 
 .carousel_carousel_container {
