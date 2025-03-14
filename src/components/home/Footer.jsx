@@ -55,16 +55,17 @@ export const Footer = () => {
                     <p>"I am trying my best to become a good programmer"</p>
                     <div className="icon">
                         <i className='fa fa-map-marker-alt'></i>
-                        <label>Location: Hanoi, Vietnam</label>
+                        <span>Location: Hanoi, Vietnam</span>
                     </div>
                     <div className="icon">
                         <i className='fa fa-phone'></i>
-                        <label>Phone: +84 383402036</label>
+                        <span>Phone: +84 383402036</span>
                     </div>
                     <div className="icon">
                         <i className='fa fa-envelope'></i>
-                        <label>Email: dluongta@gmail.com</label>
+                        <span>Email: dluongta@gmail.com</span>
                     </div>
+
                 </div>
             </div>
             <div className="legal container">
