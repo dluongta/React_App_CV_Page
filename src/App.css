@@ -564,7 +564,6 @@ footer .blue {
 
 footer .icon {
   margin-top: 20px;
-  display: flex;
 }
 
 footer .icon i {
@@ -601,7 +600,7 @@ footer .icon i {
       transform: scale(1); /* Initial size */
   }
   50% {
-      transform: scale(1.2); /* Slightly larger scale at midpoint */
+      transform: scale(1.3); /* Slightly larger scale at midpoint */
   }
   100% {
       transform: scale(1); /* Return to original size */
@@ -928,6 +927,11 @@ iframe {
     font-size: 14px; /* Giảm kích thước chữ cho phần mô tả nếu cần */
   }
 
+  
+  .grid1 span {
+    font-size: 14px; /* Giảm kích thước chữ cho phần mô tả nếu cần */
+  }
+
   /* Ensure branding text does not overlap */
   .branding h1,
   .branding p {
@@ -1101,9 +1105,6 @@ iframe {
   }
 
 }
-footer .box  {
-  font-size: 14px;
-}
 
 .carousel_carousel_container {
   overflow: hidden;
@@ -1147,18 +1148,5 @@ marquee {
   text-align: left;
 }
 
-.box .icon {
-  display: flex;
-  align-items: center;
-  gap: 10px; /* Optional: adjust the spacing between the icon and the text */
-}
 
-.box .icon i {
-  font-size: 18px; /* Adjust the size of the icon */
-}
-
-.box .icon span {
-  font-size: 14px; /* Adjust the font size of the text */
-  color: #fff; /* Adjust the color of the text */
-}
 
