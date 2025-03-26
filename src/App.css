@@ -1148,12 +1148,19 @@ marquee {
   text-align: left;
 }
 
+@keyframes runningBorder {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
 .branding {
   position: relative;
   padding: 20px;
   border: 2px solid transparent; /* Initial border */
-  display: inline-block;
-  overflow: hidden;
   background: #fff; /* Card background color */
   transition: all 0.3s ease;
 }
@@ -1171,11 +1178,3 @@ marquee {
   z-index: -1; /* Ensure it's behind the card content */
 }
 
-@keyframes runningBorder {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
-}
