@@ -1170,3 +1170,12 @@ marquee {
   animation: runningBorder 4s linear infinite; /* Animation for running border */
   z-index: -1; /* Ensure it's behind the card content */
 }
+
+@keyframes runningBorder {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
