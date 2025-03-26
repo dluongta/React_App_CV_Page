@@ -1148,7 +1148,6 @@ marquee {
   text-align: left;
 }
 
-/* Apply a border animation to the card */
 .branding {
   position: relative;
   padding: 20px;
@@ -1170,37 +1169,4 @@ marquee {
   background-size: 200% 100%;
   animation: runningBorder 4s linear infinite; /* Animation for running border */
   z-index: -1; /* Ensure it's behind the card content */
-}
-
-/* Apply a border animation to the card */
-.card {
-  position: relative;
-  padding: 20px;
-  border: 2px solid transparent; /* Initial border */
-  display: inline-block;
-  overflow: hidden;
-  background: #fff; /* Card background color */
-  transition: all 0.3s ease;
-}
-
-.card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(90deg, #4f46e5, #9333ea, #4f46e5); /* Color gradient for the border */
-  background-size: 200% 100%;
-  animation: runningBorder 4s linear infinite; /* Animation for running border */
-  z-index: -1; /* Ensure it's behind the card content */
-}
-
-@keyframes runningBorder {
-  0% {
-    background-position: 200% 0;
-  }
-  100% {
-    background-position: -200% 0;
-  }
 }
