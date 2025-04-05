@@ -78,6 +78,11 @@ export const Pages = () => {
       id: "15",
       link: "https://xlsx-reader.w3spaces.com/",
       linkName: "XLSX Reader",
+    },
+    {
+      id: "16",
+      link: "https://tiktok-short-video.vercel.app/",
+      linkName: "TikTok Short Video",
     }
   ]
   return (

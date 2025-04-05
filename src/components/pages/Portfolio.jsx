@@ -97,6 +97,11 @@ export const Portfolio = () => {
       id: "19",
       link: "https://github.com/luen2003/Flutter_Weather_App/releases/download/v1.0.0/app-release.apk",
       linkName: "Flutter Weather App",
+    },
+    {
+      id: "20",
+      link: "https://tiktok-short-video.vercel.app/",
+      linkName: "TikTok Short Video",
     }
   ];
   return (
