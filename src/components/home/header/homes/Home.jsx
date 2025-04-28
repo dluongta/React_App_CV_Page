@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import headerImg from '../../../../assets/main.png';
 import introBackground from '../../../../assets/IntroBackground.mp4';
 import { Link } from 'react-router-dom';
-import math from '../../../../assets/math.gif';
 
 export const Home = ({ className }) => {
   const originalToRotate = ["Proficient Programmer", "Software Developer", "Hardware Engineer"];
