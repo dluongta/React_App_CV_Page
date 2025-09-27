@@ -136,8 +136,8 @@ export const Pages = () => {
     },
     {
       id: "27",
-      link: "https://github.com/luen2003/WarehouseManagement",
-      linkName: "Warehouse Management System",
+      link: "https://dluongta.github.io/runcodeonline.html",
+      linkName: "Run Code Online",
     }
   ]
   return (
