@@ -1,0 +1,1567 @@
+/* Prevent horizontal overflow */
+html {
+  overflow-x: hidden;
+}
+
+/* Container adjustments */
+.container {
+  max-width: 100%;
+  /* Allow full width */
+  padding: 0;
+  /* Remove padding */
+  margin: 0 auto;
+  /* Center the container */
+}
+
+body {
+  overflow-x: hidden;
+  /* Hide horizontal overflow */
+  font-family: "Times New Roman", Times, serif;
+}
+
+/* Ensure flex items don’t overflow */
+.flex {
+  flex-wrap: wrap;
+  /* Allow items to wrap */
+}
+
+/* Media queries for mobile adjustments */
+@media screen and (max-width: 768px) {
+  .timeline-section {
+    margin-top: 10em;
+  }
+
+  .nav-links-sidebar {
+    left: 0;
+    /* Align sidebar to the left */
+    right: 0;
+    /* Stretch sidebar to the right */
+    margin: 0;
+    /* Remove any margin */
+  }
+
+  /* Additional adjustments */
+  .home,
+  .about,
+  .services,
+  .branding {
+    padding: 0;
+    /* Remove any padding */
+    margin: 0;
+    /* Remove any margin */
+  }
+}
+
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+/*header*/
+header {
+  padding: 20px 0;
+}
+
+header ul {
+  display: inline-block;
+}
+
+header ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+header ul li a {
+  font-weight: 500;
+  transition: 0.5s;
+}
+
+header ul li a:hover {
+  color: rgb(12, 152, 239);
+  font-weight: 500;
+}
+
+.HeaderIcon {
+  max-lines: 20px;
+  transition: 0.5s;
+}
+
+.nav-items-icon {
+  color: black;
+  display: none;
+}
+
+header.active {
+  position: sticky;
+  top: 0;
+  left: 0;
+  background-color: aliceblue;
+  box-shadow: 0 2px 28px 0 black;
+  width: 100%;
+  z-index: 10;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    /* Make containers full width */
+    padding: 0;
+    /* Remove padding */
+  }
+
+  img {
+    max-width: 100%;
+    /* Responsive images */
+    height: auto;
+  }
+
+  .flex {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allow items to wrap */
+  }
+
+  header .icon {
+    display: none;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-links-sidebar {
+    position: absolute;
+    display: block;
+    background-color: aliceblue;
+    left: 50px;
+    top: 75px;
+    transition: 0.5s;
+    width: 100%;
+    height: 60vh;
+    z-index: 5;
+  }
+
+  .nav-links-sidebar {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  header ul li {
+    margin-bottom: 30px;
+  }
+
+  .nav-items-icon {
+    display: block;
+    position: absolute;
+    right: 30px;
+    color: black;
+    border: 1px solid black;
+    padding: 5px 10px;
+  }
+}
+
+/*header*/
+/*home*/
+.left,
+.right {
+  width: 50%;
+  position: relative;
+}
+
+.flex {
+  display: flex;
+}
+
+.topMargin {
+  margin-top: 80px;
+}
+
+.home {
+  height: 40em;
+  margin-top: 200px;
+}
+
+.home .img {
+  height: 10em;
+  width: 100%;
+  position: relative;
+  margin-top: 5em;
+}
+
+.home img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 28em;
+  width: 80%;
+  object-fit: contain;
+  transform: scale(1.2);
+}
+
+.home h1 {
+  font-size: 60px;
+}
+
+.socialIcon i {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 10px;
+  border-radius: 50%;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.socialIcon i:hover {
+  color: white;
+}
+
+.facebook {
+  color: rgb(75, 139, 241);
+  border: 1px solid rgb(75, 139, 241);
+}
+
+.facebook:hover {
+  background-color: rgb(75, 139, 241);
+}
+
+.instagram {
+  color: rgb(241, 75, 224);
+  border: 1px solid rgb(241, 75, 224);
+}
+
+.instagram:hover {
+  background-color: rgb(241, 75, 224);
+}
+
+.likedin {
+  color: rgb(75, 139, 241);
+  border: 1px solid rgb(75, 139, 241);
+}
+
+.likedin:hover {
+  background-color: rgb(75, 139, 241);
+}
+
+.youtube {
+  color: rgb(253, 0, 0);
+  border: 1px solid rgb(253, 0, 0);
+}
+
+.youtube:hover {
+  background-color: rgb(253, 0, 0);
+}
+
+.tiktok {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.tiktok:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+.github {
+  color: rgb(0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.github:hover {
+  background-color: rgb(0, 0, 0);
+}
+
+button {
+  background: none;
+  outline: none;
+  border: none;
+  color: white;
+  font-weight: 600;
+  font-size: 15px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.primary-btn {
+  padding: 15px 40px;
+  background-color: aquamarine;
+}
+
+.primary-btn:hover {
+  background-color: rgb(255, 0, 225);
+  box-shadow: 0 13px 27px 0 rebeccapurple;
+}
+
+.home .right {
+  margin-top: 15%;
+}
+
+.home .socialIcon {
+  margin: 30px 0;
+}
+
+.home p {
+  margin-bottom: 20px;
+}
+
+p {
+  line-height: 30px;
+}
+
+/*home*/
+
+/*branding*/
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.branding {
+  background-color: #000000;
+  color: white;
+  margin-top: 35px;
+  padding: 80px 0;
+}
+
+.branding h1 {
+  font-size: 40px;
+  color: green;
+  margin-right: 20px;
+}
+
+.branding h2 {
+  font-weight: 500;
+  font-size: 22px;
+  margin: 10px 0 20px 0;
+}
+
+.branding p {
+  color: white;
+  opacity: 0.7;
+}
+
+/*branding*/
+
+/*about*/
+.mtop {
+  margin-top: 50px;
+}
+
+h3 {
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: #38d16a;
+  margin: 20px 0;
+}
+
+.heading h1 {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.about p {
+  margin-bottom: 20px;
+}
+
+.about .left {
+  padding-right: 30px;
+}
+
+.about .img {
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about .img::after {
+  contain: "";
+  position: absolute;
+  top: 0;
+  left: -50px;
+  right: 0;
+  background-color: aqua;
+  width: 100%;
+  height: 86vh;
+  z-index: -1;
+}
+
+/*about*/
+
+/*services*/
+.services {
+  text-align: center;
+  background-color: wheat;
+  padding: 50px 0;
+}
+
+.services .box {
+  text-align: left;
+}
+
+.services img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.services .text {
+  background-color: aliceblue;
+  box-shadow: 0 5px 20px 0 black;
+  padding: 30px;
+  margin: 20px;
+  margin-top: -30px;
+  position: relative;
+  z-index: 1;
+}
+
+.services .text h2 {
+  font-weight: 500;
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/*services*/
+
+/*wrapper*/
+.wrapper .container {
+  max-width: 40%;
+  margin: auto;
+  text-align: center;
+}
+
+.wrapper h2 {
+  font-size: 40px;
+}
+
+.wrapper p {
+  opacity: 1;
+  margin-bottom: 30px;
+}
+
+/*wrapper*/
+/*skill*/
+.skill {
+  padding: 50px 0;
+}
+
+.skill .heading {
+  text-align: center;
+}
+
+.progress {
+  background-color: rgb(135, 136, 137);
+  border-radius: 20px;
+  position: relative;
+  margin: 45px 0;
+  height: 10px;
+  width: 90%;
+}
+
+.progress h4 {
+  position: absolute;
+  color: #000000;
+  top: -30px;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.progress h4:nth-child(2) {
+  right: 0;
+  font-size: 17px;
+  font-weight: 400;
+  color: gray;
+}
+
+.progress-done {
+  background-color: orange;
+  border-radius: 20px;
+  color: beige;
+  height: 100%;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
+}
+
+.skill .right {
+  padding: 0 50px;
+}
+
+.skill .right h1 {
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.skill .right p {
+  margin-bottom: 20px;
+}
+
+/*skill*/
+/*wrapperOne*/
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 30px;
+}
+
+.wrapperOne {
+  background-color: rgb(115, 0, 255);
+  text-align: center;
+}
+
+.wrapperOne h1 {
+  color: white;
+}
+
+.wrapperOne p {
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+/*wrapperOne*/
+/*footer*/
+
+footer {
+  background-color: #434242;
+  padding: 100px 0 0 0;
+  color: azure;
+}
+
+footer p {
+  color: white;
+  margin: 20px 0;
+}
+
+footer .socialIcon i {
+  background-color: transparent;
+  border: 1px solid white;
+  border-radius: 50%;
+}
+
+footer h2 {
+  margin-bottom: 30px;
+  font-size: 20px;
+}
+
+footer li {
+  color: white;
+  margin-bottom: 15px;
+}
+
+footer li::before {
+  content: ".";
+  font-size: 50px;
+  vertical-align: top;
+  line-height: 10px;
+  margin-right: 20px;
+  color: #00bbff;
+}
+
+footer .box p {
+  margin: 0;
+  margin-top: 15px;
+}
+
+footer .blue {
+  color: #00bbff;
+  text-decoration: none;
+  opacity: 1;
+}
+
+footer .icon {
+  margin-top: 20px;
+}
+
+footer .icon i {
+  color: #00bbff;
+  margin-right: 20px;
+  width: 20px;
+  height: 20px;
+}
+
+.legal {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #8c9297;
+  margin-top: 70px;
+  padding: 20px 0;
+}
+
+.legal p,
+.legal span {
+  margin: 0;
+  /* Removes default margins */
+}
+
+.legal span {
+  font-weight: normal;
+  /* Optional: Adjust font weight if needed */
+}
+
+/* Styling for the heartbeat effect */
+.legal .heartbeat {
+  animation: heartbeat 1.5s ease-in-out infinite;
+  /* Apply heartbeat animation */
+  display: inline-block;
+  /* Ensure the element stays inline with the text */
+}
+
+/* Keyframes for the heartbeat effect using scale */
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+    /* Initial size */
+  }
+
+  50% {
+    transform: scale(1.3);
+    /* Slightly larger scale at midpoint */
+  }
+
+  100% {
+    transform: scale(1);
+    /* Return to original size */
+  }
+}
+
+footer .socialIcon i:hover {
+  color: #434242;
+}
+
+footer .fa-facebook-f:hover {
+  background-color: white;
+}
+
+footer .fa-instagram:hover {
+  background-color: white;
+}
+
+footer .fa-linkedin:hover {
+  background-color: white;
+}
+
+footer .fa-youtube:hover {
+  background-color: white;
+}
+
+footer .fa-tiktok:hover {
+  background-color: white;
+}
+
+footer .fa-github:hover {
+  background-color: white;
+}
+
+.white {
+  color: white;
+}
+
+/*footer*/
+
+@media screen and (max-width: 768px) {
+
+  .left,
+  .right {
+    width: 100%;
+  }
+
+  .home {
+    margin-top: -20px;
+  }
+
+  .home .img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+
+  .home img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform: scale(1);
+  }
+
+  .home h1:first-child {
+    margin-left: -80px;
+    padding: 0;
+  }
+
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .about .container {
+    flex-direction: column;
+  }
+
+  .about .img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .about img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+
+  .about img::after {
+    display: none;
+  }
+
+  .wrapper .container {
+    max-width: 80%;
+  }
+
+  .skill .right {
+    padding: 0;
+  }
+
+  footer .grid1 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.pages,
+.blog,
+.portfolio {
+  margin-left: 30px;
+}
+
+.pages .card {
+  background-color: aliceblue;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 90%;
+  min-height: 50vh;
+  border-radius: 10px;
+  border-style: none;
+  position: relative;
+}
+
+.card h1 {
+  padding: 10px;
+  margin: 10px;
+}
+
+.card .link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #00bbff;
+}
+
+.card .link:hover {
+  color: purple;
+}
+
+.blog .card {
+  background-color: rgb(248, 240, 255);
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 90%;
+  min-height: 50vh;
+  border-radius: 10px;
+  border-style: none;
+  position: relative;
+}
+
+.portfolio .card {
+  background-color: rgb(255, 248, 240);
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 90%;
+  min-height: 50vh;
+  border-radius: 10px;
+  border-style: none;
+  position: relative;
+}
+
+/*city*/
+.tablink {
+  background-color: #555;
+  color: white;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  font-size: 17px;
+  width: 25%;
+}
+
+.tablink:hover {
+  background-color: #777;
+}
+
+.tabContent {
+  color: white;
+  display: none;
+  padding: 50px;
+  text-align: center;
+}
+
+#Hanoi {
+  background-color: teal;
+}
+
+#Sydney {
+  background-color: green;
+}
+
+#Toronto {
+  background-color: navy;
+}
+
+#London {
+  background-color: salmon;
+}
+
+/*city*/
+/*homepage*/
+#mySidenav a {
+  position: fixed;
+  left: -80px;
+  margin-top: 150px;
+  transition: 0.3s;
+  padding: 15px;
+  width: 100px;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  z-index: 1000;
+}
+
+#mySidenav a:hover {
+  left: 0;
+}
+
+#pages {
+  top: 20px;
+  background-color: #04aa6d;
+}
+
+#blog {
+  top: 80px;
+  background-color: #2196f3;
+}
+
+#portfolio {
+  top: 140px;
+  background-color: #f44336;
+}
+
+#contact {
+  top: 200px;
+  background-color: #ff8800;
+}
+
+.blue {
+  color: #2196f3;
+  text-decoration: underline;
+}
+
+/*homepage*/
+iframe {
+  border: none;
+  width: 100%;
+  height: 500px;
+}
+
+.contact {
+  display: flex;
+  /* Aligns children in a row */
+}
+
+.pdf-container {
+  flex-grow: 1;
+  /* This makes the pdf-container fill the remaining space */
+  padding: 10px;
+  /* Optional padding */
+}
+
+.pdf {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  /* Remove default border for a cleaner look */
+  margin-bottom: 20px;
+  /* Space between iframes */
+  width: 80%;
+}
+
+/* Initial state for sections */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Visible state */
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.home {
+  margin-top: -15em;
+}
+
+/* Media queries for mobile adjustments */
+@media screen and (max-width: 768px) {
+  .home {
+    padding: 0;
+    /* Remove any padding */
+    margin: 0;
+    /* Remove any margin */
+    height: auto;
+    /* Allow dynamic height */
+    position: relative;
+    /* Ensure stacking context */
+  }
+
+  .home img {
+    width: 100%;
+    /* Make images responsive */
+    height: auto;
+    /* Maintain aspect ratio */
+    object-fit: cover;
+    /* Cover the area without distortion */
+    position: relative;
+    /* Position relative for stacking */
+  }
+
+  .branding {
+    position: relative;
+    /* Ensure it stacks correctly */
+    z-index: 1;
+    /* Bring it above other content if necessary */
+  }
+
+  .wrapperOne {
+    padding: 20px;
+    /* Padding tùy chọn */
+    text-align: center;
+    /* Căn giữa nội dung */
+  }
+
+  .grid1 {
+    display: flex;
+    /* Sử dụng flexbox */
+    flex-direction: column;
+    /* Đặt hướng flex là chiều dọc */
+    align-items: center;
+    /* Căn giữa các phần tử */
+  }
+
+  .grid1 .box {
+    margin-bottom: 20px;
+    /* Khoảng cách giữa các box */
+    width: 100%;
+    /* Chiều rộng 100% để các box chiếm toàn bộ không gian */
+  }
+
+  .grid1 h1 {
+    font-size: 24px;
+    /* Giảm kích thước chữ nếu cần */
+  }
+
+  .grid1 p {
+    font-size: 14px;
+    /* Giảm kích thước chữ cho phần mô tả nếu cần */
+  }
+
+
+  .grid1 span {
+    font-size: 14px;
+    /* Giảm kích thước chữ cho phần mô tả nếu cần */
+  }
+
+  /* Ensure branding text does not overlap */
+  .branding h1,
+  .branding p {
+    z-index: 2;
+    /* Ensure branding text is on top */
+    position: relative;
+    /* Establish a new stacking context */
+  }
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background-color: #fff;
+  width: 8px;
+  height: 8px;
+  opacity: 0.8;
+  border-radius: 50%;
+  animation: fall 10s linear infinite, drift 15s ease-in-out infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+@keyframes drift {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(20px);
+  }
+
+  100% {
+    transform: translateX(-20px);
+  }
+}
+
+/* Ensure the snowflakes are positioned above all other elements */
+.snowfall {
+  position: fixed;
+  /* Ensures the snowflakes are fixed relative to the viewport */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10000;
+  /* Snowflakes above other content */
+  pointer-events: none;
+  /* Ensures the snowflakes don't block interaction with other elements */
+}
+
+.card h1 {
+  display: -webkit-box;
+  /* Thiết lập để hiển thị dưới dạng hộp */
+  -webkit-box-orient: vertical;
+  /* Đặt chiều hướng của hộp là dọc */
+  -webkit-line-clamp: 2;
+  /* Giới hạn số dòng hiển thị là 2 */
+  overflow: hidden;
+  /* Ẩn phần nội dung thừa */
+  text-overflow: ellipsis;
+  /* Thêm dấu ba chấm (...) khi bị cắt */
+  line-height: 1.5;
+  /* Tùy chỉnh khoảng cách giữa các dòng (nếu cần) */
+  max-height: 3em;
+  /* Đảm bảo chiều cao tối đa của 2 dòng */
+  line-clamp: 2;
+  /* Giới hạn số dòng hiển thị là 2 */
+}
+
+/* Mặc định: ảnh sẽ nằm bên phải */
+.home .math-image {
+  width: 250px;
+  margin-left: -145px;
+  margin-top: 650px;
+}
+
+.home {
+  margin-top: 200px;
+}
+
+/* Điều chỉnh ảnh cho các thiết bị di động */
+@media (max-width: 768px) {
+  .home .math-image {
+    width: 200px;
+    margin-top: 50px;
+    margin-left: 60px;
+    margin-bottom: 100px;
+  }
+
+  .right {
+    margin-bottom: -100px;
+  }
+
+  .home {
+    margin-bottom: 160px;
+  }
+}
+
+/* Card styles */
+.card {
+  position: relative;
+  background-color: rgb(255, 248, 240);
+  padding: 20px;
+  margin-bottom: 15px;
+  width: 90%;
+  min-height: 50vh;
+  border-radius: 10px;
+  border-style: none;
+  cursor: pointer;
+  overflow: hidden;
+  /* Ensure the circle effect doesn't overflow */
+  transition: transform 0.3s ease;
+  z-index: 1;
+  /* Ensure card is above other elements */
+}
+
+.card h1 {
+  padding: 10px;
+  margin: 10px;
+}
+
+.card .link {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 20px;
+  color: #00bbff;
+  z-index: 2;
+  /* Ensure the link is above the circle effect */
+}
+
+.card .link:hover {
+  color: purple;
+}
+
+/* Circle effect */
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: -500px;
+  right: -500px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(0, 0, 255, 0.5);
+  /* Blue color */
+  border-radius: 50%;
+  transition: width 0.5s ease, height 0.5s ease;
+  z-index: 0;
+  /* Circle effect is below the card and link */
+}
+
+.card:hover::after,
+.card:active::after {
+  width: 2800px;
+  /* Larger circle when hovered or touched */
+  height: 2800px;
+  bottom: -900px;
+  right: -900px;
+}
+
+.card:hover,
+.card:active {
+  transform: scale(1.05);
+  /* Slight scaling of the card when hovered or touched */
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  /* This ensures that content stays above the circle */
+}
+
+.swiper-slide {
+  height: 700px;
+}
+
+/* Giảm chiều cao video khi ở màn hình nhỏ để tránh bị che khuất */
+@media screen and (max-width: 768px) {
+  .swiper-slide {
+    height: 250px !important;
+    width: 100% !important;
+  }
+
+  .swiper-slide video {
+    width: 100%;
+  }
+
+  .swiper-wrapper,
+  .swiper-slide {
+    width: 100%;
+  }
+
+  .direction {
+    flex-direction: column;
+  }
+
+}
+
+.carousel_carousel_container {
+  overflow: hidden;
+  height: 128px;
+  /* Điều chỉnh chiều cao phù hợp */
+  position: relative;
+  color: #205aef;
+}
+
+.carousel_carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.carousel_carousel_item {
+  height: 128px;
+  display: flex;
+  align-items: center;
+  font-size: 56px;
+  font-weight: 800;
+  text-align: left;
+}
+
+.marquee-container {
+  width: 100%;
+  /* Chiếm toàn bộ chiều rộng */
+  height: 50px;
+  /* Đặt chiều cao cho marquee */
+  overflow: hidden;
+  /* Đảm bảo văn bản không tràn ra ngoài */
+  position: relative;
+  /* Đảm bảo marquee nằm đúng vị trí */
+  z-index: 1000;
+}
+
+marquee {
+  color: white;
+  /* Màu chữ */
+  font-size: 15px;
+  /* Kích thước chữ */
+  background-color: #3498db;
+  /* Màu nền */
+  padding: 5px 0;
+  /* Padding xung quanh văn bản */
+}
+
+.direction {
+  display: flex;
+  align-items: center;
+  text-align: left;
+}
+
+@keyframes runningBorder {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.branding {
+  position: relative;
+  padding: 20px;
+  border: 2px solid transparent;
+  /* Initial border */
+  background: #fff;
+  /* Card background color */
+  transition: all 0.3s ease;
+}
+
+.branding::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #9333ea, #4f46e5);
+  /* Color gradient for the border */
+  background-size: 200% 100%;
+  animation: runningBorder 4s linear infinite;
+  /* Animation for running border */
+  z-index: -1;
+  /* Ensure it's behind the card content */
+}
+
+
+.btn-led {
+  position: relative;
+  padding: 15px 40px;
+  background-color: aquamarine;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+}
+
+/* LED Border Span Elements */
+.btn-led span {
+  position: absolute;
+  display: block;
+  z-index: 2;
+  pointer-events: none;
+}
+
+/* TOP Border */
+.btn-led span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, rgba(18, 105, 186, 0.961), cyan, rgb(59, 47, 215), rgb(0, 128, 255));
+  background-size: 600% 100%;
+  animation: animate1 1s linear infinite;
+}
+
+/* RIGHT Border */
+.btn-led span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, rgba(18, 105, 186, 0.961), cyan, rgb(59, 47, 215), rgb(0, 128, 255));
+  background-size: 100% 600%;
+  animation: animate2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+/* BOTTOM Border */
+.btn-led span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, rgba(18, 105, 186, 0.961), cyan, rgb(59, 47, 215), rgb(0, 128, 255));
+  background-size: 600% 100%;
+  animation: animate3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+/* LEFT Border */
+.btn-led span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(0deg, rgba(18, 105, 186, 0.961), cyan, rgb(59, 47, 215), rgb(0, 128, 255));
+  background-size: 100% 600%;
+  animation: animate4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+/* LED Border Movement Animations */
+@keyframes animate1 {
+  0% {
+    left: -100%;
+  }
+
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+
+@keyframes animate2 {
+  0% {
+    top: -100%;
+  }
+
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+@keyframes animate3 {
+  0% {
+    right: -100%;
+  }
+
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+@keyframes animate4 {
+  0% {
+    bottom: -100%;
+  }
+
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+
+.timeline-section {
+  padding: 60px 0;
+  position: relative;
+}
+
+.timeline {
+  position: relative;
+  margin-left: 60px;
+  border-left: 4px solid #007bff;
+  /* đường thẳng dọc */
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 40px;
+  padding-left: 40px;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: 0;
+  left: -2px;
+  /* đặt giữa line */
+  width: 20px;
+  height: 20px;
+  background-color: #007bff;
+  border-radius: 50%;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #007bff;
+  transform: translateX(-50%);
+  /* căn giữa dot với line */
+  z-index: 1;
+}
+
+.timeline-content {
+  background-color: #f9f9f9;
+  padding: 15px 20px;
+  border-radius: 6px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.timeline-content h4 {
+  color: #007bff;
+  margin: 0 0 8px;
+}
+
+.timeline-content p {
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+.custom-iframe {
+  display: block;
+  width: 100%;
+  margin: 30px 0; 
+  border: none;
+}
+
+.progress {
+    margin: 24px 0;
+    position: relative;
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border-radius: 30px;
+    height: 40px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.progress-done {
+    height: 100%;
+    width: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    transition: width 1s ease-in-out, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+.video-player-container {
+  position: relative;
+}
+
+.controls {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+.fullscreen-btn {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 768px) {
+  .img {
+    margin-bottom: 40px; 
+  }
+}
+
+.carousel_carousel_container {
+  height: 120px; 
+  overflow: hidden;
+  position: relative;
+}
+
+.carousel_carousel {
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carousel_carousel_item {
+  height: 120px;          
+  line-height: 55px;       
+  font-size: 48px;
+  font-weight: 900;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; 
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+  .headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin: 0;
+    padding: 0;
+  }
+
+ 
+  .gradientTextStyle {
+    background-image: linear-gradient(83.84deg, #0088FF -6.87%, #A033FF 26.54%, #FF5C87 58.58%);
+    background-clip: text; 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    display: inline-block;
+    white-space: nowrap;
+    text-align: left;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  @media only screen and (max-width: 768px) {
+    .headline {
+      align-items: flex-start !important;
+    }
+
+    .gradientTextStyle {
+      padding: 0 !important;
+      margin: 0 !important;
+      text-align: left !important;
+    }
+  }
+
