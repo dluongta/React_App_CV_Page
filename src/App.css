@@ -1645,6 +1645,10 @@ footer .socialIcon {
   footer .legal {
     margin-left: 8px!important;
   }
+  .home {
+    padding-top: 0px!important;
+    margin-top: 0px!important;
+  }
 }
 
 
