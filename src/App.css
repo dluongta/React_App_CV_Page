@@ -1598,9 +1598,11 @@ footer .legal {
     padding-top: 20px;
     font-size: 14px;
     margin-left: 10px;
-    margin-right: 90px;
+    margin-right: 10px;
 }
-
+footer .legal .author{
+    margin-right: 90px!important;
+}
 footer .blue {
     color: #00cfff;
 }
@@ -1608,4 +1610,35 @@ footer .blue {
 footer .socialIcon {
     margin-top: 20px;
 }
+
+.legal {
+  display: flex;
+  flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ chỗ */
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px; /* Khoảng cách giữa 2 phần tử */
+  padding: 30px 0 10px; /* top: 30px, bottom: 10px để cách đều phần trên */
+  line-height: 1.6; /* khoảng cách giữa các dòng đều nhau */
+  color: #fff;
+  font-size: 14px;
+  text-align: center; /* Đảm bảo xuống dòng thì vẫn cân đối */
+  flex-wrap: nowrap; /* Ngăn không cho xuống dòng */
+  overflow-x: auto; /* Cho phép cuộn nếu nội dung quá dài */
+  /* white-space: nowrap; */
+}
+.legal p{
+  line-height: 1.6!important; /* khoảng cách giữa các dòng đều nhau */
+}
+.container.grid1 {
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .legal {
+    flex-direction: row;
+    justify-content: censpace-betweenter;
+    gap: 10px 20px;
+  }
+}
+
 
