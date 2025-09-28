@@ -151,8 +151,8 @@ export const Portfolio = () => {
     },
     {
       id: "30",
-      link: "https://github.com/luen2003/ASPNETProduct",
-      linkName: "ASPNET Product",
+      link: "https://github.com/luen2003/dotnet-mssm-api",
+      linkName: "ASPNET API",
     },
     {
       id: "31",
