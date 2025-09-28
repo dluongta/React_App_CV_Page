@@ -1639,6 +1639,12 @@ footer .socialIcon {
     justify-content: censpace-betweenter;
     gap: 10px 20px;
   }
+  footer .legal .author{
+    margin-right: 10px!important;
+  }
+  footer .legal {
+    margin-left: 8px!important;
+  }
 }
 
 
