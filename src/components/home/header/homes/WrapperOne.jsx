@@ -1,6 +1,10 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "./WrapperOne.module.css"; // Sử dụng CSS Module
+import styles from "./WrapperOne.module.css"; // CSS Module
 
+// ➤ Hàm random từ min đến max
+const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
+
+// ➤ Dữ liệu
 const data = [
     { num: "99%", text: "AWARDS WINNING" },
     { num: "99%", text: "SATISFIED CLIENTS" },
@@ -8,24 +12,30 @@ const data = [
     { num: "2999", text: "LINES OF CODE" },
 ];
 
+// ➤ Các chữ số từ 0 đến 9
 const digits = Array.from({ length: 10 }, (_, i) => i);
 
-const DigitColumn = ({ finalDigit, delay }) => {
-    const [position, setPosition] = useState(0);
+// ➤ Cột chữ số cuộn
+const DigitColumn = ({ finalDigit, delay, stopOrder }) => {
+    const [position, setPosition] = useState(random(0, 9));
+    const intervalRef = useRef(null);
+    const totalSteps = useRef(random(15, 25) + stopOrder * 5); // số bước nhiều hơn với các số đứng sau
 
     useEffect(() => {
-        let current = 0;
-        const interval = setInterval(() => {
+        let count = 0;
+
+        intervalRef.current = setInterval(() => {
             setPosition(prev => (prev + 1) % 10);
-            current++;
-            if (current > 15 + finalDigit + delay / 100) {
-                clearInterval(interval);
+            count++;
+
+            if (count >= totalSteps.current) {
+                clearInterval(intervalRef.current);
                 setPosition(finalDigit);
             }
-        }, 100); // Điều chỉnh tốc độ ở đây
+        }, 80 + stopOrder * 10); // delay tăng dần theo stopOrder
 
-        return () => clearInterval(interval);
-    }, [finalDigit, delay]);
+        return () => clearInterval(intervalRef.current);
+    }, [finalDigit, stopOrder]);
 
     return (
         <div className={styles.digitColumn}>
@@ -46,6 +56,7 @@ const DigitColumn = ({ finalDigit, delay }) => {
     );
 };
 
+// ➤ Component hiển thị số hoàn chỉnh
 const AnimatedNumber = ({ number }) => {
     const hasPercent = number.includes("%");
     const cleanNumber = number.replace("%", "");
@@ -54,13 +65,14 @@ const AnimatedNumber = ({ number }) => {
     return (
         <h1 className={styles.animatedNumber}>
             {digitsArr.map((d, i) => (
-                <DigitColumn key={i} finalDigit={d} delay={i * 300} />
+                <DigitColumn key={i} finalDigit={d} stopOrder={i} />
             ))}
             {hasPercent && <span className={styles.symbol}>%</span>}
         </h1>
     );
 };
 
+// ➤ Component chính
 export const WrapperOne = ({ className = "" }) => {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
