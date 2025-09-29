@@ -1,0 +1,106 @@
+.wrapperOne {
+    background: linear-gradient(to right, #7b2ff7, #f107a3); /* hoặc giữ nguyên nền bạn có */
+    padding: 4rem 2rem;
+    overflow: hidden;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.2rem;
+    flex-wrap: nowrap;
+}
+
+/* Phần số */
+.animatedNumber {
+    display: flex;
+    align-items: flex-end;
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2em;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+}
+
+/* Cột số cuộn */
+.digitColumn {
+    overflow: hidden;
+    height: 1.2em;
+    width: 0.75em;
+    display: inline-block;
+    position: relative;
+}
+
+.digitScroll {
+    display: flex;
+    flex-direction: column;
+}
+
+.digit {
+    height: 1.2em;
+    text-align: center;
+}
+
+.symbol {
+    margin-left: 0.3rem;
+}
+
+/* Phần mô tả */
+.label {
+    margin: 0;
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .animatedNumber {
+        font-size: 2.2rem;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .box {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .animatedNumber {
+        font-size: 2.5rem;
+        justify-content: center;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+}
