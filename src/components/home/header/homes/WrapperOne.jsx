@@ -1,10 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "./WrapperOne.module.css"; // CSS Module
+import styles from "./WrapperOne.module.css"; 
 
-// ➤ Hàm random từ min đến max
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
-// ➤ Dữ liệu
 const data = [
     { num: "99%", text: "AWARDS WINNING" },
     { num: "99%", text: "SATISFIED CLIENTS" },
@@ -12,10 +10,8 @@ const data = [
     { num: "2999", text: "LINES OF CODE" },
 ];
 
-// ➤ Các chữ số từ 0 đến 9
 const digits = Array.from({ length: 10 }, (_, i) => i);
 
-// ➤ Cột chữ số cuộn
 const DigitColumn = ({ finalDigit, delay, stopOrder }) => {
     const [position, setPosition] = useState(random(0, 9));
     const intervalRef = useRef(null);
@@ -32,7 +28,7 @@ const DigitColumn = ({ finalDigit, delay, stopOrder }) => {
                 clearInterval(intervalRef.current);
                 setPosition(finalDigit);
             }
-        }, 80 + stopOrder * 10); // delay tăng dần theo stopOrder
+        }, 80 + stopOrder * 10); 
 
         return () => clearInterval(intervalRef.current);
     }, [finalDigit, stopOrder]);
@@ -56,7 +52,6 @@ const DigitColumn = ({ finalDigit, delay, stopOrder }) => {
     );
 };
 
-// ➤ Component hiển thị số hoàn chỉnh
 const AnimatedNumber = ({ number }) => {
     const hasPercent = number.includes("%");
     const cleanNumber = number.replace("%", "");
@@ -72,7 +67,6 @@ const AnimatedNumber = ({ number }) => {
     );
 };
 
-// ➤ Component chính
 export const WrapperOne = ({ className = "" }) => {
     const [isVisible, setIsVisible] = useState(false);
     const sectionRef = useRef(null);
