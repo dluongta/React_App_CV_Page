@@ -1751,8 +1751,8 @@ section.contact {
 }
 
 .card {
-  width: 100%;                    
-  max-width: calc(100% - 40px);    
+  width: calc(100% - 24px); 
+  margin: 0 auto;            
   background: #f4fbff;
   border-radius: 8px;
   padding: 18px;
