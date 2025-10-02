@@ -1838,7 +1838,7 @@ section.contact {
   color: #fff;
 }
 
-.grid1 {
+footer .grid1 {
   display: grid;
   grid-template-columns: repeat(4, 1fr); /* 3 cột bằng nhau */
   column-gap: 20px; /* khoảng cách giữa các cột */
@@ -1846,7 +1846,7 @@ section.contact {
   margin: 0 auto; /* căn giữa toàn bộ container */
 }
 
-.socialIcon {
+footer .socialIcon {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 15px;
@@ -1854,7 +1854,7 @@ section.contact {
   margin-top: 20px;
 }
 
-.socialIcon i {
+footer .socialIcon i {
   width: 40px;
   height: 40px;
   line-height: 40px;
@@ -1867,7 +1867,7 @@ section.contact {
   transition: background-color 0.3s, color 0.3s;
 }
 
-.socialIcon i:hover {
+footer .socialIcon i:hover {
   background-color: white;
   color: black;
 }
@@ -1880,4 +1880,39 @@ section.contact {
 
 .logo {
   margin-left: 18px;
+}
+
+footer {
+  color: white; /* Đặt màu chữ mặc định trong footer */
+}
+
+footer .box h2,
+footer .box p,
+footer .box span,
+footer .box li,
+footer .box a {
+  color: white;
+}
+
+/* Thêm style cho icon trong phần "Get in Touch" */
+footer .icon i {
+  color: #00d2ff; /* màu xanh dương cho icon, có thể thay đổi */
+  margin-right: 8px;
+}
+
+/* Đảm bảo link không mất màu trắng */
+footer a {
+  color: white;
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #00d2ff; /* Màu khi hover */
+}
+
+/* Optional: Làm dot màu xanh trong Quick Links */
+footer ul li::before {
+  content: '●';
+  color: #00d2ff;
+  margin-right: 8px;
 }

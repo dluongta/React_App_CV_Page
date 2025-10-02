@@ -1,0 +1,20 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background-color: #8B0000; /* Đỏ sẫm */
+  color: white;
+  border: none;
+  border-radius: 4px; /* Vuông nhẹ, nếu muốn vuông hẳn thì để 0 */
+  font-size: 24px;
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+  z-index: 1000;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s;
+}
+
+.scroll-to-top:hover {
+  background-color: #a30000; /* đỏ sẫm sáng hơn khi hover */
+}

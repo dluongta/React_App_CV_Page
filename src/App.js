@@ -1,4 +1,3 @@
-
 import './App.css';
 import { Header } from './components/home/header/Header';
 import {
@@ -12,21 +11,23 @@ import { Pages } from './components/pages/Pages';
 import { Portfolio } from './components/pages/Portfolio';
 import { Blog } from './components/pages/Blog';
 import { Contact } from './components/pages/Contact';
+import ScrollToTopButton from './components/common/ScrollToTopButton'; // 🆕
 
 function App() {
   return (
     <>
-    <Router>
-    <Header />
-    <Switch>
-      <Route path= '/' exact component={HomePage} />
-      <Route path= '/pages' exact component={Pages} />
-      <Route path= '/portfolio' exact component={Portfolio} />
-      <Route path= '/blog' exact component={Blog} />
-      <Route path= '/contact' exact component={Contact} />
-    </Switch>
-    <Footer/>
-    </Router>
+      <Router>
+        <Header />
+        <Switch>
+          <Route path='/' exact component={HomePage} />
+          <Route path='/pages' exact component={Pages} />
+          <Route path='/portfolio' exact component={Portfolio} />
+          <Route path='/blog' exact component={Blog} />
+          <Route path='/contact' exact component={Contact} />
+        </Switch>
+        <Footer />
+        <ScrollToTopButton />
+      </Router>
     </>
   );
 }
