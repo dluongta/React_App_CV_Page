@@ -107,7 +107,7 @@ export const Portfolio = () => {
       id: "21",
       link: "https://github.com/luen2003/BookingRoom",
       linkName: "Booking Laravel App",
-      
+
     },
     {
       id: "22",
@@ -182,30 +182,32 @@ export const Portfolio = () => {
             Contact
           </Link>
         </div>
+        <div className="cards-wrapper">
 
-        <div className="card ">
-          <div className="card-content">
-            <h1>Major: Information Of Technology - UET - VNU</h1>
-            <h1>Time: 2021 - 2025</h1>
-          </div>
-        </div>
-
-        {data.map((value) => {
-          return (
-            <div className="card ">
-              <div className="card-content">
-                <h1>{value.linkName}</h1>
-              </div>
-              <Link
-                className="link"
-                to={{ pathname: value.link }}
-                target="_blank"
-              >
-                &rarr; {value.link}
-              </Link>
+          <div className="card ">
+            <div className="card-content">
+              <h1>Major: Information Of Technology - UET - VNU</h1>
+              <h1>Time: 2021 - 2025</h1>
             </div>
-          );
-        })}
+          </div>
+
+          {data.map((value) => {
+            return (
+              <div className="card ">
+                <div className="card-content">
+                  <h1>{value.linkName}</h1>
+                </div>
+                <Link
+                  className="link"
+                  to={{ pathname: value.link }}
+                  target="_blank"
+                >
+                  &rarr; {value.link}
+                </Link>
+              </div>
+            );
+          })}
+        </div>
       </section>
     </>
   );

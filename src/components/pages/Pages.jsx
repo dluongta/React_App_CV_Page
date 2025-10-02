@@ -149,16 +149,18 @@ export const Pages = () => {
           <Link to='/portfolio' id="portfolio"> Portfolio </Link>
           <Link to='/contact' id="contact"> Contact </Link>
         </div>
+        <div className="cards-wrapper">
 
-        {data.map((value) => {
-          return (<div className='card '>
-            <div className="card-content">
-              <h1>{value.linkName}</h1>
-            </div>
-            <Link className='link' to={{ pathname: value.link }} target="_blank">&rarr; {value.link}</Link>
-          </div>)
-        }
-        )}
+          {data.map((value) => {
+            return (<div className='card '>
+              <div className="card-content">
+                <h1>{value.linkName}</h1>
+              </div>
+              <Link className='link' to={{ pathname: value.link }} target="_blank">&rarr; {value.link}</Link>
+            </div>)
+          }
+          )}
+        </div>
       </section>
     </>
   )

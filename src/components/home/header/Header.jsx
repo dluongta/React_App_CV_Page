@@ -1,18 +1,44 @@
-import React, { useState } from 'react'
-import { Link } from "react-router-dom";
+import React, { useState, useEffect, useRef } from 'react';
+import { Link, useLocation } from "react-router-dom";
 import SearchIcon from '@mui/icons-material/Search';
 import DevicesIcon from '@mui/icons-material/Devices';
 import GridViewIcon from '@mui/icons-material/GridView';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
-import logo from '../../../assets/luen-1.jpg'
+import logo from '../../../assets/luen-1.jpg';
 
 export const Header = () => {
     const [sideBar, setSidebar] = useState(false);
-    window.addEventListener("scroll", function () {
-        const header = document.querySelector(".header")
-        header.classList.toggle("active", this.window.scrollY > 200)
-    })
+    const location = useLocation();
+    const navRef = useRef();
+
+    // Scroll effect
+    useEffect(() => {
+        const handleScroll = () => {
+            const header = document.querySelector(".header");
+            header.classList.toggle("active", window.scrollY > 200);
+        };
+        window.addEventListener("scroll", handleScroll);
+        return () => window.removeEventListener("scroll", handleScroll);
+    }, []);
+
+    // Close sidebar if clicking outside
+    useEffect(() => {
+        const handleClickOutside = (event) => {
+            if (navRef.current && !navRef.current.contains(event.target)) {
+                setSidebar(false);
+            }
+        };
+        if (sideBar) {
+            document.addEventListener("mousedown", handleClickOutside);
+        } else {
+            document.removeEventListener("mousedown", handleClickOutside);
+        }
+        return () => document.removeEventListener("mousedown", handleClickOutside);
+    }, [sideBar]);
+
+    const isActive = (path) => location.pathname === path;
+
     return (
         <>
             <div className="marquee-container">
@@ -21,32 +47,33 @@ export const Header = () => {
                 </marquee>
             </div>
             <header className='header'>
-                <div className='container flex'>
+                <div className='container flex' style={{ position: 'relative' }}>
                     <div className='logo'>
-                        <Link to='/'> <img width="95" height="60" src={logo} alt='' /> </Link>
+                        <Link to='/'>
+                            <img width="95" height="60" src={logo} alt='' />
+                        </Link>
                     </div>
-                    <div className='nav'>
+                    <div className='nav' ref={navRef}>
                         <ul className={sideBar ? "nav-links-sidebar" : "nav-links"} onClick={() => setSidebar(false)}>
-                            <li>
-                                <Link to='/'> Home </Link>
+                            <li className={isActive('/') ? 'active-link' : ''}>
+                                <Link to='/'>Home</Link>
                             </li>
-                            <li>
-                                <Link to='/pages'> Pages </Link>
+                            <li className={isActive('/pages') ? 'active-link' : ''}>
+                                <Link to='/pages'>Pages</Link>
                             </li>
-                            <li>
-                                <Link to='/blog'> Blog </Link>
+                            <li className={isActive('/blog') ? 'active-link' : ''}>
+                                <Link to='/blog'>Blog</Link>
                             </li>
-                            <li>
-                                <Link to='/Portfolio'> Portfolio </Link>
+                            <li className={isActive('/portfolio') ? 'active-link' : ''}>
+                                <Link to='/portfolio'>Portfolio</Link>
                             </li>
-                            <li>
-                                <Link to='/contact'> Contact </Link>
+                            <li className={isActive('/contact') ? 'active-link' : ''}>
+                                <Link to='/contact'>Contact</Link>
                             </li>
                             <li className='icon'>
                                 <SearchIcon className="HeaderIcon" />
                                 <DevicesIcon className="HeaderIcon" />
                                 <GridViewIcon className="HeaderIcon" />
-
                             </li>
                         </ul>
                     </div>
@@ -54,9 +81,7 @@ export const Header = () => {
                         {sideBar ? <CloseIcon /> : <MenuIcon />}
                     </button>
                 </div>
-
             </header>
         </>
-
-    )
-}
+    );
+};
