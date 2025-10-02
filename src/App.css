@@ -1658,7 +1658,7 @@ footer .socialIcon {
   color: #007bff; 
 }
 
-.nav-links li.active-link::after,
+/* .nav-links li.active-link::after,
 .nav-links-sidebar li.active-link::after {
   content: "";
   position: absolute;
@@ -1669,7 +1669,7 @@ footer .socialIcon {
   background: #007bff;
   border-radius: 2px;
   transition: width 0.3s ease;
-}
+} */
 
 
 @media (max-width: 768px) {
@@ -1812,4 +1812,31 @@ section.contact {
   color: #fff;
 }
 
+.nav-links li.active-link,
+.nav-links-sidebar li.active-link {
+  background: #007bff; /* Giống hover */
+  border-radius: 6px;
+}
+
+.nav-links li.active-link a,
+.nav-links-sidebar li.active-link a {
+  color: #fff; /* Chữ trắng */
+}
+
+.nav-links li:hover::before {
+  background: orangered; /* màu đỏ sẫm */
+  left: 0;
+}
+
+.nav-links li:hover a {
+  color: #fff; /* Chữ trắng khi hover */
+}
+
+.nav-links-sidebar li:hover {
+  background-color: orangered;
+}
+
+.nav-links-sidebar li:hover a {
+  color: #fff;
+}
 
