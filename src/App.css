@@ -1625,7 +1625,7 @@ footer .socialIcon {
     gap: 10px 20px;
   }
   footer .legal .author{
-    margin-right: 20px!important;
+    margin-right: 86px!important;
   }
   footer .legal > p {
     margin-left: 0px!important;
@@ -1915,4 +1915,41 @@ footer ul li::before {
   content: '●';
   color: #00d2ff;
   margin-right: 8px;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .grid1 {
+    grid-template-columns: repeat(2, 1fr)!important;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid1 {
+    grid-template-columns: 1fr!important;
+    gap: 15px;
+  }
+
+  .centerBox {
+    text-align: center;
+  }
+
+  .socialIcon {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 999;
 }
