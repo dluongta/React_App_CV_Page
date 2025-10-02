@@ -1789,7 +1789,7 @@ section.contact {
   transition: color 0.3s ease;
 }
 
-.nav-links li::before {
+.nav-links li:not(.icon)::before {
   content: "";
   position: absolute;
   top: 0;
@@ -1821,13 +1821,13 @@ section.contact {
   color: #fff; /* Chữ trắng */
 }
 
-.nav-links li:hover::before {
-  background: orangered; /* màu đỏ sẫm */
+.nav-links li:not(.icon):hover::before {
+  background: orangered;
   left: 0;
 }
 
-.nav-links li:hover a {
-  color: #fff; /* Chữ trắng khi hover */
+.nav-links li:not(.icon):hover a {
+  color: #fff;
 }
 
 .nav-links-sidebar li:hover {
@@ -1878,3 +1878,6 @@ section.contact {
   align-items: flex-start; 
 }
 
+.logo {
+  margin-left: 18px;
+}
