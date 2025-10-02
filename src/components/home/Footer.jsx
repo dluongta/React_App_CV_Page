@@ -11,7 +11,7 @@ export const Footer = () => {
     return (
         <footer>
             <div className="container grid1">
-                <div className="box">
+                <div className="box centerBox">
                     <img width="95" height="60" src={logo_brand} alt='' />
                     <p>LUMIND - LUONG MIND</p>
                     <div className="socialIcon">

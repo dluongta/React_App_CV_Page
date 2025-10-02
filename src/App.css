@@ -1588,7 +1588,7 @@ footer .legal {
     margin-right: 10px;
 }
 footer .legal .author{
-    margin-right: 80px!important;
+    margin-right: 128px!important;
 }
 footer .blue {
     color: #00cfff;
@@ -1613,11 +1613,9 @@ footer .socialIcon {
   overflow-x: auto; /* Cho phép cuộn nếu nội dung quá dài */
   /* white-space: nowrap; */
 }
-.legal p{
+.legal > p{
   line-height: 1.6!important; /* khoảng cách giữa các dòng đều nhau */
-}
-.container.grid1 {
-  margin-bottom: 30px;
+  margin-left: 90px;
 }
 
 @media (max-width: 768px) {
@@ -1627,10 +1625,10 @@ footer .socialIcon {
     gap: 10px 20px;
   }
   footer .legal .author{
-    margin-right: 10px!important;
+    margin-right: 20px!important;
   }
-  footer .legal {
-    margin-left: 8px!important;
+  footer .legal > p {
+    margin-left: 0px!important;
   }
   .home {
     padding-top: 0px!important;
@@ -1838,5 +1836,45 @@ section.contact {
 
 .nav-links-sidebar li:hover a {
   color: #fff;
+}
+
+.grid1 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 3 cột bằng nhau */
+  column-gap: 20px; /* khoảng cách giữa các cột */
+  max-width: 1080px; /* giới hạn chiều rộng tổng */
+  margin: 0 auto; /* căn giữa toàn bộ container */
+}
+
+.socialIcon {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 15px;
+  justify-items: start; /* icon căn trái trong từng ô */
+  margin-top: 20px;
+}
+
+.socialIcon i {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  border: 1px solid white;
+  font-size: 20px;
+  color: white;
+  cursor: pointer; /* con trỏ khi hover */
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.socialIcon i:hover {
+  background-color: white;
+  color: black;
+}
+
+.centerBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
 }
 
