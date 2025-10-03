@@ -1112,13 +1112,13 @@ iframe {
   bottom: 10px;
   right: 10px;
   font-size: 20px;
-  color: #00bbff;
+  color: darkblue!important;
   z-index: 2;
   /* Ensure the link is above the circle effect */
 }
 
 .card .link:hover {
-  color: purple;
+  color: purple!important;
 }
 
 /* Circle effect */
