@@ -2,7 +2,7 @@ import React from 'react';
 import logo from '../../../../assets/logo.jpg';
 import Hero from './Hero';
 import CustomVideoPlayer from './CustomVideoPlayer';
-
+import CustomVideoPlayerLogo from './CustomVideoPlayerLogo';
 export const Branding = ({ className }) => {
   const data = [
     {
@@ -47,6 +47,7 @@ export const Branding = ({ className }) => {
       <iframe className="custom-iframe" src="https://vietnam-map-platform.vercel.app/" title="Vietnam Map Platform"></iframe>
       <iframe className="custom-iframe" src="https://dluongta.github.io/globe.html" title="3D Globe"></iframe>
       <CustomVideoPlayer />
+      <CustomVideoPlayerLogo />
       <Hero />
     </>
   );
