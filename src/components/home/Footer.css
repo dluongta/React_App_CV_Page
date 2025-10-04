@@ -1,0 +1,160 @@
+/* ================================
+   FOOTER - LUMIND
+================================ */
+footer {
+  position: relative;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+  background: none;
+  margin-top: -10px;
+  padding: 0;
+}
+
+/* SVG Waves */
+footer svg {
+  display: block;
+  width: 100%;
+  margin-bottom: -2px;
+}
+
+.wave {
+  animation: wave 3s linear infinite;
+  fill: #4478e3; /* ✅ Trùng màu footer */
+}
+
+#wave2 {
+  animation-duration: 5s;
+  animation-direction: reverse;
+  opacity: 0.6;
+}
+
+#wave3 {
+  animation-duration: 7s;
+  opacity: 0.3;
+}
+
+/* Giọt nước */
+.drop {
+  fill: transparent;
+  stroke: #6695f3;
+  stroke-width:0.5;
+  opacity: 0.8;               /* Mờ nhẹ */
+  animation: drop 5s ease infinite;
+  transform: translateY(80%);
+  filter: drop-shadow(0 0 2px rgba(90,141,253,0.6)); /* 💡 Hiệu ứng phát sáng */
+}
+
+.drop1 { transform-origin: 20px 3px; }
+.drop2 { animation-delay: 3s; transform-origin: 25px 3px; }
+.drop3 { animation-delay: -2s; transform-origin: 16px 3px; }
+.gooeff { filter: url(#goo); }
+
+@keyframes drop {
+  0%, 80% { transform: translateY(80%); opacity: .6; }
+  90% { transform: translateY(10%); }
+  100% { transform: translateY(0%) scale(1.5); opacity: 0; }
+}
+
+@keyframes wave {
+  to { transform: translateX(-100%); }
+}
+
+/* ================================
+   MAIN CONTENT
+================================ */
+.container.grid1 {
+  background: #4478e3;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 20px;
+  padding: 50px 10vw 30px;
+  text-align: left;
+}
+
+.centerBox { text-align: center; }
+
+footer h2 {
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+footer p, footer a, footer span {
+  color: #eee;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+footer a {
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+footer a:hover { color: #ffdd57; }
+
+/* ================================
+   SOCIAL ICONS
+================================ */
+.socialIcon a {
+  margin: 0 6px;
+  color: white;
+  font-size: 18px;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.socialIcon a:hover {
+  transform: scale(1.2);
+  color: #ffdd57;
+}
+
+/* ================================
+   LEGAL SECTION
+================================ */
+.legal.container {
+  background: #3769c9;
+  text-align: center;
+  padding: 10px 0 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.blue { color: #ffdd57; }
+
+.heartbeat {
+  animation: pulse 1.5s infinite;
+}
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.3); }
+  100% { transform: scale(1); }
+}
+
+footer {
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #7b2ff7, #f107a3);; /* hoặc màu bạn dùng */
+  overflow: hidden;
+}
+
+/* Xóa khoảng trắng giữa grid1 và legal */
+footer .container {
+  margin: 0 auto;
+  padding: 0;
+}
+
+footer .grid1 {
+  margin: 0;
+  padding: 40px 0; /* nếu bạn cần khoảng trên dưới */
+}
+
+footer .legal {
+  margin-top: 0; /* xóa khoảng trắng dư */
+  padding-top: 10px; /* chỉ chừa một chút nếu cần */
+  border-top: 1px solid rgba(255, 255, 255, 0.2); /* tạo ngăn nhẹ giữa 2 phần */
+  text-align: center;
+}
+
+footer .legal p,
+footer .legal span {
+  margin: 0;
+  padding: 0;
+}
+
