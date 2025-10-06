@@ -75,92 +75,87 @@ export const Portfolio = () => {
     },
     {
       id: "15",
-      link: "https://chatdeepmind.vercel.app/",
-      linkName: "Chat DeepMind",
-    },
-    {
-      id: "16",
       link: "https://react-app-google-login-page.vercel.app/",
       linkName: "React App Google Login Page",
     },
     {
-      id: "17",
+      id: "16",
       link: "http://pdf-excel-generator.atwebpages.com/",
       linkName: "PDF And Excel Generator",
     },
     {
-      id: "18",
+      id: "17",
       link: "https://xlsx-reader.w3spaces.com/",
       linkName: "XLSX Reader",
     },
     {
-      id: "19",
+      id: "18",
       link: "https://github.com/luen2003/Flutter_Weather_App/releases/download/v1.0.0/app-release.apk",
       linkName: "Flutter Weather App",
     },
     {
-      id: "20",
+      id: "19",
       link: "https://tiktok-short-video.vercel.app/",
       linkName: "TikTok Short Video",
     },
     {
-      id: "21",
+      id: "20",
       link: "https://github.com/luen2003/BookingRoom",
       linkName: "Booking Laravel App",
 
     },
     {
-      id: "22",
+      id: "21",
       link: "https://react-livestream-app.onrender.com/",
       linkName: "Livestream App",
     },
     {
-      id: "23",
+      id: "22",
       link: "https://bank-qrcode.w3spaces.com/",
       linkName: "Bank QRCode",
     },
     {
-      id: "24",
+      id: "23",
       link: "https://github.com/luen2003/Face-App",
       linkName: "Face Recognition Analysis",
     },
     {
-      id: "25",
+      id: "24",
       link: "https://react-app-text-audio.onrender.com/",
       linkName: "Read Text + Translate + Record + Download MP3",
     },
     {
-      id: "26",
+      id: "25",
       link: "https://github.com/luen2003/Styled_Python",
       linkName: "Styled Effect Python App",
     },
     {
-      id: "27",
+      id: "26",
       link: "https://quizzes-app.w3spaces.com/",
       linkName: "Quizzes App",
     },
     {
-      id: "28",
+      id: "27",
       link: "https://digital_calendar.playcode.io/",
       linkName: "Digital Calendar",
     },
     {
-      id: "29",
+      id: "28",
       link: "https://custom_video.playcode.io/",
       linkName: "Custom Video",
     },
     {
-      id: "30",
+      id: "29",
       link: "https://github.com/luen2003/ASPNET_API",
       linkName: "ASPNET API",
     },
     {
-      id: "31",
+      id: "30",
       link: "https://github.com/luen2003/text-3d-video",
       linkName: "Text 3D Video",
     },
     {
-      id: "32",
+      id: "31",
       link: "https://dluongta.github.io/runcodeonline.html",
       linkName: "Run Code Online",
     }
