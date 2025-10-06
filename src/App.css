@@ -1615,7 +1615,7 @@ footer .socialIcon {
 }
 .legal > p{
   line-height: 1.6!important; /* khoảng cách giữa các dòng đều nhau */
-  margin-left: 90px;
+  margin-left: 125px!important;
 }
 
 @media (max-width: 768px) {
@@ -1628,7 +1628,7 @@ footer .socialIcon {
     margin-right: 20px!important;
   }
   footer .legal > p {
-    margin-left: 0px!important;
+    margin-left: 10px!important;
   }
   .home {
     padding-top: 0px!important;
