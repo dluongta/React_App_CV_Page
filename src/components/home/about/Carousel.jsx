@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import heroImage1 from '../../../assets/luen.jpg';
 import heroImage2 from '../../../assets/luen_logo.png';
 import heroImage3 from '../../../assets/hexagon-main.png';
-import './Carousel.css'; // Tạo file CSS này
+import './Carousel.css';
 
 const Carousel = () => {
     const images = [heroImage1, heroImage2, heroImage3];
