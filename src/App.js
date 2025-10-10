@@ -11,7 +11,7 @@ import { Pages } from './components/pages/Pages';
 import { Portfolio } from './components/pages/Portfolio';
 import { Blog } from './components/pages/Blog';
 import { Contact } from './components/pages/Contact';
-import ScrollToTopButton from './components/common/ScrollToTopButton'; // 🆕
+import ScrollToTopButton from './components/button/ScrollToTopButton';
 
 function App() {
   return (
