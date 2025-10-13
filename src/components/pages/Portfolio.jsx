@@ -158,6 +158,11 @@ export const Portfolio = () => {
       id: "31",
       link: "https://dluongta.github.io/runcodeonline.html",
       linkName: "Run Code Online",
+    },
+    {
+      id: "32",
+      link: "https://deeptankio.onrender.com/",
+      linkName: "DeepTankIO",
     }
   ];
   return (

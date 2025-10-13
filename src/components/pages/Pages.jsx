@@ -133,6 +133,11 @@ export const Pages = () => {
       id: "26",
       link: "https://dluongta.github.io/runcodeonline.html",
       linkName: "Run Code Online",
+    },
+    {
+      id: "27",
+      link: "https://deeptankio.onrender.com/",
+      linkName: "DeepTankIO",
     }
   ]
   return (
