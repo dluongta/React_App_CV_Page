@@ -43,7 +43,7 @@ const CustomVideoPlayer = () => {
 
     const onLoadedMetadata = () => {
       setDuration(video.duration);
-      setIsPlaying(!video.paused); 
+      setIsPlaying(!video.paused);
       const track = video.textTracks[0];
       if (track) {
         track.mode = 'hidden';
@@ -203,7 +203,7 @@ const CustomVideoPlayer = () => {
           muted={isMuted}
           src={bgVideo}
           loop
-          onClick={togglePlay} 
+          onClick={togglePlay}
         >
           <track src={caption} kind="subtitles" srcLang="en" label="English" default />
           Your browser does not support the video tag.
@@ -280,9 +280,8 @@ const CustomVideoPlayer = () => {
                     {[0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
                       <div
                         key={speed}
-                        className={`settings-item playback-speed ${
-                          playbackRate === speed ? 'active' : ''
-                        }`}
+                        className={`settings-item playback-speed ${playbackRate === speed ? 'active' : ''
+                          }`}
                         onClick={() => changePlaybackRate(speed)}
                       >
                         {speed === 1 ? 'Normal' : `${speed}x`}

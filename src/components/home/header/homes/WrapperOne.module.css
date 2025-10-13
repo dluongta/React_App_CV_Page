@@ -1,5 +1,6 @@
 .wrapperOne {
-    background: linear-gradient(to right, #7b2ff7, #f107a3); /* hoặc giữ nguyên nền bạn có */
+    background: linear-gradient(to right, #7b2ff7, #f107a3);
+    /* hoặc giữ nguyên nền bạn có */
     padding: 4rem 2rem;
     overflow: hidden;
 }

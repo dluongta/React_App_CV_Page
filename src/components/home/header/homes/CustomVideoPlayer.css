@@ -121,7 +121,7 @@
 
     .control-btn:focus {
         outline: none;
-        background-color:rgba(0, 0, 0, 0.4);
+        background-color: rgba(0, 0, 0, 0.4);
     }
 
     .volume-container {

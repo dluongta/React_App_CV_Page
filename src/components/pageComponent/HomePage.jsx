@@ -8,11 +8,10 @@ import { Service } from '../home/services/Service';
 import { Wrapper } from '../home/Wrapper';
 import { City } from '../home/header/homes/City';
 import { Link } from 'react-router-dom';
-import hexagon from '../../assets/hexagon.png'; // Đảm bảo đường dẫn ảnh đúng
+import hexagon from '../../assets/hexagon.png';
 
-// Import the Particles component from react-tsparticles
 import Particles from 'react-tsparticles';
-import { loadSlim } from 'tsparticles-slim'; // Dùng phiên bản slim để tối ưu hiệu suất
+import { loadSlim } from 'tsparticles-slim'; 
 
 export const HomePage = () => {
   useEffect(() => {
@@ -28,93 +27,90 @@ export const HomePage = () => {
     };
 
     window.addEventListener('scroll', handleScroll);
-    handleScroll(); // Gọi hàm này khi trang tải
+    handleScroll(); 
 
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
-  // Cấu hình cho particles với ảnh hexagon nhỏ, rơi nhanh và thưa
+
   const particlesOptions = {
     fullScreen: {
-      enable: true, // Bật chế độ toàn màn hình cho particles
-      zIndex: 1000,   // Đảm bảo particles nằm dưới các phần tử khác
+      enable: true, 
+      zIndex: 1000,  
     },
     interactivity: {
       events: {
         onClick: {
-          enable: true, // Bật sự kiện click
-          mode: "push", // Thêm particles khi click
+          enable: true, 
+          mode: "push", 
         },
         onHover: {
-          enable: true, // Bật sự kiện hover
-          mode: "repulse", // Làm cho particles di chuyển ra khỏi con trỏ
+          enable: true, 
+          mode: "repulse", 
         },
       },
       modes: {
         push: {
-          quantity: 10, // Số lượng particles khi click
+          quantity: 10, 
         },
         repulse: {
-          distance: 100, // Khoảng cách đẩy particles khi hover
+          distance: 100, 
         },
       },
     },
     particles: {
       number: {
-        value: 50, // Giảm số lượng particles để làm chúng thưa hơn
+        value: 50, 
       },
       size: {
-        value: 12, // Giảm kích thước của các particles (ảnh nhỏ lại)
+        value: 12, 
       },
       shape: {
         type: 'image',
         image: [
           {
-            src: hexagon, // Ảnh hexagon cho particles
-            width: 20,    // Chiều rộng của ảnh hexagon
-            height: 20,   // Chiều cao của ảnh hexagon
+            src: hexagon, 
+            width: 20,    
+            height: 20,  
           },
         ],
       },
       move: {
         enable: true,
-        speed: 8, // Tăng tốc độ rơi của particles (rơi nhanh hơn)
-        direction: 'bottom', // Hướng rơi xuống dưới
-        random: true, // Cho phép di chuyển ngẫu nhiên trong màn hình
-        straight: false, // Di chuyển theo hướng ngẫu nhiên
+        speed: 8, 
+        direction: 'bottom',
+        random: true, 
+        straight: false, 
       },
       opacity: {
-        value: 0.8, // Độ mờ của các particles
+        value: 0.8, 
       },
     },
   };
 
-  // Khởi tạo particles
   const particlesInit = (engine) => {
-    loadSlim(engine); // Sử dụng phiên bản slim của tsparticles để tối ưu hiệu suất
-    // loadFull(engine); // Có thể dùng phiên bản đầy đủ nếu cần nhiều tính năng hơn
+    loadSlim(engine); 
   };
 
   return (
     <>
-      {/* Particles toàn màn hình với ảnh hexagon nhỏ */}
+
       <Particles
         id="tsparticles"
         init={particlesInit}
         options={particlesOptions}
         style={{
-          position: 'fixed', // Vị trí cố định để phủ toàn bộ màn hình
+          position: 'fixed', 
           top: 0,
           left: 0,
           width: '100%',
           height: '100%',
-          zIndex: 1000, // Đảm bảo particles nằm dưới các phần tử khác
+          zIndex: 1000, 
         }}
       />
 
-      {/* Nội dung chính */}
       <div id="mySidenav" className="sidenav">
         <Link to='/pages' id="pages"> Pages </Link>
         <Link to='/blog' id="blog"> Blog </Link>
@@ -122,7 +118,6 @@ export const HomePage = () => {
         <Link to='/contact' id="contact"> Contact </Link>
       </div>
 
-      {/* Các phần tử khác */}
       <Home className="reveal" />
       <Branding className="reveal" />
       <About className="reveal" />

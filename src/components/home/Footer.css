@@ -1,6 +1,3 @@
-/* ================================
-   FOOTER - LUMIND
-================================ */
 footer {
   position: relative;
   width: 100%;
@@ -11,7 +8,7 @@ footer {
   padding: 0;
 }
 
-/* SVG Waves */
+
 footer svg {
   display: block;
   width: 100%;
@@ -20,7 +17,7 @@ footer svg {
 
 .wave {
   animation: wave 3s linear infinite;
-  fill: #4478e3; /* ✅ Trùng màu footer */
+  fill: #4478e3; 
 }
 
 #wave2 {
@@ -34,15 +31,14 @@ footer svg {
   opacity: 0.3;
 }
 
-/* Giọt nước */
 .drop {
   fill: transparent;
   stroke: #6695f3;
   stroke-width:0.5;
-  opacity: 0.8;               /* Mờ nhẹ */
+  opacity: 0.8;               
   animation: drop 5s ease infinite;
   transform: translateY(80%);
-  filter: drop-shadow(0 0 2px rgba(90,141,253,0.6)); /* 💡 Hiệu ứng phát sáng */
+  filter: drop-shadow(0 0 2px rgba(90,141,253,0.6)); 
 }
 
 .drop1 { transform-origin: 20px 3px; }
@@ -134,7 +130,7 @@ footer {
   overflow: hidden;
 }
 
-/* Xóa khoảng trắng giữa grid1 và legal */
+
 footer .container {
   margin: 0 auto;
   padding: 0;
@@ -142,13 +138,13 @@ footer .container {
 
 footer .grid1 {
   margin: 0;
-  padding: 40px 0; /* nếu bạn cần khoảng trên dưới */
+  padding: 40px 0; 
 }
 
 footer .legal {
-  margin-top: 0; /* xóa khoảng trắng dư */
-  padding-top: 10px; /* chỉ chừa một chút nếu cần */
-  border-top: 1px solid rgba(255, 255, 255, 0.2); /* tạo ngăn nhẹ giữa 2 phần */
+  margin-top: 0; 
+  padding-top: 10px; 
+  border-top: 1px solid rgba(255, 255, 255, 0.2); 
   text-align: center;
 }
 

@@ -12,7 +12,6 @@ export const Footer = () => {
 
   return (
     <footer>
-      {/* Hiệu ứng sóng */}
       <svg viewBox="0 -5 120 28" preserveAspectRatio="none">
         <defs>
           <filter id="goo">
@@ -31,16 +30,13 @@ export const Footer = () => {
               210,15 210,10 240,10 v 28 h -240 z" />
         </defs>
 
-        {/* Ba lớp sóng cùng màu với nền footer */}
         <use id="wave3" className="wave" xlinkHref="#wave" x="0" y="-2" />
         <use id="wave2" className="wave" xlinkHref="#wave" x="0" y="0" />
         <g className="gooeff">
-        {/* Bong bóng bên trái */}
         <circle className="drop drop1" cx="20" cy="2" r="1.8" />
         <circle className="drop drop2" cx="25" cy="2.5" r="1.5" />
         <circle className="drop drop3" cx="16" cy="2.8" r="1.2" />
 
-        {/* Bong bóng bên phải thêm mới */}
         <circle className="drop drop4" cx="95" cy="2.2" r="1.5" />
         <circle className="drop drop5" cx="105" cy="3" r="1.8" />
         <circle className="drop drop6" cx="110" cy="2.5" r="1.2" />
@@ -50,7 +46,6 @@ export const Footer = () => {
 
       </svg>
 
-      {/* Nội dung chính */}
       <div className="container grid1">
         <div className="box centerBox">
           <img width="95" height="60" src={logo_brand} alt="logo" />

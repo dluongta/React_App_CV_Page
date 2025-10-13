@@ -86,29 +86,29 @@ export const Home = ({ className }) => {
           </div>
           <div className="right topMargin" style={{ marginTop: '-22px' }}>
             <div className="direction">
-<div className="headline">
+              <div className="headline">
 
-              <h1 className="gradientTextStyle">
-              I AM A
-              </h1>
-              <h1>
-                <div className="carousel_carousel_container">
-                  <div
-                    className="carousel_carousel"
-                    style={{
-                      transform: `translateY(-${currentLineIndex * 25 }%)`,
-                      transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none',
+                <h1 className="gradientTextStyle">
+                  I AM A
+                </h1>
+                <h1>
+                  <div className="carousel_carousel_container">
+                    <div
+                      className="carousel_carousel"
+                      style={{
+                        transform: `translateY(-${currentLineIndex * 25}%)`,
+                        transition: isTransitioning ? 'transform 0.5s ease-in-out' : 'none',
 
-                    }}
-                  >
-                    {toRotate.map((text, index) => (
-                      <div key={index} className="carousel_carousel_item" style={gradientTransitonTextStyle}>
-                        {text}
-                      </div>
-                    ))}
+                      }}
+                    >
+                      {toRotate.map((text, index) => (
+                        <div key={index} className="carousel_carousel_item" style={gradientTransitonTextStyle}>
+                          {text}
+                        </div>
+                      ))}
+                    </div>
                   </div>
-                </div>
-              </h1>
+                </h1>
               </div>
             </div>
 

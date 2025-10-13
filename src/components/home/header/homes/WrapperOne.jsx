@@ -1,5 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
-import styles from "./WrapperOne.module.css"; 
+import styles from "./WrapperOne.module.css";
 
 const random = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
 
@@ -28,7 +28,7 @@ const DigitColumn = ({ finalDigit, delay, stopOrder }) => {
                 clearInterval(intervalRef.current);
                 setPosition(finalDigit);
             }
-        }, 80 + stopOrder * 10); 
+        }, 80 + stopOrder * 10);
 
         return () => clearInterval(intervalRef.current);
     }, [finalDigit, stopOrder]);
