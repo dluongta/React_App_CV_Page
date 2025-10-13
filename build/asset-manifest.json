@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.9d84c788.css",
-    "main.js": "/static/js/main.aef2739f.js",
-    "static/media/main.png": "/static/media/main.ce1a2d60016cb21729a7.png",
+    "main.css": "/static/css/main.9bed02a9.css",
+    "main.js": "/static/js/main.35eff1f1.js",
+    "static/media/main.png": "/static/media/main.192af24b6c9f0a24c18a.png",
     "static/media/IntroBackground.mp4": "/static/media/IntroBackground.0b25c36ec48c2eb7bf77.mp4",
     "static/media/dluongta-animation.mp4": "/static/media/dluongta-animation.9279a867b31c081d65b6.mp4",
     "static/media/lumind_logo.mp4": "/static/media/lumind_logo.3541df5a34770549a46b.mp4",
@@ -17,11 +17,11 @@
     "index.html": "/index.html",
     "static/media/caption.vtt": "/static/media/caption.3e852e34cf64d66091d2.vtt",
     "static/media/caption_logo.vtt": "/static/media/caption_logo.c938afd7754ea3ffe6d7.vtt",
-    "main.9d84c788.css.map": "/static/css/main.9d84c788.css.map",
-    "main.aef2739f.js.map": "/static/js/main.aef2739f.js.map"
+    "main.9bed02a9.css.map": "/static/css/main.9bed02a9.css.map",
+    "main.35eff1f1.js.map": "/static/js/main.35eff1f1.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d84c788.css",
-    "static/js/main.aef2739f.js"
+    "static/css/main.9bed02a9.css",
+    "static/js/main.35eff1f1.js"
   ]
 }
