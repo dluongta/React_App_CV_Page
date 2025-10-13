@@ -2,6 +2,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import caption from '../../../../assets/caption.vtt';
 import bgVideo from '../../../../assets/dluongta-animation.mp4';
 import './CustomVideoPlayer.css';
+import FullscreenIcon from '@mui/icons-material/Fullscreen';
+import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
 
 const formatTime = (seconds) => {
   if (isNaN(seconds)) return '00:00:00';
@@ -295,7 +297,7 @@ const CustomVideoPlayer = () => {
                 title="Fullscreen"
                 onClick={toggleFullscreen}
               >
-                {isFullscreen ? 'X' : '⛶'}
+                {isFullscreen ? <FullscreenExitIcon /> : <FullscreenIcon />}
               </button>
             </div>
           </div>
