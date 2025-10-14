@@ -138,6 +138,11 @@ export const Pages = () => {
       id: "27",
       link: "https://deeptankio.onrender.com/",
       linkName: "DeepTankIO",
+    },
+    {
+      id: "28",
+      link: "https://github.com/luen2003/VNKey/releases/download/v1.0.0/VNKey.exe",
+      linkName: "VNKey Application",
     }
   ]
   return (

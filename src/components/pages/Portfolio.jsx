@@ -163,6 +163,11 @@ export const Portfolio = () => {
       id: "32",
       link: "https://deeptankio.onrender.com/",
       linkName: "DeepTankIO",
+    },
+    {
+      id: "33",
+      link: "https://github.com/luen2003/VNKey/releases/download/v1.0.0/VNKey.exe",
+      linkName: "VNKey Application",
     }
   ];
   return (

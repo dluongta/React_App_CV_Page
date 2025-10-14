@@ -30,8 +30,8 @@ export const Blog = () => {
     },
     {
       id: "06",
-      link: "https://github.com/luen2003/BookingRoom",
-      linkName: "Booking Laravel App",
+      link: "https://github.com/luen2003/VNKey/releases/download/v1.0.0/VNKey.exe",
+      linkName: "VNKey Application",
     }
   ]
   return (
