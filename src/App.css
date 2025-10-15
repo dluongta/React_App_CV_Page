@@ -2013,3 +2013,7 @@ footer {
 footer .box ul li {
   padding-left: 2px!important;
 }
+
+.home p {
+  margin-right: 10px!important;
+}
