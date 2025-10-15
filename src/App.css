@@ -2006,3 +2006,6 @@ footer {
 .drop5 { animation-delay: 2s; transform-origin: 105px 3px; }
 .drop6 { animation-delay: 3s; transform-origin: 110px 3px; }
 
+.home .blue {
+  color: #1a9cff;
+}
