@@ -2009,3 +2009,7 @@ footer {
 .home .blue {
   color: #1a9cff;
 }
+
+footer .box ul li {
+  padding-left: 0px!important;
+}
