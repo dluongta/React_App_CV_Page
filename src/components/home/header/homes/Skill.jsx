@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 
 export const Skill = ({ className }) => {
-    // 👇 Custom hook dùng để phát hiện khi phần tử vào vùng nhìn thấy (in-view)
     const useInView = () => {
         const ref = useRef(null);
         const [inView, setInView] = useState(false);
@@ -31,6 +30,8 @@ export const Skill = ({ className }) => {
             width: '0%',
             opacity: 0,
         });
+        const [count, setCount] = useState(0);
+        const intervalRef = useRef(null);
 
         useEffect(() => {
             if (inView) {
@@ -38,6 +39,19 @@ export const Skill = ({ className }) => {
                     width: `${done}%`,
                     opacity: 1,
                 });
+
+                if (count < done && !intervalRef.current) {
+                    intervalRef.current = setInterval(() => {
+                        setCount((prev) => {
+                            if (prev >= done) {
+                                clearInterval(intervalRef.current);
+                                intervalRef.current = null;
+                                return done;
+                            }
+                            return prev + 1;
+                        });
+                    }, 10); 
+                }
             }
         }, [inView, done]);
 
@@ -45,12 +59,11 @@ export const Skill = ({ className }) => {
             <div className="progress" ref={ref}>
                 <div className="progress-done" style={style}>
                     <span>{title}</span>
-                    <span>{done}%</span>
+                    <span>{count}%</span>
                 </div>
             </div>
         );
     };
-
 
     const data = [
         {
@@ -70,10 +83,10 @@ export const Skill = ({ className }) => {
 
                 <div className="content flex">
                     <div className="left topMargin">
-                        <Progress done="80" title="HTML" />
-                        <Progress done="90" title="CSS" />
-                        <Progress done="90" title="JAVASCRIPT" />
-                        <Progress done="80" title="REACT JS" />
+                        <Progress done={80} title="HTML" />
+                        <Progress done={90} title="CSS" />
+                        <Progress done={90} title="JAVASCRIPT" />
+                        <Progress done={80} title="REACT JS" />
                     </div>
 
                     <div className="right mtop">
