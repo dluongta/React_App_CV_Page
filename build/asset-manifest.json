@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/static/css/main.a08c9b46.css",
-    "main.js": "/static/js/main.2a926de4.js",
-    "static/media/main.png": "/static/media/main.6ca58106978db043af39.png",
+    "main.js": "/static/js/main.1f422ea3.js",
+    "static/media/main.png": "/static/media/main.2c951946643e24a16725.png",
     "static/media/IntroBackground.mp4": "/static/media/IntroBackground.0b25c36ec48c2eb7bf77.mp4",
     "static/media/dluongta-animation.mp4": "/static/media/dluongta-animation.9279a867b31c081d65b6.mp4",
     "static/media/lumind_logo.mp4": "/static/media/lumind_logo.3541df5a34770549a46b.mp4",
@@ -18,10 +18,10 @@
     "static/media/caption.vtt": "/static/media/caption.3e852e34cf64d66091d2.vtt",
     "static/media/caption_logo.vtt": "/static/media/caption_logo.c938afd7754ea3ffe6d7.vtt",
     "main.a08c9b46.css.map": "/static/css/main.a08c9b46.css.map",
-    "main.2a926de4.js.map": "/static/js/main.2a926de4.js.map"
+    "main.1f422ea3.js.map": "/static/js/main.1f422ea3.js.map"
   },
   "entrypoints": [
     "static/css/main.a08c9b46.css",
-    "static/js/main.2a926de4.js"
+    "static/js/main.1f422ea3.js"
   ]
 }
