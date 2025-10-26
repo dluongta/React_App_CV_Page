@@ -31,118 +31,108 @@ export const Pages = () => {
     },
     {
       id: "06",
-      link: "https://react-app-blog-page.vercel.app/",
-      linkName: "Blog App Website",
-    },
-    {
-      id: "07",
       link: "https://github.com/luen2003/python-code",
       linkName: "Python Code",
     },
     {
-      id: "08",
+      id: "07",
       link: "https://vietnam-map-platform.vercel.app/",
       linkName: "Vietnam Map Platform",
     },
     {
-      id: "09",
+      id: "08",
       link: "https://qr-scanner-live.netlify.app/",
       linkName: "QR Code Scanner",
     },
     {
-      id: "10",
+      id: "09",
       link: "https://react-app-videocall.onrender.com/",
       linkName: "Voice Or Video Call Using WebRTC",
     },
     {
-      id: "11",
+      id: "10",
       link: "https://react-qr-code-generator-live.vercel.app/",
       linkName: "React QRCode Generator",
     },
     {
-      id: "12",
+      id: "11",
       link: "https://react-app-google-login-page.vercel.app/",
       linkName: "React App Google Login Page",
     },
     {
-      id: "13",
+      id: "12",
       link: "http://pdf-excel-generator.atwebpages.com/",
       linkName: "PDF And Excel Generator",
     },
     {
-      id: "14",
+      id: "13",
       link: "https://xlsx-reader.w3spaces.com/",
       linkName: "XLSX Reader",
     },
     {
-      id: "15",
+      id: "14",
       link: "https://tiktok-short-video.vercel.app/",
       linkName: "TikTok Short Video",
     },
     {
-      id: "16",
+      id: "15",
       link: "https://react-livestream-app.onrender.com/",
       linkName: "Livestream App",
     },
     {
-      id: "17",
+      id: "16",
       link: "https://bank-qrcode.w3spaces.com/",
       linkName: "Bank QRCode",
     },
     {
-      id: "18",
+      id: "17",
       link: "https://github.com/luen2003/Face-App",
       linkName: "Face Recognition Analysis",
     },
     {
-      id: "19",
+      id: "18",
       link: "https://react-app-text-audio.onrender.com/",
       linkName: "Read Text + Translate + Record + Download MP3",
     },
     {
-      id: "20",
+      id: "19",
       link: "https://github.com/luen2003/Styled_Python",
       linkName: "Styled Effect Python App",
     },
     {
-      id: "21",
+      id: "20",
       link: "https://quizzes-app.w3spaces.com/",
       linkName: "Quizzes App",
     },
     {
-      id: "22",
+      id: "21",
       link: "https://digital_calendar.playcode.io/",
       linkName: "Digital Calendar",
     },
     {
-      id: "23",
+      id: "22",
       link: "https://custom_video.playcode.io/",
       linkName: "Custom Video",
     },
     {
-      id: "24",
+      id: "23",
       link: "https://github.com/luen2003/ASPNET_API",
       linkName: "ASPNET API",
     },
     {
-      id: "25",
+      id: "24",
       link: "https://github.com/luen2003/text-3d-video",
       linkName: "Text 3D Video",
     },
     {
-      id: "26",
+      id: "25",
       link: "https://dluongta.github.io/runcodeonline.html",
       linkName: "Run Code Online",
     },
     {
-      id: "27",
+      id: "26",
       link: "https://deeptankio.onrender.com/",
       linkName: "DeepTankIO",
-    },
-    {
-      id: "28",
-      link: "https://github.com/luen2003/VNKey/releases/download/v1.0.0/VNKey.exe",
-      linkName: "VNKey Application",
     }
   ]
   return (
