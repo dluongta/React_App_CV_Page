@@ -2,6 +2,7 @@ import React, { useState, useEffect, useRef } from 'react';
 import headerImg from '../../../../assets/main.png';
 import introBackground from '../../../../assets/IntroBackground.mp4';
 import { Link } from 'react-router-dom';
+import './Home.css';
 
 export const Home = ({ className }) => {
   const originalToRotate = ["Proficient Programmer", "Software Developer", "Hardware Engineer"];
@@ -10,25 +11,24 @@ export const Home = ({ className }) => {
   const [isTransitioning, setIsTransitioning] = useState(true);
 
   useEffect(() => {
-    const interval = setInterval(() => {
-      if (currentLineIndex === toRotate.length - 1) {
-        // Tắt hiệu ứng chuyển động và reset về phần tử đầu tiên
-        setIsTransitioning(false); // Tắt hiệu ứng
-        setCurrentLineIndex(0); // Reset về phần tử đầu tiên
+  const interval = setInterval(() => {
+    if (currentLineIndex === toRotate.length - 1) {
+      setIsTransitioning(false);
+      setCurrentLineIndex(0);
 
-        // Bật lại hiệu ứng sau 1 chu kỳ render (bằng cách dùng setTimeout với thời gian ngắn)
-        setTimeout(() => {
-          setIsTransitioning(true);
-        }, 50);
-      } else {
-        // Chuyển sang phần tử tiếp theo với hiệu ứng bình thường
+      setTimeout(() => {
         setIsTransitioning(true);
-        setCurrentLineIndex((prevIndex) => prevIndex + 1);
-      }
-    }, 3000);
+        setCurrentLineIndex(1);
+      }, 20);
+    } else {
+      setIsTransitioning(true);
+      setCurrentLineIndex((prevIndex) => prevIndex + 1);
+    }
+  }, 3000);
 
-    return () => clearInterval(interval);
-  }, [currentLineIndex, toRotate]);
+  return () => clearInterval(interval);
+}, [currentLineIndex, toRotate]);
+
 
 
 

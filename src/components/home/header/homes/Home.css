@@ -1,0 +1,45 @@
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+
+/* 
+.gradientTextStyle {
+  background: linear-gradient(90deg, #FF8800, #A033FF, #0088FF, #FF8800);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s ease-in-out infinite alternate;
+  font-weight: 800;
+  display: inline-block;
+}
+ */
+.carousel_carousel_item {
+  background: linear-gradient(90deg, #FF8800, #A033FF, #0088FF, #FF8800);
+  background-size: 300% 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 4s ease-in-out infinite alternate;
+  font-weight: 800;
+}
+
+.carousel_carousel_container {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.carousel_carousel {
+  display: flex;
+  flex-direction: column;
+}
+
+.headline h1 {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+}

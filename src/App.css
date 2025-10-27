@@ -1015,25 +1015,6 @@ iframe {
   animation: fall 10s linear infinite, drift 15s ease-in-out infinite;
 }
 
-@keyframes fall {
-  to {
-    transform: translateY(100vh);
-  }
-}
-
-@keyframes drift {
-  0% {
-    transform: translateX(0);
-  }
-
-  50% {
-    transform: translateX(20px);
-  }
-
-  100% {
-    transform: translateX(-20px);
-  }
-}
 
 
 .card h1 {
