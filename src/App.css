@@ -1998,3 +1998,8 @@ footer .box ul li {
 .home p {
   margin-right: 10px!important;
 }
+
+.home img {
+   width: 50vw!important;
+   height: 100vh!important;
+}
