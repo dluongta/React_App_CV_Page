@@ -192,8 +192,6 @@ header.active {
 }
 
 .home .img {
-  height: 10em;
-  width: 100%;
   position: relative;
   margin-top: 5em;
 }
@@ -202,11 +200,13 @@ header.active {
   position: absolute;
   top: 0;
   left: 0;
-  height: 28em;
-  width: 80%;
+  width: 40vw;
+  height: 100vh;
   object-fit: contain;
   transform: scale(1.2);
+  margin-left: 48px;
 }
+
 
 .home h1 {
   font-size: 60px;
@@ -608,32 +608,24 @@ footer .icon i {
 
 .legal span {
   font-weight: normal;
-  /* Optional: Adjust font weight if needed */
 }
 
-/* Styling for the heartbeat effect */
 .legal .heartbeat {
   animation: heartbeat 1.5s ease-in-out infinite;
-  /* Apply heartbeat animation */
   display: inline-block;
-  /* Ensure the element stays inline with the text */
 }
 
-/* Keyframes for the heartbeat effect using scale */
 @keyframes heartbeat {
   0% {
     transform: scale(1);
-    /* Initial size */
   }
 
   50% {
     transform: scale(1.3);
-    /* Slightly larger scale at midpoint */
   }
 
   100% {
     transform: scale(1);
-    /* Return to original size */
   }
 }
 
@@ -886,14 +878,11 @@ iframe {
 
 .contact {
   display: flex;
-  /* Aligns children in a row */
 }
 
 .pdf-container {
   flex-grow: 1;
-  /* This makes the pdf-container fill the remaining space */
   padding: 10px;
-  /* Optional padding */
 }
 
 .pdf {
@@ -901,20 +890,16 @@ iframe {
   margin-left: auto;
   margin-right: auto;
   border: none;
-  /* Remove default border for a cleaner look */
   margin-bottom: 20px;
-  /* Space between iframes */
   width: 80%;
 }
 
-/* Initial state for sections */
 .reveal {
   opacity: 0;
   transform: translateY(50px);
   transition: opacity 0.6s ease-out, transform 0.6s ease-out;
 }
 
-/* Visible state */
 .reveal.visible {
   opacity: 1;
   transform: translateY(0);
@@ -924,83 +909,60 @@ iframe {
   margin-top: -15em;
 }
 
-/* Media queries for mobile adjustments */
 @media screen and (max-width: 768px) {
   .home {
     padding: 0;
-    /* Remove any padding */
     margin: 0;
-    /* Remove any margin */
     height: auto;
-    /* Allow dynamic height */
     position: relative;
-    /* Ensure stacking context */
   }
 
   .home img {
     width: 100%;
-    /* Make images responsive */
     height: auto;
-    /* Maintain aspect ratio */
     object-fit: cover;
-    /* Cover the area without distortion */
     position: relative;
-    /* Position relative for stacking */
+    margin: 0;
   }
 
   .branding {
     position: relative;
-    /* Ensure it stacks correctly */
     z-index: 1;
-    /* Bring it above other content if necessary */
   }
 
   .wrapperOne {
     padding: 20px;
-    /* Padding tùy chọn */
     text-align: center;
-    /* Căn giữa nội dung */
   }
 
   .grid1 {
     display: flex;
-    /* Sử dụng flexbox */
     flex-direction: column;
-    /* Đặt hướng flex là chiều dọc */
     align-items: center;
-    /* Căn giữa các phần tử */
   }
 
   .grid1 .box {
     margin-bottom: 20px;
-    /* Khoảng cách giữa các box */
     width: 100%;
-    /* Chiều rộng 100% để các box chiếm toàn bộ không gian */
   }
 
   .grid1 h1 {
     font-size: 24px;
-    /* Giảm kích thước chữ nếu cần */
   }
 
   .grid1 p {
     font-size: 14px;
-    /* Giảm kích thước chữ cho phần mô tả nếu cần */
   }
 
 
   .grid1 span {
     font-size: 14px;
-    /* Giảm kích thước chữ cho phần mô tả nếu cần */
   }
 
-  /* Ensure branding text does not overlap */
   .branding h1,
   .branding p {
     z-index: 2;
-    /* Ensure branding text is on top */
     position: relative;
-    /* Establish a new stacking context */
   }
 }
 
@@ -1019,24 +981,15 @@ iframe {
 
 .card h1 {
   display: -webkit-box;
-  /* Thiết lập để hiển thị dưới dạng hộp */
   -webkit-box-orient: vertical;
-  /* Đặt chiều hướng của hộp là dọc */
   -webkit-line-clamp: 2;
-  /* Giới hạn số dòng hiển thị là 2 */
   overflow: hidden;
-  /* Ẩn phần nội dung thừa */
   text-overflow: ellipsis;
-  /* Thêm dấu ba chấm (...) khi bị cắt */
   line-height: 1.5;
-  /* Tùy chỉnh khoảng cách giữa các dòng (nếu cần) */
   max-height: 3em;
-  /* Đảm bảo chiều cao tối đa của 2 dòng */
   line-clamp: 2;
-  /* Giới hạn số dòng hiển thị là 2 */
 }
 
-/* Mặc định: ảnh sẽ nằm bên phải */
 .home .math-image {
   width: 250px;
   margin-left: -145px;
@@ -1047,7 +1000,6 @@ iframe {
   margin-top: 200px;
 }
 
-/* Điều chỉnh ảnh cho các thiết bị di động */
 @media (max-width: 768px) {
   .home .math-image {
     width: 200px;
@@ -1065,7 +1017,6 @@ iframe {
   }
 }
 
-/* Card styles */
 .card {
   position: relative;
   background-color: rgb(255, 248, 240);
@@ -1077,10 +1028,8 @@ iframe {
   border-style: none;
   cursor: pointer;
   overflow: hidden;
-  /* Ensure the circle effect doesn't overflow */
   transition: transform 0.3s ease;
   z-index: 1;
-  /* Ensure card is above other elements */
 }
 
 .card h1 {
@@ -1095,14 +1044,12 @@ iframe {
   font-size: 20px;
   color: darkblue!important;
   z-index: 2;
-  /* Ensure the link is above the circle effect */
 }
 
 .card .link:hover {
   color: purple!important;
 }
 
-/* Circle effect */
 .card::after {
   content: "";
   position: absolute;
@@ -1111,17 +1058,14 @@ iframe {
   width: 60px;
   height: 60px;
   background-color: rgba(0, 0, 255, 0.5);
-  /* Blue color */
   border-radius: 50%;
   transition: width 0.5s ease, height 0.5s ease;
   z-index: 0;
-  /* Circle effect is below the card and link */
 }
 
 .card:hover::after,
 .card:active::after {
   width: 2800px;
-  /* Larger circle when hovered or touched */
   height: 2800px;
   bottom: -900px;
   right: -900px;
@@ -1130,20 +1074,17 @@ iframe {
 .card:hover,
 .card:active {
   transform: scale(1.05);
-  /* Slight scaling of the card when hovered or touched */
 }
 
 .card-content {
   position: relative;
   z-index: 1;
-  /* This ensures that content stays above the circle */
 }
 
 .swiper-slide {
   height: 700px;
 }
 
-/* Giảm chiều cao video khi ở màn hình nhỏ để tránh bị che khuất */
 @media screen and (max-width: 768px) {
   .swiper-slide {
     height: 250px !important;
@@ -1168,7 +1109,6 @@ iframe {
 .carousel_carousel_container {
   overflow: hidden;
   height: 128px;
-  /* Điều chỉnh chiều cao phù hợp */
   position: relative;
   color: #205aef;
 }
@@ -1189,25 +1129,17 @@ iframe {
 
 .marquee-container {
   width: 100%;
-  /* Chiếm toàn bộ chiều rộng */
   height: 50px;
-  /* Đặt chiều cao cho marquee */
   overflow: hidden;
-  /* Đảm bảo văn bản không tràn ra ngoài */
   position: relative;
-  /* Đảm bảo marquee nằm đúng vị trí */
   z-index: 1000;
 }
 
 marquee {
   color: white;
-  /* Màu chữ */
   font-size: 15px;
-  /* Kích thước chữ */
   background-color: #3498db;
-  /* Màu nền */
   padding: 5px 0;
-  /* Padding xung quanh văn bản */
 }
 
 .direction {
@@ -1230,9 +1162,7 @@ marquee {
   position: relative;
   padding: 20px;
   border: 2px solid transparent;
-  /* Initial border */
   background: #fff;
-  /* Card background color */
   transition: all 0.3s ease;
 }
 
@@ -1244,12 +1174,9 @@ marquee {
   width: 100%;
   height: 100%;
   background: linear-gradient(90deg, #4f46e5, #9333ea, #4f46e5);
-  /* Color gradient for the border */
   background-size: 200% 100%;
   animation: runningBorder 4s linear infinite;
-  /* Animation for running border */
   z-index: -1;
-  /* Ensure it's behind the card content */
 }
 
 
@@ -1265,7 +1192,6 @@ marquee {
   z-index: 1;
 }
 
-/* LED Border Span Elements */
 .btn-led span {
   position: absolute;
   display: block;
@@ -1273,7 +1199,6 @@ marquee {
   pointer-events: none;
 }
 
-/* TOP Border */
 .btn-led span:nth-child(1) {
   top: 0;
   left: -100%;
@@ -1284,7 +1209,6 @@ marquee {
   animation: animate1 1s linear infinite;
 }
 
-/* RIGHT Border */
 .btn-led span:nth-child(2) {
   top: -100%;
   right: 0;
@@ -1296,7 +1220,6 @@ marquee {
   animation-delay: 0.25s;
 }
 
-/* BOTTOM Border */
 .btn-led span:nth-child(3) {
   bottom: 0;
   right: -100%;
@@ -1308,7 +1231,6 @@ marquee {
   animation-delay: 0.5s;
 }
 
-/* LEFT Border */
 .btn-led span:nth-child(4) {
   bottom: -100%;
   left: 0;
@@ -1320,7 +1242,6 @@ marquee {
   animation-delay: 0.75s;
 }
 
-/* LED Border Movement Animations */
 @keyframes animate1 {
   0% {
     left: -100%;
@@ -1375,7 +1296,6 @@ marquee {
   position: relative;
   margin-left: 60px;
   border-left: 4px solid #007bff;
-  /* đường thẳng dọc */
 }
 
 .timeline-item {
@@ -1388,7 +1308,6 @@ marquee {
   position: absolute;
   top: 0;
   left: -2px;
-  /* đặt giữa line */
   width: 20px;
   height: 20px;
   background-color: #007bff;
@@ -1396,7 +1315,6 @@ marquee {
   border: 3px solid white;
   box-shadow: 0 0 0 2px #007bff;
   transform: translateX(-50%);
-  /* căn giữa dot với line */
   z-index: 1;
 }
 
@@ -1558,7 +1476,6 @@ footer .box{
     margin-left: 10px;
 }
 
-/* Legal section */
 footer .legal {
     text-align: center;
     margin-top: 40px;
@@ -1581,21 +1498,21 @@ footer .socialIcon {
 
 .legal {
   display: flex;
-  flex-wrap: wrap; /* Cho phép xuống dòng khi không đủ chỗ */
+  flex-wrap: wrap; 
   justify-content: space-between;
   align-items: center;
-  gap: 20px; /* Khoảng cách giữa 2 phần tử */
-  padding: 30px 0 10px; /* top: 30px, bottom: 10px để cách đều phần trên */
-  line-height: 1.6; /* khoảng cách giữa các dòng đều nhau */
+  gap: 20px; 
+  padding: 30px 0 10px;
+  line-height: 1.6; 
   color: #fff;
   font-size: 14px;
-  text-align: center; /* Đảm bảo xuống dòng thì vẫn cân đối */
-  flex-wrap: nowrap; /* Ngăn không cho xuống dòng */
-  overflow-x: auto; /* Cho phép cuộn nếu nội dung quá dài */
+  text-align: center; 
+  flex-wrap: nowrap; 
+  overflow-x: auto; 
   /* white-space: nowrap; */
 }
 .legal > p{
-  line-height: 1.6!important; /* khoảng cách giữa các dòng đều nhau */
+  line-height: 1.6!important; 
   margin-left: 125px!important;
 }
 
@@ -1821,17 +1738,17 @@ section.contact {
 
 footer .grid1 {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 3 cột bằng nhau */
-  column-gap: 20px; /* khoảng cách giữa các cột */
-  max-width: 100vw; /* giới hạn chiều rộng tổng */
-  margin: 0 auto; /* căn giữa toàn bộ container */
+  grid-template-columns: repeat(4, 1fr); 
+  column-gap: 20px; 
+  max-width: 100vw; 
+  margin: 0 auto; 
 }
 
 footer .socialIcon {
   display: grid;
   grid-template-columns: repeat(3, 1fr); 
   gap: 15px;
-  justify-items: start; /* icon căn trái trong từng ô */
+  justify-items: start; 
   margin-top: 20px;
 }
 
@@ -1844,7 +1761,7 @@ footer .socialIcon i {
   border: 1px solid white;
   font-size: 20px;
   color: white;
-  cursor: pointer; /* con trỏ khi hover */
+  cursor: pointer; 
   transition: background-color 0.3s, color 0.3s;
 }
 
@@ -1864,7 +1781,7 @@ footer .socialIcon i:hover {
 }
 
 footer {
-  color: white; /* Đặt màu chữ mặc định trong footer */
+  color: white; 
 }
 
 footer .box h2,
@@ -1875,20 +1792,18 @@ footer .box a {
   color: white;
 }
 
-/* Thêm style cho icon trong phần "Get in Touch" */
 footer .icon i {
-  color: #00d2ff; /* màu xanh dương cho icon, có thể thay đổi */
+  color: #00d2ff; 
   margin-right: 8px;
 }
 
-/* Đảm bảo link không mất màu trắng */
 footer a {
   color: white;
   text-decoration: none;
 }
 
 footer a:hover {
-  color: #00d2ff; /* Màu khi hover */
+  color: #00d2ff; 
 }
 
 /* Optional: Làm dot màu xanh trong Quick Links */
@@ -1935,25 +1850,22 @@ footer a:hover {
   z-index: 999;
 }
 
-/* Xóa khoảng trắng mặc định và tràn ngang */
 html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
 }
 
-/* Cho footer luôn full màn hình */
 .footer {
-  width: 100vw!important;              /* full chiều ngang màn hình */
-  background-color: #3d83ff; /* hoặc màu bạn đang dùng */
+  width: 100vw!important;              
+  background-color: #3d83ff;
   color: white;
   padding: 40px 0!important;
   box-sizing: border-box;
 }
 
-/* Nếu bạn đang dùng container bên trong */
 .footer .container {
-  max-width: 100vw!important;         /* giữ cho nội dung không dính sát lề */
+  max-width: 100vw!important;        
   margin: 0 auto!important;
   padding: 0 20px!important;
 }
@@ -1969,7 +1881,7 @@ footer {
   grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   width: 100%!important;
-  max-width: 100%!important; /* để không vượt khung */
+  max-width: 100%!important; 
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -1999,7 +1911,3 @@ footer .box ul li {
   margin-right: 10px!important;
 }
 
-.home img {
-   width: 50vw!important;
-   height: 100vh!important;
-}
