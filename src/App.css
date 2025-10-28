@@ -1,31 +1,22 @@
-/* Prevent horizontal overflow */
 html {
   overflow-x: hidden;
 }
 
-/* Container adjustments */
 .container {
   max-width: 100%;
-  /* Allow full width */
   padding: 0;
-  /* Remove padding */
   margin: 0 auto;
-  /* Center the container */
 }
 
 body {
   overflow-x: hidden;
-  /* Hide horizontal overflow */
   font-family: "Times New Roman", Times, serif;
 }
 
-/* Ensure flex items don’t overflow */
 .flex {
   flex-wrap: wrap;
-  /* Allow items to wrap */
 }
 
-/* Media queries for mobile adjustments */
 @media screen and (max-width: 768px) {
   .timeline-section {
     margin-top: 10em;
@@ -33,22 +24,16 @@ body {
 
   .nav-links-sidebar {
     left: 0;
-    /* Align sidebar to the left */
     right: 0;
-    /* Stretch sidebar to the right */
     margin: 0;
-    /* Remove any margin */
   }
 
-  /* Additional adjustments */
   .home,
   .about,
   .services,
   .branding {
     padding: 0;
-    /* Remove any padding */
     margin: 0;
-    /* Remove any margin */
   }
 }
 
@@ -113,21 +98,17 @@ header.active {
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;
-    /* Make containers full width */
     padding: 0;
-    /* Remove padding */
   }
 
   img {
     max-width: 100%;
-    /* Responsive images */
     height: auto;
   }
 
   .flex {
     display: flex;
     flex-wrap: wrap;
-    /* Allow items to wrap */
   }
 
   header .icon {
