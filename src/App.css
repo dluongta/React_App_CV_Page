@@ -1322,6 +1322,10 @@ marquee {
   margin: 30px 0; 
   border: none;
 }
+.custom-iframe-2d {
+  width: 90%!important;
+  margin: 0 auto;
+}
 
 .progress {
     margin: 24px 0;

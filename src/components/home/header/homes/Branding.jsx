@@ -45,7 +45,7 @@ export const Branding = ({ className }) => {
       <iframe className="custom-iframe" src="https://dluongta.github.io/3d-model.html" title="3D Model"></iframe>
       <iframe className="custom-iframe" src="https://dluongta.github.io/fireworks.html" title="Fireworks Lighting"></iframe>
       <iframe className="custom-iframe" src="https://vietnam-map-platform.vercel.app/" title="Vietnam Map Platform"></iframe>
-      <iframe className="custom-iframe" src="https://dluongta.github.io/map/map/html/index.html" title="World Map 2D"></iframe>
+      <iframe className="custom-iframe custom-iframe-2d" src="https://dluongta.github.io/map/map/html/index.html" title="World Map 2D"></iframe>
       <iframe className="custom-iframe" src="https://dluongta.github.io/globe.html" title="3D Globe"></iframe>
       <CustomVideoPlayer />
       <CustomVideoPlayerLogo />
