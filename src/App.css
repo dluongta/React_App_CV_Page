@@ -1376,6 +1376,10 @@ marquee {
   .img {
     margin-bottom: 40px; 
   }
+  .custom-iframe-2d {
+    width: 100%!important;
+    margin: 0 auto;
+  }
 }
 
 .carousel_carousel_container {
