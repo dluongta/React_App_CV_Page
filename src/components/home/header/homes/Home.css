@@ -19,7 +19,7 @@
 }
  */
 .carousel_carousel_item {
-  background: linear-gradient(90deg, #A033FF, #0088FF, #FF5C87, #FF8800);
+  background: linear-gradient(90deg,  #FF8800, #A033FF, #0088FF, #FF5C87);
   background-size: 300% 300%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
