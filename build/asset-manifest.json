@@ -1,9 +1,9 @@
 {
   "files": {
     "main.css": "/static/css/main.96fa18ff.css",
-    "main.js": "/static/js/main.6e53237d.js",
+    "main.js": "/static/js/main.ed523c23.js",
     "static/media/main.png": "/static/media/main.69b222e4667886470d7b.png",
-    "static/media/IntroBackground.mp4": "/static/media/IntroBackground.eb4b118ae9acaeded656.mp4",
+    "static/media/IntroBackground.mp4": "/static/media/IntroBackground.fe59cc4cf576fdc2d167.mp4",
     "static/media/dluongta-animation.mp4": "/static/media/dluongta-animation.9279a867b31c081d65b6.mp4",
     "static/media/lumind_logo.mp4": "/static/media/lumind_logo.3541df5a34770549a46b.mp4",
     "static/media/contact-img.png": "/static/media/contact-img.b99cdb766ab2d8b5cfa5.png",
@@ -18,10 +18,10 @@
     "static/media/caption.vtt": "/static/media/caption.3e852e34cf64d66091d2.vtt",
     "static/media/caption_logo.vtt": "/static/media/caption_logo.c938afd7754ea3ffe6d7.vtt",
     "main.96fa18ff.css.map": "/static/css/main.96fa18ff.css.map",
-    "main.6e53237d.js.map": "/static/js/main.6e53237d.js.map"
+    "main.ed523c23.js.map": "/static/js/main.ed523c23.js.map"
   },
   "entrypoints": [
     "static/css/main.96fa18ff.css",
-    "static/js/main.6e53237d.js"
+    "static/js/main.ed523c23.js"
   ]
 }
