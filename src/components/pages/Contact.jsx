@@ -12,7 +12,7 @@ export const Contact = () => {
                     <Link to='/contact' id="contact"> Contact </Link>
                 </div>
                 <div className="pdf-container">
-                    <iframe className="pdf" src="/CV.pdf" width="100%" height="500" title="CV"></iframe>
+                    <iframe className="pdf" src="/Resume.pdf" width="100%" height="500" title="Resume"></iframe>
                 </div>
             </section>
         </>

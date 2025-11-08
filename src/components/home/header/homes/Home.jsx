@@ -138,8 +138,8 @@ export const Home = ({ className }) => {
               I am Dinh Luong Ta. I am a programmer skilled at Web Development, Android Development. I am also learning Artificial Intelligence and Hardware. I am extremely fascinated by science and technology.
             </p>
             <p>
-              My CV: <Link to={{ pathname: '/CV.pdf' }} target="_blank" className="blue">
-                CV Viewer Page
+              My Resume: <Link to={{ pathname: '/Resume.pdf' }} target="_blank" className="blue">
+                Resume Viewer Page
               </Link>
             </p>
             <button className="primary-btn btn-led">

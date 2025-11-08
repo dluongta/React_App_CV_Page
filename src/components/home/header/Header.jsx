@@ -43,7 +43,7 @@ export const Header = () => {
         <>
             <div className="marquee-container">
                 <marquee behavior="scroll" direction="left" scrollamount="10">
-                    Welcome to React App CV Page
+                    Welcome to React App Resume Page
                 </marquee>
             </div>
             <header className='header'>
