@@ -17,6 +17,7 @@ const formatTime = (seconds) => {
 const CustomVideoPlayer = ({ src, captionSrc }) => {
   const videoRef = useRef(null);
   const progressBarRef = useRef(null);
+  const settingsRef = useRef(null);
 
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(true);
@@ -31,6 +32,7 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
   const [previewTime, setPreviewTime] = useState(null);
   const [previewPos, setPreviewPos] = useState(null);
 
+  // Video setup
   useEffect(() => {
     const video = videoRef.current;
     if (!video) return;
@@ -61,7 +63,6 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
       setLoading(false);
       setIsPlaying(true);
     };
-
     const onPause = () => setIsPlaying(false);
 
     video.addEventListener('loadedmetadata', onLoadedMetadata);
@@ -79,6 +80,7 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
     };
   }, [src, captionSrc]);
 
+  // Fullscreen listener
   useEffect(() => {
     const handleFullscreenChange = () => {
       setIsFullscreen(Boolean(document.fullscreenElement));
@@ -87,10 +89,15 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, []);
 
+  // Click outside to close settings
   useEffect(() => {
-  const handleClickOutside = () => setShowSettings(false);
-  document.addEventListener('click', handleClickOutside);
-  return () => document.removeEventListener('click', handleClickOutside);
+    const handleClickOutside = (event) => {
+      if (settingsRef.current && !settingsRef.current.contains(event.target)) {
+        setShowSettings(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
   const togglePlay = () => {
@@ -148,13 +155,8 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
     if (!video) return;
     const track = video.textTracks[0];
     if (!track) return;
-    if (track.mode === 'showing') {
-      track.mode = 'hidden';
-      setIsCaptionsOn(false);
-    } else {
-      track.mode = 'showing';
-      setIsCaptionsOn(true);
-    }
+    track.mode = track.mode === 'showing' ? 'hidden' : 'showing';
+    setIsCaptionsOn(track.mode === 'showing');
   };
 
   const changePlaybackRate = (rate) => {
@@ -162,19 +164,13 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
     if (!video) return;
     video.playbackRate = rate;
     setPlaybackRate(rate);
-    setShowSettings(false);
+    setShowSettings(false); // auto-close menu
   };
 
   const toggleSettings = (e) => {
     e.stopPropagation();
-    setShowSettings(prev => !prev);
+    setShowSettings((prev) => !prev);
   };
-
-  useEffect(() => {
-    const handleClickOutside = () => setShowSettings(false);
-    document.addEventListener('click', handleClickOutside);
-    return () => document.removeEventListener('click', handleClickOutside);
-  }, []);
 
   return (
     <div className="video-player-container">
@@ -256,21 +252,23 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
                 CC
               </button>
 
-              <div className="settings-menu" onClick={(e) => e.stopPropagation()}>
+              <div className="settings-menu" ref={settingsRef}>
                 <button
-                  className="control-btn settings-btn"
+                  className={`control-btn settings-btn ${showSettings ? 'active' : ''}`}
                   title="Settings"
                   onClick={toggleSettings}
                 >
                   ⚙️
                 </button>
+
                 {showSettings && (
                   <div className="settings-content">
                     {[0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
                       <div
                         key={speed}
-                        className={`settings-item playback-speed ${playbackRate === speed ? 'active' : ''
-                          }`}
+                        className={`settings-item playback-speed ${
+                          playbackRate === speed ? 'active' : ''
+                        }`}
                         onClick={() => changePlaybackRate(speed)}
                       >
                         {speed === 1 ? 'Normal' : `${speed}x`}
@@ -279,7 +277,6 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
                   </div>
                 )}
               </div>
-
 
               <button
                 className="control-btn fullscreen-btn"

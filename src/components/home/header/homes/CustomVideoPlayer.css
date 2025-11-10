@@ -261,18 +261,15 @@
         flex-direction: column;
         padding: 8px 12px;
         background: rgba(0, 0, 0, 0.4);
-        /* nền trong suốt */
         color: white;
     }
 
     .video-container:hover .controls {
         background: rgba(0, 0, 0, 0.6);
-        /* hover rõ hơn */
     }
 
     .control-btn {
         color: white;
-        /* đổi màu icon nút trắng để nổi trên nền trong suốt */
     }
 
 
@@ -297,7 +294,6 @@
         }
     }
 
-    /* custom caption container placed above controls */
 .custom-captions {
   position: absolute;
   left: 0;
@@ -334,26 +330,24 @@
 .video-player-container * {
   font-family: inherit !important;
 }
-/* Mặc định: controls ẩn */
+
 .controls {
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Khi hover vào video container hoặc controls thì hiện ra ngay */
 .video-container:hover .controls,
 .video-container .controls:hover {
   opacity: 1;
   visibility: visible;
-  transition-delay: 0s; /* hiện ngay khi hover */
+  transition-delay: 0s; 
 }
 
-/* Khi rời chuột ra khỏi video, sau 3s mới ẩn đi */
 .video-container:not(:hover) .controls {
   opacity: 0;
   visibility: hidden;
-  transition-delay: 3s; /* delay 3 giây trước khi ẩn */
+  transition-delay: 3s; 
 }
 
 .settings-content {
@@ -370,5 +364,58 @@
   color: #333;
 }
 
-/* Xóa hover hiện menu */
+.settings-menu {
+    position: relative;
+}
+
+.settings-content {
+    display: none;
+    position: absolute;
+    bottom: 40px;
+    right: 0;
+    background-color: var(--bg-color);
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 8px;
+    min-width: 150px;
+    z-index: 10;
+    color: #333;
+}
+
+.settings-menu:hover .settings-content,
+.settings-content:hover {
+    display: block;
+}
+
+.settings-item {
+    padding: 8px 12px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.settings-item:hover {
+    background-color: var(--secondary-color);
+}
+
+
+.settings-content {
+  position: absolute;
+  bottom: 36px;
+  right: 0;
+  background-color: var(--bg-color);
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 8px;
+  min-width: 150px;
+  z-index: 10;
+  color: #333;
+}
+
+/* Hover trigger */
+.settings-menu:hover .settings-content,
+.settings-content:hover {
+  display: block;
+}
+
 
