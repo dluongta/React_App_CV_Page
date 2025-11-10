@@ -8,6 +8,8 @@ import caption_logo from '../../../../assets/caption_logo.vtt';
 import bgLogoVideo from '../../../../assets/lumind_logo.mp4';
 import caption_rectangle_text from '../../../../assets/caption_rectangle_text.vtt';
 import bgTextVideo from '../../../../assets/rectangle_text.mp4';
+import lumind_animation_text from '../../../../assets/lumind_animation.vtt';
+import lumindAnimationVideo from '../../../../assets/lumind_animation.mp4';
 export const Branding = ({ className }) => {
   const data = [
     {
@@ -55,6 +57,7 @@ export const Branding = ({ className }) => {
       <CustomVideoPlayer src={bgVideo} captionSrc={caption} />
       <CustomVideoPlayer src={bgLogoVideo} captionSrc={caption_logo} />
       <CustomVideoPlayer src={bgTextVideo} captionSrc={caption_rectangle_text} />
+      <CustomVideoPlayer src={lumindAnimationVideo} captionSrc={lumind_animation_text} />
       <Hero />
     </>
   );
