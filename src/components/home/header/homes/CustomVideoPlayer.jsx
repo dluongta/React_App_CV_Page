@@ -87,6 +87,12 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
     return () => document.removeEventListener('fullscreenchange', handleFullscreenChange);
   }, []);
 
+  useEffect(() => {
+  const handleClickOutside = () => setShowSettings(false);
+  document.addEventListener('click', handleClickOutside);
+  return () => document.removeEventListener('click', handleClickOutside);
+  }, []);
+
   const togglePlay = () => {
     const video = videoRef.current;
     if (!video) return;
@@ -182,7 +188,7 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
           playsInline
           autoPlay
           muted={isMuted}
-          src={src}                
+          src={src}
           loop
           onClick={togglePlay}
         >
@@ -250,7 +256,7 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
                 CC
               </button>
 
-              <div className="settings-menu">
+              <div className="settings-menu" onClick={(e) => e.stopPropagation()}>
                 <button
                   className="control-btn settings-btn"
                   title="Settings"
@@ -263,9 +269,8 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
                     {[0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
                       <div
                         key={speed}
-                        className={`settings-item playback-speed ${
-                          playbackRate === speed ? 'active' : ''
-                        }`}
+                        className={`settings-item playback-speed ${playbackRate === speed ? 'active' : ''
+                          }`}
                         onClick={() => changePlaybackRate(speed)}
                       >
                         {speed === 1 ? 'Normal' : `${speed}x`}
@@ -274,6 +279,7 @@ const CustomVideoPlayer = ({ src, captionSrc }) => {
                   </div>
                 )}
               </div>
+
 
               <button
                 className="control-btn fullscreen-btn"
