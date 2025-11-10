@@ -296,3 +296,63 @@
             font-size: 12px;
         }
     }
+
+    /* custom caption container placed above controls */
+.custom-captions {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 80px; /* adjust this to sit above your controls */
+  display: flex;
+  justify-content: center;
+  pointer-events: none; /* clicks go through */
+  z-index: 999; /* ensure it's above the controls */
+  padding: 0 12px;
+}
+
+.custom-captions .caption-line {
+  display: inline-block;
+  background: rgba(0,0,0,0.6);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 1rem;
+  text-shadow: 0 0 3px rgba(0,0,0,0.8);
+  max-width: calc(100% - 40px);
+  white-space: pre-wrap;
+  text-align: center;
+}
+
+/* when fullscreen, push higher a bit */
+:fullscreen .custom-captions {
+  bottom: 110px;
+}
+.video-player-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+}
+
+.video-player-container * {
+  font-family: inherit !important;
+}
+/* Mặc định: controls ẩn */
+.controls {
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Khi hover vào video container hoặc controls thì hiện ra ngay */
+.video-container:hover .controls,
+.video-container .controls:hover {
+  opacity: 1;
+  visibility: visible;
+  transition-delay: 0s; /* hiện ngay khi hover */
+}
+
+/* Khi rời chuột ra khỏi video, sau 3s mới ẩn đi */
+.video-container:not(:hover) .controls {
+  opacity: 0;
+  visibility: hidden;
+  transition-delay: 3s; /* delay 3 giây trước khi ẩn */
+}
+

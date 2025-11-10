@@ -2,7 +2,12 @@ import React from 'react';
 import logo from '../../../../assets/logo.jpg';
 import Hero from './Hero';
 import CustomVideoPlayer from './CustomVideoPlayer';
-import CustomVideoPlayerLogo from './CustomVideoPlayerLogo';
+import caption from '../../../../assets/caption.vtt';
+import bgVideo from '../../../../assets/dluongta-animation.mp4';
+import caption_logo from '../../../../assets/caption_logo.vtt';
+import bgLogoVideo from '../../../../assets/lumind_logo.mp4';
+import caption_rectangle_text from '../../../../assets/caption_rectangle_text.vtt';
+import bgTextVideo from '../../../../assets/rectangle_text.mp4';
 export const Branding = ({ className }) => {
   const data = [
     {
@@ -47,8 +52,9 @@ export const Branding = ({ className }) => {
       <iframe className="custom-iframe" src="https://vietnam-map-platform.vercel.app/" title="Vietnam Map Platform"></iframe>
       <iframe className="custom-iframe custom-iframe-2d" src="https://dluongta.github.io/map/map/html/index.html" title="World Map 2D"></iframe>
       <iframe className="custom-iframe" src="https://dluongta.github.io/globe.html" title="3D Globe"></iframe>
-      <CustomVideoPlayer />
-      <CustomVideoPlayerLogo />
+      <CustomVideoPlayer src={bgVideo} captionSrc={caption} />
+      <CustomVideoPlayer src={bgLogoVideo} captionSrc={caption_logo} />
+      <CustomVideoPlayer src={bgTextVideo} captionSrc={caption_rectangle_text} />
       <Hero />
     </>
   );

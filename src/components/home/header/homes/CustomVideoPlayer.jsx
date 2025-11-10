@@ -1,6 +1,4 @@
 import React, { useEffect, useRef, useState } from 'react';
-import caption from '../../../../assets/caption.vtt';
-import bgVideo from '../../../../assets/dluongta-animation.mp4';
 import './CustomVideoPlayer.css';
 import FullscreenIcon from '@mui/icons-material/Fullscreen';
 import FullscreenExitIcon from '@mui/icons-material/FullscreenExit';
@@ -16,7 +14,7 @@ const formatTime = (seconds) => {
     .padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
 };
 
-const CustomVideoPlayer = () => {
+const CustomVideoPlayer = ({ src, captionSrc }) => {
   const videoRef = useRef(null);
   const progressBarRef = useRef(null);
 
@@ -37,7 +35,6 @@ const CustomVideoPlayer = () => {
     const video = videoRef.current;
     if (!video) return;
 
-    // Set initial volume & mute
     video.volume = 1;
     video.muted = true;
 
@@ -80,9 +77,8 @@ const CustomVideoPlayer = () => {
       video.removeEventListener('playing', onPlaying);
       video.removeEventListener('pause', onPause);
     };
-  }, []);
+  }, [src, captionSrc]);
 
-  // Handle fullscreen change event
   useEffect(() => {
     const handleFullscreenChange = () => {
       setIsFullscreen(Boolean(document.fullscreenElement));
@@ -94,18 +90,13 @@ const CustomVideoPlayer = () => {
   const togglePlay = () => {
     const video = videoRef.current;
     if (!video) return;
-
-    if (video.paused) {
-      video.play().catch(err => console.log('Play error:', err));
-    } else {
-      video.pause();
-    }
+    if (video.paused) video.play().catch(console.error);
+    else video.pause();
   };
 
   const toggleMute = () => {
     const video = videoRef.current;
     if (!video) return;
-
     video.muted = !video.muted;
     setIsMuted(video.muted);
     setVolume(video.muted ? 0 : video.volume);
@@ -114,7 +105,6 @@ const CustomVideoPlayer = () => {
   const handleVolumeChange = (e) => {
     const video = videoRef.current;
     if (!video) return;
-
     const vol = parseFloat(e.target.value);
     video.volume = vol;
     video.muted = vol === 0;
@@ -125,17 +115,14 @@ const CustomVideoPlayer = () => {
   const handleProgressClick = (e) => {
     const video = videoRef.current;
     if (!video) return;
-
     const rect = e.currentTarget.getBoundingClientRect();
     const clickX = e.clientX - rect.left;
-    const width = rect.width;
-    video.currentTime = (clickX / width) * video.duration;
+    video.currentTime = (clickX / rect.width) * video.duration;
   };
 
   const handleProgressMouseMove = (e) => {
     const video = videoRef.current;
     if (!video) return;
-
     const rect = e.currentTarget.getBoundingClientRect();
     const hoverX = e.clientX - rect.left;
     const width = rect.width;
@@ -146,20 +133,15 @@ const CustomVideoPlayer = () => {
 
   const toggleFullscreen = () => {
     const container = videoRef.current.parentElement;
-    if (!document.fullscreenElement) {
-      container.requestFullscreen().catch(err => console.error('Fullscreen error:', err));
-    } else {
-      document.exitFullscreen().catch(err => console.error('Exit fullscreen error:', err));
-    }
+    if (!document.fullscreenElement) container.requestFullscreen().catch(console.error);
+    else document.exitFullscreen().catch(console.error);
   };
 
   const toggleCaptions = () => {
     const video = videoRef.current;
     if (!video) return;
-
     const track = video.textTracks[0];
     if (!track) return;
-
     if (track.mode === 'showing') {
       track.mode = 'hidden';
       setIsCaptionsOn(false);
@@ -172,7 +154,6 @@ const CustomVideoPlayer = () => {
   const changePlaybackRate = (rate) => {
     const video = videoRef.current;
     if (!video) return;
-
     video.playbackRate = rate;
     setPlaybackRate(rate);
     setShowSettings(false);
@@ -199,13 +180,15 @@ const CustomVideoPlayer = () => {
           controlsList="nodownload"
           preload="metadata"
           playsInline
-          autoPlay={true}
+          autoPlay
           muted={isMuted}
-          src={bgVideo}
+          src={src}                
           loop
           onClick={togglePlay}
         >
-          <track src={caption} kind="subtitles" srcLang="en" label="English" default />
+          {captionSrc && (
+            <track src={captionSrc} kind="subtitles" srcLang="en" label="English" default />
+          )}
           Your browser does not support the video tag.
         </video>
 
@@ -280,8 +263,9 @@ const CustomVideoPlayer = () => {
                     {[0.5, 0.75, 1, 1.25, 1.5, 2].map((speed) => (
                       <div
                         key={speed}
-                        className={`settings-item playback-speed ${playbackRate === speed ? 'active' : ''
-                          }`}
+                        className={`settings-item playback-speed ${
+                          playbackRate === speed ? 'active' : ''
+                        }`}
                         onClick={() => changePlaybackRate(speed)}
                       >
                         {speed === 1 ? 'Normal' : `${speed}x`}
