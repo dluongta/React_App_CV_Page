@@ -83,7 +83,7 @@ export const Footer = () => {
 
         <div className="box">
           <h2>Get in Touch</h2>
-          <p>"Contribute to the community. Do everything."</p>
+          <p>"Software Developer. Hardware Engineer."</p>
           <div className="icon"><i className="fa fa-map-marker-alt"></i><span>Location: Hanoi, Vietnam</span></div>
           <div className="icon"><i className="fa fa-phone"></i><a href="tel:+84383402036">Phone: +84 383402036</a></div>
           <div className="icon"><i className="fa fa-envelope"></i><a href="mailto:dluongta@gmail.com">Email: dluongta@gmail.com</a></div>
