@@ -401,7 +401,7 @@
 
 .settings-content {
   position: absolute;
-  bottom: 32px;
+  bottom: 30px;
   right: 0;
   background-color: var(--bg-color);
   border-radius: 8px;
