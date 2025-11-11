@@ -49,7 +49,6 @@ export const Branding = ({ className }) => {
       <img width={'100%'} src={logo} alt="Logo" />
       <iframe className="custom-iframe" src="/pages/3d-model.html" title="3D Model"></iframe>
       <iframe className="custom-iframe" src="/pages/fireworks.html" title="Fireworks Lighting"></iframe>
-      <iframe className="custom-iframe custom-iframe-2d" src="/pages/map/map/html/index.html" title="World Map 2D"></iframe>
       <iframe className="custom-iframe" src="/pages/globe.html" title="3D Globe"></iframe>
       <CustomVideoPlayer src={bgVideo} captionSrc={caption} />
       <CustomVideoPlayer src={bgLogoVideo} captionSrc={caption_logo} />
