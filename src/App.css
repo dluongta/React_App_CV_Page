@@ -1940,3 +1940,7 @@ footer .box ul li {
 .home p {
   margin-right: 10px !important;
 }
+
+footer a:hover {
+  color: #fff!important;
+}
