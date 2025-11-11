@@ -2262,7 +2262,7 @@ function setLoadingStatus(status) {
 if (IS_HEADER) {
   init();
 } else {
-  setLoadingStatus("Click On Screen To Enable Sound");
+  setLoadingStatus("Click On Sound Button To Enable Sound");
   setTimeout(() => {
     soundManager.preload().then(init, (reason) => {
       init();
