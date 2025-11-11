@@ -97,7 +97,7 @@ const store = {
   state: {
     // will be unpaused in init()
     paused: true,
-    soundEnabled: true,
+    soundEnabled: false,
     menuOpen: false,
     openHelpTopic: null,
     fullscreen: isFullscreen(),
@@ -1620,7 +1620,8 @@ function floralEffect(star) {
   });
   // Queue burst flash render
   BurstFlash.add(star.x, star.y, 46);
-  soundManager.playSound("burstSmall");
+  if (store.state.soundEnabled)
+    soundManager.playSound("burstSmall");
 }
 
 // Floral burst with willow stars
@@ -1645,7 +1646,8 @@ function fallingLeavesEffect(star) {
   });
   // Queue burst flash render
   BurstFlash.add(star.x, star.y, 46);
-  soundManager.playSound("burstSmall");
+  if (store.state.soundEnabled)
+    soundManager.playSound("burstSmall");
 }
 
 // Crackle pops into a small cloud of golden sparks.
@@ -1754,7 +1756,8 @@ class Shell {
 
     comet.onDeath = (comet) => this.burst(comet.x, comet.y);
 
-    soundManager.playSound("lift");
+    if (store.state.soundEnabled)
+      soundManager.playSound("lift");
   }
 
   burst(x, y) {
@@ -1769,7 +1772,8 @@ class Shell {
     if (this.crossette)
       onDeath = (star) => {
         if (!playedDeathSound) {
-          soundManager.playSound("crackleSmall");
+          if (store.state.soundEnabled)
+            soundManager.playSound("crackleSmall");
           playedDeathSound = true;
         }
         crossetteEffect(star);
@@ -1777,7 +1781,8 @@ class Shell {
     if (this.crackle)
       onDeath = (star) => {
         if (!playedDeathSound) {
-          soundManager.playSound("crackle");
+          if (store.state.soundEnabled)
+            soundManager.playSound("crackle");
           playedDeathSound = true;
         }
         crackleEffect(star);
@@ -1975,7 +1980,8 @@ class Shell {
         shellSizeSelector() - this.shellSize
       );
       const soundScale = (1 - sizeDifferenceFromMaxSize / maxDiff) * 0.3 + 0.7;
-      soundManager.playSound("burst", soundScale);
+      if (store.state.soundEnabled)
+        soundManager.playSound("burst", soundScale);
     }
   }
 }
