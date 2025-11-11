@@ -5,13 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>3D Neon Sign Board Food Model</title>
     <style>
-      body {
+      html, body {
         margin: 0;
+        padding: 0;
         overflow: hidden;
+        height: 100%;
+        touch-action: none;
       }
       canvas {
         display: block;
-      }
+      }      
     </style>
     <script src="three@0.145.0.min.js"></script>
     <script src="GLTFLoader.js"></script>
@@ -93,6 +96,14 @@
         camera.aspect = window.innerWidth / window.innerHeight;
         camera.updateProjectionMatrix();
       });
+
+      window.addEventListener(
+        "touchmove",
+        function (e) {
+          e.preventDefault();
+        },
+        { passive: false }
+      );
     </script>
   </body>
 </html>
