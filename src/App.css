@@ -1329,7 +1329,7 @@ marquee {
 .custom-iframe {
   display: block;
   width: 100%;
-  margin: 60px 0;
+  margin: 30px 0;
   border: none;
 }
 
@@ -1392,6 +1392,9 @@ marquee {
   .custom-iframe-2d {
     width: 100% !important;
     margin: -150px auto;
+  }
+  .custom-iframe {
+    margin: 60px 0!important;
   }
 }
 
