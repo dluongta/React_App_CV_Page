@@ -8,10 +8,7 @@
     <style>
         body {
             margin: 0;
-            padding: 0;
             overflow: hidden;
-            height: 100%;
-            touch-action: none;
         }
 
         canvas {
@@ -2530,6 +2527,7 @@
 
         // Start FPS measurement
         requestAnimationFrame(updateFPS);
+        
         window.addEventListener(
             "touchmove",
             function (e) {
