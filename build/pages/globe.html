@@ -8,6 +8,7 @@
     <style>
         body {
             margin: 0;
+            overflow: hidden;
         }
 
         canvas {
@@ -2527,13 +2528,18 @@
         // Start FPS measurement
         requestAnimationFrame(updateFPS);
         
-        window.addEventListener(
-            "touchmove",
-            function (e) {
-            e.preventDefault();
-            },
-            { passive: false }
-        );
+    const canvas = document.querySelector("canvas");
+
+    window.addEventListener(
+    "touchmove",
+    function (e) {
+        if (e.target.closest("#debug-panel")) return;
+
+        if (e.target === canvas) e.preventDefault();
+    },
+    { passive: false }
+    );
+
     </script>
 
 </body>
