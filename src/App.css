@@ -611,31 +611,40 @@ footer .icon i {
 }
 
 footer .socialIcon i:hover {
-  color: #434242;
+  color: #4285f4;
 }
 
 footer .fa-facebook-f:hover {
   background-color: white;
+  color: rgb(75, 139, 241);
 }
 
 footer .fa-instagram:hover {
   background-color: white;
+  color: rgb(241, 75, 224)!important;
 }
 
 footer .fa-linkedin:hover {
   background-color: white;
+  color: rgb(75, 139, 241)!important;
+
 }
 
 footer .fa-youtube:hover {
   background-color: white;
+  color: rgb(253, 0, 0)!important;
+
 }
 
 footer .fa-tiktok:hover {
   background-color: white;
+  color: rgb(0, 0, 0)!important;
+
 }
 
 footer .fa-github:hover {
   background-color: white;
+  color: rgb(0, 0, 0)!important;
 }
 
 .white {
@@ -1768,11 +1777,6 @@ footer .socialIcon i {
   color: white;
   cursor: pointer;
   transition: background-color 0.3s, color 0.3s;
-}
-
-footer .socialIcon i:hover {
-  background-color: white;
-  color: black;
 }
 
 .centerBox {
