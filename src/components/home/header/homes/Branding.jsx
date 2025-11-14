@@ -47,6 +47,7 @@ export const Branding = ({ className }) => {
       </section>
 
       <img width={'100%'} src={logo} alt="Logo" />
+      <iframe className="custom-iframe" src="/pages/particle-text.html" title="Particle Text Canvas"></iframe>
       <iframe className="custom-iframe" src="/pages/3d-model.html" title="3D Model"></iframe>
       <iframe className="custom-iframe" src="/pages/fireworks.html" title="Fireworks Lighting"></iframe>
       <iframe className="custom-iframe" src="/pages/globe.html" title="3D Globe"></iframe>
