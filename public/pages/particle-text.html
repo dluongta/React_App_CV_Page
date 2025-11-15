@@ -55,7 +55,7 @@
 <body>
 <div class="overlay">
   <div style="font-size:20px">DLUONGTA PARTICLE TEXT</div>
-  <div class="small">Particles forming text: 3 → 2 → 1 → CHUC MUNG SINH NHAT → 09/01/2003 → DINH LUONG TA</div>
+  <div class="small">Particles forming text: 3 → 2 → 1 → CHUC MUNG SINH NHAT → 09/01/2003 → DINH LUONG TA → DLUONGTA</div>
   <div style="margin-top:8px">
     <button id="restart">Chạy lại</button>
     <button id="toggleAccent">Chữ có dấu: TẮT</button>
@@ -92,8 +92,8 @@
   const holdDuration = 700; // ms hold before explode
   const explodeDuration = 800; // ms for disperse
   const betweenDuration = 200; // pause between phases
-  const textsUnaccented = ['3','2','1','CHUC', 'MUNG', 'SINH' ,'NHAT','09/01/2003','DINH LUONG TA'];
-  const textsAccented = ['3','2','1','CHÚC', 'MỪNG', 'SINH', 'NHẬT','09/01/2003','ĐÌNH LƯƠNG TẠ'];
+  const textsUnaccented = ['3','2','1','CHUC', 'MUNG', 'SINH' ,'NHAT','09','01','2003','DINH', 'LUONG', 'TA', 'DLUONGTA'];
+  const textsAccented = ['3','2','1','CHÚC', 'MỪNG', 'SINH', 'NHẬT','09','01','2003','ĐÌNH', 'LƯƠNG', 'TẠ', 'DLUONGTA'];
   let useAccent = false;
 
   let particlePool = []; // pool to re-use particles
